@@ -22,16 +22,16 @@ public class ButtonListener implements Button.OnClickListener {
     public void onClick(View view) {
 
         scrollView.fullScroll(ScrollView.FOCUS_UP);
-            /*
+
         switch (view.getId()) {
             case R.id.next_btn_1 :
-                btc.surveyComplete();
+                btc.normalComplete();
                 break;
 
             default:
                 break;
         }
-        */
+
     }
 
 

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.Nullable;
@@ -14,12 +13,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.cbu_medical_survey_app.datas.DataController;
 import com.example.cbu_medical_survey_app.fragments.normal_fragment_1;
-import com.example.cbu_medical_survey_app.fragments.normal_fragment_2;
 
 public class SubActivity extends AppCompatActivity {
 
-
+    public static DataController dtc = new DataController();
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -27,7 +26,7 @@ public class SubActivity extends AppCompatActivity {
         setContentView(R.layout.normal_page);
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.survey_content,normal_fragment_1.newInstance()).commit();
+        transaction.add(R.id.survey_content,new normal_fragment_1(this)).commit();
 
 
     }

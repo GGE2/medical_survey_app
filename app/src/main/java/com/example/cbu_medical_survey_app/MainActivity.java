@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_main_1;
     EditText main_input_name,main_input_address;
-    public static DataController dtc = new DataController();
+
 
 
 
@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         btn_main_1 = (Button)findViewById(R.id.btn_main_1);
         main_input_name = (EditText)findViewById((R.id.main_input_name));
         main_input_address = (EditText)findViewById((R.id.main_input_address));
-
-        btn_main_1.setClickable(false);
 
 
         btn_main_1.setOnClickListener(new View.OnClickListener(){

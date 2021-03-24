@@ -49,22 +49,8 @@ public class normal_fragment_2 extends Fragment {
         next_btn2 = (Button)vg.findViewById(R.id.next_btn_2);
 
 
-        pre_btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                ((SubActivity)getActivity()).replaceFragment(normal_fragment_1.newInstance());
-            }
-        });
-        /*
-        next_btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                ((SubActivity)getActivity()).replaceFragment(normal_fragment_3.newInstance());
-            }
-        });
-            */
 
 
         // 프래그먼트에 데이터 세팅

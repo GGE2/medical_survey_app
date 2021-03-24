@@ -23,7 +23,7 @@
         android:textSize="14sp"
         android:textStyle="bold"/>
     <RadioGroup
-        android:id="@+id/radio_1"
+        android:id="@+id/pro1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
             <RadioButton
-                android:id="@+id/radio_1_check1"
+                android:id="@+id/pro1_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="남자"
@@ -42,7 +42,7 @@
                 />
 
             <RadioButton
-                android:id="@+id/radio_1_check2"
+                android:id="@+id/pro1_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="여자"
@@ -66,7 +66,7 @@
             android:textSize="14sp"
             android:textStyle="bold"/>
         <RadioGroup
-            android:id="@+id/radio_2"
+            android:id="@+id/pro2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -75,7 +75,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <RadioButton
-                android:id="@+id/radio_2_check1"
+                android:id="@+id/pro2_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="미혼"
@@ -85,7 +85,7 @@
                 />
 
             <RadioButton
-                android:id="@+id/radio_2_check2"
+                android:id="@+id/pro2_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="기혼(부부가 같이 살고 있다)"
@@ -93,7 +93,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
             <RadioButton
-                android:id="@+id/radio_2_check3"
+                android:id="@+id/pro2_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="별거"
@@ -103,7 +103,7 @@
                 />
 
             <RadioButton
-                android:id="@+id/radio_2_check4"
+                android:id="@+id/pro2_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="이혼"
@@ -111,7 +111,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
             <RadioButton
-                android:id="@+id/radio_2_check5"
+                android:id="@+id/pro2_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="사별"
@@ -121,7 +121,7 @@
                 />
 
             <RadioButton
-                android:id="@+id/radio_2_check6"
+                android:id="@+id/pro2_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="주말부부"
@@ -504,6 +504,7 @@
            android:textStyle="bold"/>
 
        <RadioGroup
+           android:id="@+id/pro7"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:orientation="vertical">
@@ -604,12 +605,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <RadioButton
-                    android:id="@+id/pro8_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
                 <EditText
-                    android:id="@+id/pro8_2"
+                    android:id="@+id/pro8_1"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:textColor="@color/text_black"
@@ -622,13 +619,14 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:textStyle="bold"/>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <RadioButton
-                    android:id="@+id/pro8_3"
+                    android:id="@+id/pro8_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="모르겠다."

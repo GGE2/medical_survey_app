@@ -74,12 +74,7 @@ public class DataController {
             case R.id.normal_frag1: {
                 normal_data.setDataToView(vg);
             }
-            case R.id.main_landscape:{
-                normal_data.setDataToView(vg);
-            }
-            case R.id.main_portrait:{
-                normal_data.setDataToView(vg);
-            }
+
 
         }
 
