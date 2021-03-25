@@ -9,32 +9,38 @@
     tools:context=".MainActivity"
     android:id="@+id/main_landscape">
 
-
+    <ScrollView
+        android:id="@+id/start_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="325dp"
             android:layout_weight="6.5">
+
             <ImageView
-                android:layout_width="680dp"
-                android:layout_height="wrap_content"
+                android:layout_width="1074dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="top|left"
-                android:src="@drawable/landscape_left"/>
+                android:src="@drawable/landscape_left" />
 
             <ImageView
                 android:layout_width="500dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/main_top_title" />
+
             <ImageView
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="336dp"
                 android:layout_gravity="top|right"
-                android:src="@drawable/landscape_right"/>
-
+                android:src="@drawable/landscape_right" />
 
 
         </FrameLayout>
@@ -69,7 +75,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="200dp"
                 android:layout_marginTop="30dp">
 
                 <TextView
@@ -106,7 +112,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="200dp"
                 android:layout_marginTop="15dp"
                 app:layout_constraintEnd_toEndOf="parent">
 
@@ -151,7 +157,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="14dp"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginLeft="200dp"
                     android:src="@drawable/main_check_icon" />
 
                 <TextView
@@ -173,7 +179,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="14dp"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginLeft="200dp"
                     android:src="@drawable/main_check_icon" />
 
                 <TextView
@@ -190,19 +196,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="24dp">
+                android:layout_marginTop="20dp">
+
                 <Button
                     android:id="@+id/btn_main_1"
                     android:layout_width="541dp"
                     android:layout_height="55dp"
+                    android:layout_marginLeft="200dp"
                     android:background="@drawable/green_bt"
-                    android:text="설문 시작하기"
-                    android:layout_marginLeft="80dp"
                     android:clickable="false"
                     android:gravity="center"
+                    android:text="설문 시작하기"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -211,8 +218,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="200dp"
-                android:layout_marginLeft="80dp">
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="200dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -245,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="80dp">
+                android:layout_marginLeft="200dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -278,7 +285,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="80dp">
+                android:layout_marginLeft="200dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -313,5 +320,5 @@
 
     </LinearLayout>
 
-
+    </ScrollView>
 </LinearLayout>
