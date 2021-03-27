@@ -23,11 +23,17 @@ import java.util.Map;
 
 public class DataController {
 
+    // 설문 시작 시 이름, 주소
+    final private String origin_name;
+    final private String origin_address;
+
     final private ValidChecker vc = new ValidChecker();
     final private LastData last_data;
     final private JobData job_data;
 
-    public DataController() {
+    public DataController(String name, String address) {
+        origin_name = name;
+        origin_address = address;
         last_data = new LastData();
         job_data = new JobData();
     }

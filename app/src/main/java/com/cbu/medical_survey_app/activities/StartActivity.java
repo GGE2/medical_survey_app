@@ -13,11 +13,12 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.datas.DataController;
 
 public class StartActivity extends AppCompatActivity {
 
     Button btn_main_1;
-    EditText main_input_name,main_input_address;
+    public static DataController dtc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +34,10 @@ public class StartActivity extends AppCompatActivity {
             setContentView(R.layout.main_page_landscape);
 
         btn_main_1 = (Button)findViewById(R.id.btn_main_1);
-        main_input_name = (EditText)findViewById((R.id.main_input_name));
-        main_input_address = (EditText)findViewById((R.id.main_input_address));
+        EditText main_input_name = (EditText)findViewById((R.id.main_input_name));
+        EditText main_input_address = (EditText)findViewById((R.id.main_input_address));
+
+        dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
 
 
         btn_main_1.setOnClickListener(new View.OnClickListener(){
@@ -73,11 +76,11 @@ public class StartActivity extends AppCompatActivity {
     }
 
 
-    //name과 address 입력값 확인
-    private boolean checkText(){
-
-
-        return main_input_name.equals(null) && main_input_address.equals(null);
-    }
+//    //name과 address 입력값 확인
+//    private boolean checkText(){
+//
+//
+//        return main_input_name.equals(null) && main_input_address.equals(null);
+//    }
 
 }

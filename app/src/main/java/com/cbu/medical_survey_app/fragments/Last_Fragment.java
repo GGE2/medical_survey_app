@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.cbu.medical_survey_app.ButtonListener;
+import com.cbu.medical_survey_app.activities.StartActivity;
 import com.cbu.medical_survey_app.activities.SurveyActivity;
 import com.cbu.medical_survey_app.R;
 
@@ -58,7 +59,7 @@ public class Last_Fragment extends Fragment {
         });
 
         // 프래그먼트에 데이터 세팅
-        SurveyActivity.dtc.setDataToView(vg);
+        StartActivity.dtc.setDataToView(vg);
 
         return vg;
     }

@@ -25,7 +25,7 @@ import org.w3c.dom.Text;
 public class SurveyActivity extends FragmentActivity {
 
     private InputMethodManager imm;
-    public static DataController dtc = new DataController();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
