@@ -1,27 +1,17 @@
-package com.example.cbu_medical_survey_app.fragments;
+package com.cbu.medical_survey_app.fragments;
 
-import android.app.DatePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
-import com.example.cbu_medical_survey_app.ButtonListener;
-import com.example.cbu_medical_survey_app.R;
-import com.example.cbu_medical_survey_app.SubActivity;
-
-import java.util.Calendar;
-import java.util.Date;
+import com.cbu.medical_survey_app.ButtonListener;
+import com.cbu.medical_survey_app.R;
 
 public class normal_fragment_2 extends Fragment {
 
@@ -49,22 +39,8 @@ public class normal_fragment_2 extends Fragment {
         next_btn2 = (Button)vg.findViewById(R.id.next_btn_2);
 
 
-        pre_btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                ((SubActivity)getActivity()).replaceFragment(normal_fragment_1.newInstance());
-            }
-        });
-        /*
-        next_btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                ((SubActivity)getActivity()).replaceFragment(normal_fragment_3.newInstance());
-            }
-        });
-            */
 
 
         // 프래그먼트에 데이터 세팅

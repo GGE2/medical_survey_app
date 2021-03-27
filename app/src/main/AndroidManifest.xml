@@ -8,9 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Medical_survey_app"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         >
-        <activity android:name=".MainActivity"
+        <activity android:name=".activities.StartActivity"
             android:windowSoftInputMode="adjustPan"
             android:configChanges="orientation|screenSize"
             >
@@ -20,7 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.PopupActivity" android:theme="@style/Theme.MaterialComponents.Dialog"/>
+        <activity android:name=".activities.SurveyActivity"/>
+        <activity android:name=".activities.PopupActivity" android:theme="@style/Theme.AppCompat.Dialog"/>
     </application>
 
 </manifest>

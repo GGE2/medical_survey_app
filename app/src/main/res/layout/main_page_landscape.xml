@@ -6,33 +6,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/bg_bt"
-    tools:context=".MainActivity">
+    tools:context=".activities.SurveyActivity"
+    android:id="@+id/main_landscape">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="6">
+            android:layout_weight="6.5">
+            <ImageView
+                android:layout_width="680dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:src="@drawable/landscape_left"/>
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/main_top_new" />
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/main_top_title" />
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:src="@drawable/landscape_right"/>
 
-        </LinearLayout>
+
+
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_weight="3"
+            android:layout_weight="2.5"
             android:background="@drawable/rounded"
             android:orientation="vertical">
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -183,6 +198,7 @@
                     android:background="@drawable/green_bt"
                     android:text="설문 시작하기"
                     android:layout_marginLeft="80dp"
+                    android:clickable="false"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:textSize="18sp"

@@ -24,12 +24,12 @@ import java.util.Map;
 public class DataController {
 
     final private ValidChecker vc = new ValidChecker();
-    final private Last_Data last_data;
-    final private Job_Data job_data;
+    final private LastData last_data;
+    final private JobData job_data;
 
     public DataController() {
-        last_data = new Last_Data();
-        job_data = new Job_Data();
+        last_data = new LastData();
+        job_data = new JobData();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기

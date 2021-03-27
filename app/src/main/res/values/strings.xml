@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">medical_survey_app</string>
     <!-- Title -->
+    <string name="name">성명</string>
+    <string name="address">주소</string>
     <string name="title_default">제목</string>
     <string name="normal_title">일반 사항</string>
     <string name="smoke_title">흡연 및 음주 습관사항</string>
@@ -17,4 +19,6 @@
 
     <!-- Imgae -->
     <string name="img_default">null</string>
+
+
 </resources>

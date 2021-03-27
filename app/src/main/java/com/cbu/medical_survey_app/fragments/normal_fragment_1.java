@@ -1,50 +1,42 @@
-package com.example.cbu_medical_survey_app.fragments;
+package com.cbu.medical_survey_app.fragments;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
 
-import com.example.cbu_medical_survey_app.ButtonListener;
-import com.example.cbu_medical_survey_app.MainActivity;
-import com.example.cbu_medical_survey_app.R;
-import com.example.cbu_medical_survey_app.SubActivity;
+import com.cbu.medical_survey_app.ButtonListener;
+import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.activities.SurveyActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
 
 public class normal_fragment_1 extends Fragment {
-    private ButtonListener btl;
+    private ButtonListener bt1;
     private Context nowContext;
     TextView editDate ;
     EditText pro3_4;
     Button next_btn;
     Calendar myCalendar = Calendar.getInstance();
+    RadioGroup rg1,rg2,rg7,rg;
 
     //각각의 Fragement마다 Instance를 반환
-
+    /*
     public static normal_fragment_1 newInstance(){
         return new normal_fragment_1();
     }
-
+*/
 
 
     //DateListener가 바뀔경우
@@ -65,7 +57,7 @@ public class normal_fragment_1 extends Fragment {
     }
 
     public normal_fragment_1(Context context) {
-        btl = new ButtonListener(context);
+        bt1 = new ButtonListener(context);
         nowContext = context;
     }
 
@@ -80,18 +72,7 @@ public class normal_fragment_1 extends Fragment {
         editDate = (TextView)vg.findViewById(R.id.pro3_1);
         pro3_4 = (EditText)vg.findViewById(R.id.pro3_4);
 
-
-        next_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                ((SubActivity)getActivity()).replaceFragment(normal_fragment_2.newInstance());
-
-            }
-        });
-
-
-
+        next_btn.setOnClickListener(bt1);
 
 
         editDate.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +87,7 @@ public class normal_fragment_1 extends Fragment {
 
 
         // 프래그먼트에 데이터 세팅
-        //MainActivity.dtc.setDataToView(vg);
+        SurveyActivity.dtc.setDataToView(vg);
 
         return vg;
     }
@@ -121,5 +102,7 @@ public class normal_fragment_1 extends Fragment {
         pro3_4.setText(simpleDateFormat2.format(myCalendar.getTime()));
 
     }
+
+
 
 }

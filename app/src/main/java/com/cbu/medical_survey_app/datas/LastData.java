@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedHashMap;
 
-public class Last_Data {
+public class LastData {
 
     final private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy년 MM월 dd일");
     private String input_today = dateFormat.format(new Date());
@@ -29,7 +29,7 @@ public class Last_Data {
     // 맵으로 하는게 나중에 편할 듯?
     final private LinkedHashMap<String, String> mapped_data;
 
-    public Last_Data() {
+    public LastData() {
         mapped_data = new LinkedHashMap<String, String>();
     }
 

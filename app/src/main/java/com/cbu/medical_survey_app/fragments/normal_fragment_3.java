@@ -1,4 +1,4 @@
-package com.example.cbu_medical_survey_app.fragments;
+package com.cbu.medical_survey_app.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.cbu_medical_survey_app.R;
+import com.cbu.medical_survey_app.R;
 
 public class normal_fragment_3 extends Fragment {
 

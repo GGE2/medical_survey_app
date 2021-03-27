@@ -1,4 +1,4 @@
-package com.cbu.medical_survey_app;
+package com.cbu.medical_survey_app.activities;
 
 import android.content.Context;
 import android.media.Image;
@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.customView.SurveyViewControl;
 import com.cbu.medical_survey_app.datas.DataController;
 import com.cbu.medical_survey_app.fragments.Job_Fragment;
@@ -21,7 +22,7 @@ import com.cbu.medical_survey_app.fragments.Last_Fragment;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends FragmentActivity {
+public class SurveyActivity extends FragmentActivity {
 
     private InputMethodManager imm;
     public static DataController dtc = new DataController();
@@ -32,6 +33,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.survey_page);
 
+        // 프래그먼트 교체 부분
         TextView title = (TextView)findViewById(R.id.top_title);
         title.setText("직업 사항");
         ImageView img = (ImageView)findViewById(R.id.title_img);

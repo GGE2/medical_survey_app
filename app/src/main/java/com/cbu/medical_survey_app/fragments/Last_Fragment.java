@@ -7,13 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.cbu.medical_survey_app.ButtonListener;
-import com.cbu.medical_survey_app.MainActivity;
+import com.cbu.medical_survey_app.activities.SurveyActivity;
 import com.cbu.medical_survey_app.R;
 
 import java.text.ParseException;
@@ -59,7 +58,7 @@ public class Last_Fragment extends Fragment {
         });
 
         // 프래그먼트에 데이터 세팅
-        MainActivity.dtc.setDataToView(vg);
+        SurveyActivity.dtc.setDataToView(vg);
 
         return vg;
     }

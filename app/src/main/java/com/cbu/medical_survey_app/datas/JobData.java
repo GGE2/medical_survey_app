@@ -8,11 +8,11 @@ import com.cbu.medical_survey_app.R;
 
 import java.util.LinkedHashMap;
 
-public class Job_Data {
+public class JobData {
 
     final private LinkedHashMap<String, String> mapped_data;
 
-    public Job_Data() {
+    public JobData() {
         mapped_data = new LinkedHashMap<String, String>();
     }
 

@@ -6,16 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CalendarView;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.cbu.medical_survey_app.ButtonListener;
-import com.cbu.medical_survey_app.MainActivity;
 import com.cbu.medical_survey_app.R;
-
-import java.text.ParseException;
 
 public class Job_Fragment extends Fragment {
 
