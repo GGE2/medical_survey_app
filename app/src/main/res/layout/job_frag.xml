@@ -48,7 +48,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="132dp"
         android:fontFamily="sans-serif"
-        android:text="30)   현재 무슨 직종에 종사하고 계십니까?(하나만 표시하여 주십시오. 괄호안에는 구체적인 직무 혹은 직위를 적어 주십시오.)"
+        android:text="32)   현재의 직종에 가장 오래 종사하셨습니까?"
         android:textColor="@color/text_black"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -149,6 +149,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_1"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -250,6 +251,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_2"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -350,6 +352,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_3"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -450,6 +453,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_4"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -550,6 +554,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_5"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -650,6 +655,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_6"
                 android:layout_width="154dp"
                 android:layout_height="53dp"
                 android:layout_margin="1dp"
@@ -750,6 +756,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_7"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -850,6 +857,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_8"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -950,6 +958,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_9"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1050,6 +1059,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_10"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1150,6 +1160,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_position_11"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1305,6 +1316,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_1"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1382,6 +1394,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_2"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1458,6 +1471,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_3"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1534,6 +1548,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_4"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1610,6 +1625,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_5"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1686,6 +1702,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_6"
                 android:layout_width="154dp"
                 android:layout_height="53dp"
                 android:layout_margin="1dp"
@@ -1762,6 +1779,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_7"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1838,6 +1856,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_8"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1914,6 +1933,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_9"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1990,6 +2010,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_10"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2065,6 +2086,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_11"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2141,6 +2163,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_12"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2217,6 +2240,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_13"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2293,6 +2317,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_14"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2370,6 +2395,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_15"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2446,6 +2472,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_16"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2522,6 +2549,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_17"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2598,6 +2626,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_18"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2674,6 +2703,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_19"
                 android:layout_width="154dp"
                 android:layout_height="53dp"
                 android:layout_margin="1dp"
@@ -2750,6 +2780,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_20"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2826,6 +2857,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_21"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2902,6 +2934,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_22"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -2978,6 +3011,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_production_23"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -3060,7 +3094,7 @@
                 android:padding="15dp">
 
                 <TextView
-                    android:id="@+id/textView26"
+                    android:id="@+id/text_production_24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
@@ -3087,7 +3121,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView26"
+                    app:layout_constraintStart_toEndOf="@+id/text_production_24"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.533" />
 

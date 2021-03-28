@@ -30,10 +30,6 @@ public class JobFragment extends Fragment {
     private EditText input_mainjob_year;
 
     public JobFragment() {
-//        positions = new position[11];
-//        productions = new production[24];
-//        radio_checked = -1;
-//        production_checked = new boolean[24];
     }
 
     public JobFragment(Context context) {
@@ -136,7 +132,8 @@ public class JobFragment extends Fragment {
             input_year = ipt_y;
             index = idx;
 
-            disableInputs();
+            if(!rb.isChecked())
+                disableInputs();
 
             radio_bt.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -186,23 +183,25 @@ public class JobFragment extends Fragment {
         protected EditText input_year;
         protected int index;
 
-        public production(CheckBox rb, EditText ipt_y, int idx) {
-            check_bt = rb;
+        public production(CheckBox cb, EditText ipt_y, int idx) {
+            check_bt = cb;
             input_other = null;
             input_year = ipt_y;
             index = idx;
 
-            disableInputs();
+            if(!cb.isChecked())
+                disableInputs();
             setBtListener();
         }
 
-        public production(CheckBox rb, EditText ipt_other, EditText ipt_y, int idx) {
-            check_bt = rb;
+        public production(CheckBox cb, EditText ipt_other, EditText ipt_y, int idx) {
+            check_bt = cb;
             input_other = ipt_other;
             input_year = ipt_y;
             index = idx;
 
-            disableInputs();
+            if(!cb.isChecked())
+                disableInputs();
             setBtListener();
         }
 
