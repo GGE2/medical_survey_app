@@ -19,17 +19,17 @@ import com.cbu.medical_survey_app.R;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-public class Last_Fragment extends Fragment {
+public class LastFragment extends Fragment {
 
     private ButtonListener btl;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy년 MM월 dd일");
     private Context nowContext;
 
-    public Last_Fragment() {
+    public LastFragment() {
 
     }
 
-    public Last_Fragment(Context context) {
+    public LastFragment(Context context) {
         btl = new ButtonListener(context);
         nowContext = context;
     }

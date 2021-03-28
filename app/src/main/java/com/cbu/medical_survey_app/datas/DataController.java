@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
-import com.cbu.medical_survey_app.fragments.Job_Fragment;
-import com.cbu.medical_survey_app.fragments.Last_Fragment;
+import com.cbu.medical_survey_app.fragments.JobFragment;
+import com.cbu.medical_survey_app.fragments.LastFragment;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -42,12 +42,12 @@ public class DataController {
     public boolean saveData(Context context) {
         Fragment nowFragment = ((FragmentActivity)context).getSupportFragmentManager().findFragmentById(R.id.survey_content);
 
-        if(nowFragment instanceof Last_Fragment){
+        if(nowFragment instanceof LastFragment){
             System.out.println("설문 완료 Frag");
             last_data.saveData(context);
             return vc.lastChecker(last_data.getData());
         }
-        else if(nowFragment instanceof Job_Fragment){
+        else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
             job_data.saveData(context);
 

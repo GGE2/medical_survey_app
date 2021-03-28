@@ -13,21 +13,21 @@ import androidx.fragment.app.Fragment;
 import com.cbu.medical_survey_app.ButtonListener;
 import com.cbu.medical_survey_app.R;
 
-public class normal_fragment_2 extends Fragment {
+public class NormalFragment_2 extends Fragment {
 
     private ButtonListener bt2;
     private Context nowContext;
     Button pre_btn1,next_btn2;
-    public normal_fragment_2(){
+    public NormalFragment_2(){
     }
-    public normal_fragment_2(Context context) {
+    public NormalFragment_2(Context context) {
         bt2 = new ButtonListener(context);
         nowContext = context;
     }
 
-    public static normal_fragment_2 newInstance(){
+    public static NormalFragment_2 newInstance(){
 
-        return new normal_fragment_2();
+        return new NormalFragment_2();
     }
 
 

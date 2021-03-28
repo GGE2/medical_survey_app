@@ -1,7 +1,6 @@
 package com.cbu.medical_survey_app.activities;
 
 import android.content.Context;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -15,12 +14,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.R;
-import com.cbu.medical_survey_app.customView.SurveyViewControl;
-import com.cbu.medical_survey_app.datas.DataController;
-import com.cbu.medical_survey_app.fragments.Job_Fragment;
-import com.cbu.medical_survey_app.fragments.Last_Fragment;
-
-import org.w3c.dom.Text;
+import com.cbu.medical_survey_app.fragments.JobFragment;
 
 public class SurveyActivity extends FragmentActivity {
 
@@ -43,7 +37,7 @@ public class SurveyActivity extends FragmentActivity {
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new Job_Fragment(this));
+        fragmentTransaction.add(R.id.survey_content, new JobFragment(this));
         fragmentTransaction.commit();
     }
 

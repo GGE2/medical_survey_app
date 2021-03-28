@@ -12,9 +12,9 @@ import androidx.fragment.app.Fragment;
 
 import com.cbu.medical_survey_app.R;
 
-public class normal_fragment_3 extends Fragment {
+public class NormalFragment_3 extends Fragment {
 
-    public normal_fragment_3(){
+    public NormalFragment_3(){
 
 
     }

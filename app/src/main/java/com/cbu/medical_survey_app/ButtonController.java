@@ -12,10 +12,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.activities.StartActivity;
-import com.cbu.medical_survey_app.activities.SurveyActivity;
 import com.cbu.medical_survey_app.activities.PopupActivity;
-import com.cbu.medical_survey_app.fragments.Last_Fragment;
-import com.cbu.medical_survey_app.fragments.normal_fragment_2;
+import com.cbu.medical_survey_app.fragments.LastFragment;
+import com.cbu.medical_survey_app.fragments.NormalFragment_2;
 
 public class ButtonController {
 
@@ -40,7 +39,7 @@ public class ButtonController {
             StartActivity.dtc.saveExcel(nowContext);
 
             // 설문 완료 시 앱 재시작
-            Intent intent = new Intent(nowContext, SurveyActivity.class);
+            Intent intent = new Intent(nowContext, StartActivity.class);
             ((Activity)nowContext).finishAffinity();
             ((Activity)nowContext).startActivity(intent);
             System.exit(0);
@@ -58,7 +57,7 @@ public class ButtonController {
             title.setText(R.string.last_title);
             title_img.setImageResource(0);
 
-            Fragment fragment = new Last_Fragment(nowContext);
+            Fragment fragment = new LastFragment(nowContext);
             FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.survey_content, fragment);
@@ -73,7 +72,7 @@ public class ButtonController {
     public void normalComplete () {
         // 현재 뷰의 데이터들을 저장
         StartActivity.dtc.saveData(nowContext);
-        Fragment fragment = new normal_fragment_2(nowContext);
+        Fragment fragment = new NormalFragment_2(nowContext);
         FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.survey_content, fragment);

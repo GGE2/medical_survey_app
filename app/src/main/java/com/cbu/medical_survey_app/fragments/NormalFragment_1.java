@@ -23,7 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class normal_fragment_1 extends Fragment {
+public class NormalFragment_1 extends Fragment {
     private ButtonListener bt1;
     private Context nowContext;
     TextView editDate ;
@@ -53,11 +53,11 @@ public class normal_fragment_1 extends Fragment {
     };
 
 
-    public normal_fragment_1() {
+    public NormalFragment_1() {
 
     }
 
-    public normal_fragment_1(Context context) {
+    public NormalFragment_1(Context context) {
         bt1 = new ButtonListener(context);
         nowContext = context;
     }
