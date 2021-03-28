@@ -54,13 +54,14 @@ public class JobData {
     }
 
     public void saveData(Context nowContext) {
+        checkedList = new ArrayList<>();
         for (int posID = 0; posID < 11; posID++) {
             RadioButton radio_position = ((Activity)nowContext).findViewById(getResId(nowContext, "radio_position_" + (posID + 1)));
 
             // 라디오 버튼이 체크되어 있으면
             if(radio_position.isChecked()){
                 radio_checked = posID;
-                text_position = getString(((Activity)nowContext).findViewById(getResId(nowContext, "text_position_" + (posID + 1))));
+                text_position = getString((TextView)((Activity)nowContext).findViewById(getResId(nowContext, "text_position_" + (posID + 1))));
             }
 
             input_positions[posID] = getString(((Activity)nowContext).findViewById(getResId(nowContext, "input_position_" + (posID + 1))));
@@ -99,7 +100,7 @@ public class JobData {
         }
 
         mapped_data.put("종사하는 직종", text_position);
-        mapped_data.put("직무", radio_checked == -1 ? "" : input_positions[radio_checked]);
+        mapped_data.put("직무, 직위", radio_checked == -1 ? "" : input_positions[radio_checked]);
         mapped_data.put("종사 기간", radio_checked == -1 ? "" : input_position_years[radio_checked]);
         for(int i = 0; i < checkedList.size(); i++) {
             mapped_data.put("생산직 종사" + (i + 1), productionList.get(i) + " " + input_production_years[checkedList.get(i)] + "년부터");
@@ -110,11 +111,47 @@ public class JobData {
     }
 
     public void setDataToView(ViewGroup vg) {
+        for (int posID = 0; posID < 11; posID++) {
+            ((EditText)vg.findViewById(getResId(vg, "input_position_" + (posID + 1)))).setText(input_positions[posID]);
+            ((EditText)vg.findViewById(getResId(vg, "input_position_year_" + (posID + 1)))).setText(input_position_years[posID]);
+        }
+
+        if(radio_checked != -1) {
+            RadioButton radio_position = vg.findViewById(getResId(vg, "radio_position_" + (radio_checked + 1)));
+            radio_position.setChecked(true);
+        }
+
+        for (int proID = 0; proID < 24; proID++) {
+            ((EditText)vg.findViewById(getResId(vg, "input_production_year_" + (proID + 1)))).setText(input_production_years[proID]);
+
+            if(proID == 23){
+                ((EditText)vg.findViewById(R.id.input_production_other)).setText(input_production_other);
+            }
+        }
+
+        for (int i = 0; i < checkedList.size() ; i++) {
+            ((CheckBox)vg.findViewById(getResId(vg, "check_production_" + (checkedList.get(i) + 1)))).setChecked(true);
+        }
+
+        if(mainjob_checked == 0) {
+            ((RadioButton)vg.findViewById(R.id.radio_mainjob_no)).setChecked(true);
+        }
+        else if(mainjob_checked == 1) {
+            ((RadioButton)vg.findViewById(R.id.radio_mainjob_yes)).setChecked(true);
+        }
+
+        ((EditText)vg.findViewById(R.id.input_mainjob)).setText(input_mainjob);
+        ((EditText)vg.findViewById(R.id.input_mainjob_year)).setText(input_mainjob_year);
 
     }
 
     private int getResId(Context nowContext, String id) {
         int getID = ((Activity)nowContext).getResources().getIdentifier(id, "id", nowContext.getPackageName());
+        return getID;
+    }
+
+    private int getResId(ViewGroup vg, String id) {
+        int getID = vg.getResources().getIdentifier(id, "id", vg.getContext().getPackageName());
         return getID;
     }
 }

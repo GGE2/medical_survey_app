@@ -14,12 +14,12 @@ import androidx.fragment.app.Fragment;
 
 import com.cbu.medical_survey_app.ButtonListener;
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.activities.StartActivity;
 
 public class JobFragment extends Fragment {
 
     private int radio_checked;
     private boolean[] production_checked;
-    private int mainjob_checked;
 
     private ButtonListener btl;
     private position[] positions;
@@ -38,7 +38,6 @@ public class JobFragment extends Fragment {
         productions = new production[24];
         radio_checked = -1;
         production_checked = new boolean[24];
-        mainjob_checked = -1;
     }
 
     @Override
@@ -48,10 +47,10 @@ public class JobFragment extends Fragment {
         Button bt_job_next = (Button) vg.findViewById(R.id.bt_job_next);
         bt_job_next.setOnClickListener(btl);
 
+        // 프래그먼트에 데이터 세팅
+        StartActivity.dtc.setDataToView(vg);
+
         initViews(vg);
-//
-//        // 프래그먼트에 데이터 세팅
-//        MainActivity.dtc.setDataToView(vg);
 
         return vg;
     }
@@ -83,10 +82,20 @@ public class JobFragment extends Fragment {
         input_mainjob = vg.findViewById(R.id.input_mainjob);
         input_mainjob_year = vg.findViewById(R.id.input_mainjob_year);
 
+        if(!radio_mainjob_no.isChecked()){
+            // 아니오에 체크되어 있지 않다면 -> 비활성화
+            input_mainjob.setFocusable(false);
+            input_mainjob.setClickable(false);
+            input_mainjob.setTextColor(getResources().getColor(R.color.text_gray));
+
+            input_mainjob_year.setFocusable(false);
+            input_mainjob_year.setClickable(false);
+            input_mainjob_year.setTextColor(getResources().getColor(R.color.text_gray));
+        }
+
         radio_mainjob_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainjob_checked = 0;
                 input_mainjob.setFocusable(true);
                 input_mainjob.setFocusableInTouchMode(true);
                 input_mainjob.setTextColor(getResources().getColor(R.color.text_black));
@@ -100,7 +109,6 @@ public class JobFragment extends Fragment {
         radio_mainjob_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainjob_checked = 1;
                 input_mainjob.setFocusable(false);
                 input_mainjob.setClickable(false);
                 input_mainjob.setTextColor(getResources().getColor(R.color.text_gray));
@@ -134,6 +142,10 @@ public class JobFragment extends Fragment {
 
             if(!rb.isChecked())
                 disableInputs();
+            else{
+                // 라디오 버튼이 이미 눌려 있다면
+                radio_checked = index;
+            }
 
             radio_bt.setOnClickListener(new View.OnClickListener() {
                 @Override

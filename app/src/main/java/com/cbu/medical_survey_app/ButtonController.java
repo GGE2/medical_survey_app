@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.activities.StartActivity;
 import com.cbu.medical_survey_app.activities.PopupActivity;
+import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_2;
 
@@ -57,7 +58,7 @@ public class ButtonController {
             title.setText(R.string.last_title);
             title_img.setImageResource(0);
 
-            Fragment fragment = new LastFragment(nowContext);
+            Fragment fragment = new JobFragment(nowContext);
             FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.survey_content, fragment);

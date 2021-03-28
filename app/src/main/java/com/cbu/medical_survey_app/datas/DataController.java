@@ -102,9 +102,10 @@ public class DataController {
 
         int idx = 0;
 
-        for (Map.Entry<String, String> entry: last_data.getData().entrySet()) {
+        for (Map.Entry<String, String> entry: job_data.getData().entrySet()) {
             cell = row.createCell(idx++);
             cell.setCellValue(entry.getKey());
+            System.out.println(entry.getKey());
         }
 
         File xlsFile = new File(context.getExternalFilesDir(null), "text.xls");
