@@ -16,6 +16,7 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class JobData {
 
@@ -153,5 +154,22 @@ public class JobData {
     private int getResId(ViewGroup vg, String id) {
         int getID = vg.getResources().getIdentifier(id, "id", vg.getContext().getPackageName());
         return getID;
+    }
+
+    public boolean check() {
+
+        // 종사 직업 미체크, 입력 안할 시
+        if(mapped_data.get("종사하는 직종").equals("") || mapped_data.get("직무, 직위").equals("") || mapped_data.get("종사 기간").equals("")) return false;
+
+        // 가자 오래 종사 여부 미체크 시
+        if(mapped_data.get("가장 오래 종사 여부").equals(""))   return false;
+        else if(mapped_data.get("가장 오래 종사 여부").equals("아니오")){
+            // 아니오 체크 시
+
+            // 아니오 체크 했는데, 직업, 기간 안 적을 시
+            if(mapped_data.get("가장 오래 종사 직업").equals("") || mapped_data.get("가장 오래 종사 기간").equals(""))  return false;
+        }
+
+        return true;
     }
 }

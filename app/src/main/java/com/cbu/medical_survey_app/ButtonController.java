@@ -58,7 +58,7 @@ public class ButtonController {
             title.setText(R.string.last_title);
             title_img.setImageResource(0);
 
-            Fragment fragment = new JobFragment(nowContext);
+            Fragment fragment = new LastFragment(nowContext);
             FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.survey_content, fragment);

@@ -27,7 +27,6 @@ public class DataController {
     final private String origin_name;
     final private String origin_address;
 
-    final private ValidChecker vc = new ValidChecker();
     final private LastData last_data;
     final private JobData job_data;
 
@@ -45,12 +44,12 @@ public class DataController {
         if(nowFragment instanceof LastFragment){
             System.out.println("설문 완료 Frag");
             last_data.saveData(context);
-            return vc.lastChecker(last_data.getData());
+            return last_data.check();
         }
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
             job_data.saveData(context);
-
+            return job_data.check();
         }
         else {
             System.out.println("아님");
@@ -81,12 +80,16 @@ public class DataController {
 
     public void setDataToView(ViewGroup vg) {
 
+        System.out.println(vg.getId());
+
         switch (vg.getId()) {
             case R.id.last_frag: {
                 last_data.setDataToView(vg);
+                break;
             }
             case R.id.job_frag: {
                 job_data.setDataToView(vg);
+                break;
             }
         }
 
