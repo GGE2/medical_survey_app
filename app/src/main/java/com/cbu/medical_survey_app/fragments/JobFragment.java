@@ -44,7 +44,9 @@ public class JobFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
         ViewGroup vg = (ViewGroup) inflater.inflate(R.layout.job_frag, container, false);
 
-        Button bt_job_next = (Button) vg.findViewById(R.id.bt_smoke_next);
+        Button bt_job_prev = (Button) vg.findViewById(R.id.bt_job_prev);
+        Button bt_job_next = (Button) vg.findViewById(R.id.bt_job_next);
+        bt_job_prev.setOnClickListener(btl);
         bt_job_next.setOnClickListener(btl);
 
         // 프래그먼트에 데이터 세팅
@@ -76,8 +78,8 @@ public class JobFragment extends Fragment {
             }
         }
 
-        radio_mainjob_no = vg.findViewById(R.id.radio_20smoke_no);
-        radio_mainjob_yes = vg.findViewById(R.id.radio_20smoke_yes);
+        radio_mainjob_no = vg.findViewById(R.id.radio_mainjob_no);
+        radio_mainjob_yes = vg.findViewById(R.id.radio_mainjob_yes);
 
         input_mainjob = vg.findViewById(R.id.input_mainjob);
         input_mainjob_year = vg.findViewById(R.id.input_mainjob_year);

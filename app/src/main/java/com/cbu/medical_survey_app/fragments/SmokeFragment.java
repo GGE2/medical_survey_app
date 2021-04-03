@@ -44,8 +44,10 @@ public class SmokeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
         ViewGroup vg = (ViewGroup) inflater.inflate(R.layout.smoke_frag, container, false);
 
-//        Button bt_job_next = (Button) vg.findViewById(R.id.bt_job_next);
-//        bt_job_next.setOnClickListener(btl);
+        Button bt_smoke_prev = (Button) vg.findViewById(R.id.bt_smoke_prev);
+        Button bt_smoke_next = (Button) vg.findViewById(R.id.bt_smoke_next);
+        bt_smoke_prev.setOnClickListener(btl);
+        bt_smoke_next.setOnClickListener(btl);
 
         // 프래그먼트에 데이터 세팅
 //        StartActivity.dtc.setDataToView(vg);

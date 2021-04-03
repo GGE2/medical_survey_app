@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentActivity;
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
+import com.cbu.medical_survey_app.fragments.SmokeFragment;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -51,6 +52,11 @@ public class DataController {
             job_data.saveData(context);
             return job_data.check();
         }
+        else if(nowFragment instanceof SmokeFragment){
+            System.out.println("흡연 및 음주 사항 Frag");
+
+            return true;
+        }
         else {
             System.out.println("아님");
         }
@@ -62,7 +68,7 @@ public class DataController {
 //            System.out.println("다음 페이지 가는 로직");
 //        }
 
-        return true;
+        return false;
     }
 
 //    public HashMap<String, String> getData(Context context) {
@@ -89,6 +95,10 @@ public class DataController {
             }
             case R.id.job_frag: {
                 job_data.setDataToView(vg);
+                break;
+            }
+            case R.id.smoke_frag: {
+
                 break;
             }
         }

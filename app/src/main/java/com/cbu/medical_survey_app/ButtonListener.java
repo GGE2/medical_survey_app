@@ -27,11 +27,17 @@ public class ButtonListener implements Button.OnClickListener {
             case R.id.bt_submit :
                 btc.surveyComplete();
                 break;
+            case R.id.bt_job_next:
+                btc.jobNext();
+                break;
+            case R.id.bt_job_prev:
+                btc.jobPrev();
+                break;
             case R.id.bt_smoke_next:
-                btc.jobComplete();
+                btc.smokeNext();
                 break;
             case R.id.bt_smoke_prev:
-
+                btc.smokePrev();
                 break;
 
             default:

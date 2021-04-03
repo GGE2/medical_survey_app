@@ -16,6 +16,7 @@ import com.cbu.medical_survey_app.activities.PopupActivity;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_2;
+import com.cbu.medical_survey_app.fragments.SmokeFragment;
 
 public class ButtonController {
 
@@ -51,18 +52,48 @@ public class ButtonController {
         }
     }
 
-    public void jobComplete() {
+    public void jobNext() {
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
             title.setText(R.string.last_title);
             title_img.setImageResource(0);
 
-            Fragment fragment = new LastFragment(nowContext);
-            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-            fragmentTransaction.replace(R.id.survey_content, fragment);
-            fragmentTransaction.commit();
+            makeFrag(new LastFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void jobPrev() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            title.setText(R.string.smoke_title);
+            title_img.setImageResource(R.drawable.img_smoke_top);
+
+            makeFrag(new SmokeFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void smokePrev() {
+
+    }
+
+    public void smokeNext() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            title.setText(R.string.last_title);
+            title_img.setImageResource(0);
+
+            makeFrag(new JobFragment(nowContext));
         }
         else{
             // 유효성 검사 실패 -> 경고창
@@ -93,5 +124,12 @@ public class ButtonController {
     private void openPopup() {
         Intent intent = new Intent(nowContext, PopupActivity.class);
         ((Activity)nowContext).startActivityForResult(intent, 1);
+    }
+
+    private void makeFrag(Fragment fragment) {
+        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        fragmentTransaction.replace(R.id.survey_content, fragment);
+        fragmentTransaction.commit();
     }
 }

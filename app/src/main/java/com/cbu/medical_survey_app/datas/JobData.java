@@ -83,8 +83,8 @@ public class JobData {
             input_production_years[proID] = getString(((Activity)nowContext).findViewById(getResId(nowContext, "input_production_year_" + (proID + 1))));
         }
 
-        RadioButton mainjob_no = ((Activity)nowContext).findViewById(R.id.radio_20smoke_no);
-        RadioButton mainjob_yes = ((Activity)nowContext).findViewById(R.id.radio_20smoke_yes);
+        RadioButton mainjob_no = ((Activity)nowContext).findViewById(R.id.radio_mainjob_no);
+        RadioButton mainjob_yes = ((Activity)nowContext).findViewById(R.id.radio_mainjob_yes);
 
         if(mainjob_no.isChecked()){
             mainjob_checked = 0;
@@ -130,10 +130,10 @@ public class JobData {
         }
 
         if(mainjob_checked == 0) {
-            ((RadioButton)vg.findViewById(R.id.radio_20smoke_no)).setChecked(true);
+            ((RadioButton)vg.findViewById(R.id.radio_mainjob_no)).setChecked(true);
         }
         else if(mainjob_checked == 1) {
-            ((RadioButton)vg.findViewById(R.id.radio_20smoke_yes)).setChecked(true);
+            ((RadioButton)vg.findViewById(R.id.radio_mainjob_yes)).setChecked(true);
         }
 
         ((EditText)vg.findViewById(R.id.input_mainjob)).setText(input_mainjob);
