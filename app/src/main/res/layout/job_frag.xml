@@ -3187,7 +3187,7 @@
             android:button="@drawable/radio_bt"
             android:fontFamily="@font/roboto_bold"
             android:paddingLeft="10dp"
-            android:text="아니오, 가장 오래된 근무지는 "
+            android:text="아니오. 가장 오래된 근무지는 "
             android:textColor="@color/text_black"
             android:textSize="14sp" />
 

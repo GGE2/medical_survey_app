@@ -76,8 +76,8 @@ public class JobFragment extends Fragment {
             }
         }
 
-        radio_mainjob_no = vg.findViewById(R.id.radio_mainjob_no);
-        radio_mainjob_yes = vg.findViewById(R.id.radio_mainjob_yes);
+        radio_mainjob_no = vg.findViewById(R.id.radio_20smoke_no);
+        radio_mainjob_yes = vg.findViewById(R.id.radio_20smoke_yes);
 
         input_mainjob = vg.findViewById(R.id.input_mainjob);
         input_mainjob_year = vg.findViewById(R.id.input_mainjob_year);

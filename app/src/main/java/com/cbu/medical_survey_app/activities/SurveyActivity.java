@@ -15,11 +15,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.JobFragment;
+import com.cbu.medical_survey_app.fragments.SmokeFragment;
 
 public class SurveyActivity extends FragmentActivity {
-
-    private InputMethodManager imm;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +26,19 @@ public class SurveyActivity extends FragmentActivity {
         setContentView(R.layout.survey_page);
 
         // 프래그먼트 교체 부분
-        TextView title = (TextView)findViewById(R.id.top_title);
-        title.setText("직업 사항");
-        ImageView img = (ImageView)findViewById(R.id.title_img);
-        img.setImageResource(0);
+//        TextView title = (TextView)findViewById(R.id.top_title);
+//        title.setText("직업 사항");
+//        ImageView img = (ImageView)findViewById(R.id.title_img);
+//        img.setImageResource(0);
 
-        imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        TextView title = (TextView)findViewById(R.id.top_title);
+        title.setText("흡연 및 음주사항");
+        ImageView img = (ImageView)findViewById(R.id.title_img);
+        img.setImageResource(R.drawable.img_smoke_top);
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new JobFragment(this));
+        fragmentTransaction.add(R.id.survey_content, new SmokeFragment(this));
         fragmentTransaction.commit();
     }
 

@@ -2,7 +2,6 @@ package com.cbu.medical_survey_app.datas;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Pair;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -10,13 +9,9 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.cbu.medical_survey_app.R;
-import com.cbu.medical_survey_app.fragments.JobFragment;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class JobData {
 
@@ -88,8 +83,8 @@ public class JobData {
             input_production_years[proID] = getString(((Activity)nowContext).findViewById(getResId(nowContext, "input_production_year_" + (proID + 1))));
         }
 
-        RadioButton mainjob_no = ((Activity)nowContext).findViewById(R.id.radio_mainjob_no);
-        RadioButton mainjob_yes = ((Activity)nowContext).findViewById(R.id.radio_mainjob_yes);
+        RadioButton mainjob_no = ((Activity)nowContext).findViewById(R.id.radio_20smoke_no);
+        RadioButton mainjob_yes = ((Activity)nowContext).findViewById(R.id.radio_20smoke_yes);
 
         if(mainjob_no.isChecked()){
             mainjob_checked = 0;
@@ -135,10 +130,10 @@ public class JobData {
         }
 
         if(mainjob_checked == 0) {
-            ((RadioButton)vg.findViewById(R.id.radio_mainjob_no)).setChecked(true);
+            ((RadioButton)vg.findViewById(R.id.radio_20smoke_no)).setChecked(true);
         }
         else if(mainjob_checked == 1) {
-            ((RadioButton)vg.findViewById(R.id.radio_mainjob_yes)).setChecked(true);
+            ((RadioButton)vg.findViewById(R.id.radio_20smoke_yes)).setChecked(true);
         }
 
         ((EditText)vg.findViewById(R.id.input_mainjob)).setText(input_mainjob);
