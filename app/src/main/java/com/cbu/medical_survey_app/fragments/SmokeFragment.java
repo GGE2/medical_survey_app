@@ -38,12 +38,21 @@ public class SmokeFragment extends Fragment {
     private EditText input_smoke_stop1;
     private EditText input_smoke_stop2;
     private EditText input_smoke_stop3;
+    private RadioGroup radiogroup_other_20smoke;
+    private EditText[] input_smoke_families;
+    private EditText[] input_smoke_family_years;
+    private RadioGroup radiogroup_drink;
+    private EditText input_drink_yes_before;
+    private drink[] drinks;
 
     public SmokeFragment() {
     }
 
     public SmokeFragment(Context context) {
         btl = new ButtonListener(context);
+        input_smoke_families = new EditText[4];
+        input_smoke_family_years = new EditText[4];
+        drinks = new drink[5];
 //        positions = new position[11];
 //        productions = new production[24];
 //        radio_checked = -1;
@@ -89,6 +98,8 @@ public class SmokeFragment extends Fragment {
 //        }
 
 //        radio_20smoke_no_checked = vg.findViewById(R.id.radio_20smoke_no);
+
+        // 16 ~ 20번
         radiogroup_20smoke = vg.findViewById(R.id.radiogroup_20smoke);
         input_first_smoke = vg.findViewById(R.id.input_first_smoke);
         radiogroup_smoke_now = vg.findViewById(R.id.radiogroup_smoke_now);
@@ -99,6 +110,46 @@ public class SmokeFragment extends Fragment {
         input_smoke_stop2 = vg.findViewById(R.id.input_smoke_stop2);
         input_smoke_stop3 = vg.findViewById(R.id.input_smoke_stop3);
 
+        if(radiogroup_smoke_now.getCheckedRadioButtonId() == R.id.radio_smoke_now_year){
+            enableEditText(input_smoke_now_year);
+        }
+        else{
+            disableEditText(input_smoke_now_year);
+        }
+
+        radiogroup_smoke_now.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.radio_smoke_now_year){
+                    enableEditText(input_smoke_now_year);
+                }
+                else{
+                    disableEditText(input_smoke_now_year);
+                }
+            }
+        });
+
+
+
+        if(radiogroup_smoke_now_amount.getCheckedRadioButtonId() == R.id.radio_smoke_now_amount){
+            enableEditText(input_smoke_now_amount);
+        }
+        else{
+            disableEditText(input_smoke_now_amount);
+        }
+
+        radiogroup_smoke_now_amount.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.radio_smoke_now_amount){
+                    enableEditText(input_smoke_now_amount);
+                }
+                else{
+                    disableEditText(input_smoke_now_amount);
+                }
+            }
+        });
+
         smoke20Handler(radiogroup_20smoke, radiogroup_20smoke.getCheckedRadioButtonId());
 
         radiogroup_20smoke.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -108,49 +159,74 @@ public class SmokeFragment extends Fragment {
             }
         });
 
-//        radio_mainjob_no = vg.findViewById(R.id.radio_mainjob_no);
-//        radio_mainjob_yes = vg.findViewById(R.id.radio_mainjob_yes);
-//
-//        input_mainjob = vg.findViewById(R.id.input_mainjob);
-//        input_mainjob_year = vg.findViewById(R.id.input_mainjob_year);
-//
-//        if(!radio_mainjob_no.isChecked()){
-//            // 아니오에 체크되어 있지 않다면 -> 비활성화
-//            input_mainjob.setFocusable(false);
-//            input_mainjob.setClickable(false);
-//            input_mainjob.setTextColor(getResources().getColor(R.color.text_gray));
-//
-//            input_mainjob_year.setFocusable(false);
-//            input_mainjob_year.setClickable(false);
-//            input_mainjob_year.setTextColor(getResources().getColor(R.color.text_gray));
-//        }
-//
-//        radio_mainjob_no.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                input_mainjob.setFocusable(true);
-//                input_mainjob.setFocusableInTouchMode(true);
-//                input_mainjob.setTextColor(getResources().getColor(R.color.text_black));
-//
-//                input_mainjob_year.setFocusable(true);
-//                input_mainjob_year.setFocusableInTouchMode(true);
-//                input_mainjob_year.setTextColor(getResources().getColor(R.color.text_black));
-//            }
-//        });
-//
-//        radio_mainjob_yes.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                input_mainjob.setFocusable(false);
-//                input_mainjob.setClickable(false);
-//                input_mainjob.setTextColor(getResources().getColor(R.color.text_gray));
-//
-//                input_mainjob_year.setFocusable(false);
-//                input_mainjob_year.setClickable(false);
-//                input_mainjob_year.setTextColor(getResources().getColor(R.color.text_gray));
-//            }
-//        });
+        // 21번
+        radiogroup_other_20smoke = vg.findViewById(R.id.radiogroup_other_20smoke);
 
+        for (int famID = 0; famID < 4; famID++) {
+            input_smoke_families[famID] = vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1)));
+            input_smoke_family_years[famID] = vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1) + "_year"));
+        }
+
+        if(radiogroup_other_20smoke.getCheckedRadioButtonId() == R.id.radio_other_20smoke_yes) {
+            enableFamily();
+        }
+        else {
+            disableFamily();
+        }
+
+        radiogroup_other_20smoke.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.radio_other_20smoke_yes) {
+                    enableFamily();
+                }
+                else {
+                    disableFamily();
+                }
+            }
+        });
+
+        radiogroup_drink = vg.findViewById(R.id.radiogroup_drink);
+        input_drink_yes_before = vg.findViewById(R.id.input_drink_yes_before);
+
+        if(radiogroup_drink.getCheckedRadioButtonId() == R.id.radio_drink_yes_before) {
+            enableEditText(input_drink_yes_before);
+        }
+        else{
+            disableEditText(input_drink_yes_before);
+        }
+
+        radiogroup_drink.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.radio_drink_yes_before) {
+                    enableEditText(input_drink_yes_before);
+                }
+                else{
+                    disableEditText(input_drink_yes_before);
+                }
+            }
+        });
+
+        for (int drinkID = 0; drinkID < 5; drinkID++) {
+            CheckBox[] cbs = new CheckBox[8];
+
+            for (int ansID = 0; ansID < 8; ansID++) {
+                cbs[ansID] = vg.findViewById(getResId(vg, "check_drink" + (drinkID + 1) + "_ans" + (ansID + 1)));
+            }
+
+            if(drinkID == 3) {
+                EditText input_drink_ans1 = vg.findViewById(getResId(vg, "input_drink" + (drinkID + 1) + "_ans1"));
+                EditText input_drink_ans2 = vg.findViewById(getResId(vg, "input_drink" + (drinkID + 1) + "_ans2"));
+
+                drinks[drinkID] = new drink(cbs, input_drink_ans1, input_drink_ans2);
+            }
+            else{
+                EditText input_drink_ans1 = vg.findViewById(getResId(vg, "input_drink" + (drinkID + 1) + "_ans1"));
+
+                drinks[drinkID] = new drink(cbs, input_drink_ans1);
+            }
+        }
     }
 
     private void disableEditText(EditText edt) {
@@ -190,13 +266,31 @@ public class SmokeFragment extends Fragment {
 
     private void enableSmokes() {
         enableEditText(input_first_smoke);
-        enableEditText(input_smoke_now_year);
-        enableEditText(input_smoke_now_amount);
+        if(radiogroup_smoke_now_amount.getCheckedRadioButtonId() == R.id.radio_smoke_now_amount){
+            enableEditText(input_smoke_now_amount);
+        }
+        if(radiogroup_smoke_now.getCheckedRadioButtonId() == R.id.radio_smoke_now_year){
+            enableEditText(input_smoke_now_year);
+        }
         enableEditText(input_smoke_stop1);
         enableEditText(input_smoke_stop2);
         enableEditText(input_smoke_stop3);
         enableRadioGroup(radiogroup_smoke_now);
         enableRadioGroup(radiogroup_smoke_now_amount);
+    }
+
+    private void disableFamily() {
+        for (int famID = 0; famID < 4; famID++) {
+            disableEditText(input_smoke_families[famID]);
+            disableEditText(input_smoke_family_years[famID]);
+        }
+    }
+
+    private void enableFamily() {
+        for (int famID = 0; famID < 4; famID++) {
+            enableEditText(input_smoke_families[famID]);
+            enableEditText(input_smoke_family_years[famID]);
+        }
     }
 
     private void smoke20Handler(RadioGroup rg, int checked) {
@@ -222,142 +316,99 @@ public class SmokeFragment extends Fragment {
     }
 
     // 문자열 값으로 id를 얻어옴
-//    private int getResId(ViewGroup vg, String id) {
-//        int getID = vg.getResources().getIdentifier(id, "id", getContext().getPackageName());
-//        return getID;
-//    }
-//
-//    private class position {
-//
-//        protected RadioButton radio_bt;
-//        protected EditText input;
-//        protected EditText input_year;
-//        protected int index;
-//
-//        public position(RadioButton rb, EditText ipt, EditText ipt_y, int idx) {
-//            radio_bt = rb;
-//            input = ipt;
-//            input_year = ipt_y;
-//            index = idx;
-//
-//            if(!rb.isChecked())
-//                disableInputs();
-//            else{
-//                // 라디오 버튼이 이미 눌려 있다면
-//                radio_checked = index;
-//            }
-//
-//            radio_bt.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    if(radio_checked != index){
-//                        if(radio_checked != -1){
-//                            positions[radio_checked].disableInputs();
-//                        }
-//                        radio_checked = index;
-//                        enableInputs();
-//                    }
-//                }
-//            });
-//        }
-//
-//        // 현재 줄 비활성화
-//        private void disableInputs() {
-//            input.setFocusable(false);
-//            input.setClickable(false);
-//            input.setTextColor(getResources().getColor(R.color.text_gray));
-//
-//            input_year.setFocusable(false);
-//            input_year.setClickable(false);
-//            input_year.setTextColor(getResources().getColor(R.color.text_gray));
-//
-//            radio_bt.setChecked(false);
-//        }
-//
-//        // 현재 줄 활성화
-//        private void enableInputs() {
-//            input.setFocusableInTouchMode(true);
-//            input.setFocusable(true);
-//            input.setTextColor(getResources().getColor(R.color.text_black));
-//
-//            input_year.setFocusableInTouchMode(true);
-//            input_year.setFocusable(true);
-//            input_year.setTextColor(getResources().getColor(R.color.text_black));
-//
-//            radio_bt.setChecked(true);
-//        }
-//    }
-//
-//    private class production {
-//
-//        protected CheckBox check_bt;
-//        protected EditText input_other;
-//        protected EditText input_year;
-//        protected int index;
-//
-//        public production(CheckBox cb, EditText ipt_y, int idx) {
-//            check_bt = cb;
-//            input_other = null;
-//            input_year = ipt_y;
-//            index = idx;
-//
-//            if(!cb.isChecked())
-//                disableInputs();
-//            setBtListener();
-//        }
-//
-//        public production(CheckBox cb, EditText ipt_other, EditText ipt_y, int idx) {
-//            check_bt = cb;
-//            input_other = ipt_other;
-//            input_year = ipt_y;
-//            index = idx;
-//
-//            if(!cb.isChecked())
-//                disableInputs();
-//            setBtListener();
-//        }
-//
-//        private void setBtListener() {
-//            check_bt.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    if(production_checked[index]){
-//                        disableInputs();
-//                    }
-//                    else{
-//                        enableInputs();
-//                    }
-//                    production_checked[index] = !production_checked[index];
-//                }
-//            });
-//        }
-//
-//        // 현재 줄 비활성화
-//        private void disableInputs() {
-//            if(index == 23) {
-//                input_other.setFocusable(false);
-//                input_other.setClickable(false);
-//                input_other.setTextColor(getResources().getColor(R.color.text_gray));
-//            }
-//
-//            input_year.setFocusable(false);
-//            input_year.setClickable(false);
-//            input_year.setTextColor(getResources().getColor(R.color.text_gray));
-//        }
-//
-//        // 현재 줄 활성화
-//        private void enableInputs() {
-//            if(index == 23) {
-//                input_other.setFocusableInTouchMode(true);
-//                input_other.setFocusable(true);
-//                input_other.setTextColor(getResources().getColor(R.color.text_black));
-//            }
-//
-//            input_year.setFocusableInTouchMode(true);
-//            input_year.setFocusable(true);
-//            input_year.setTextColor(getResources().getColor(R.color.text_black));
-//        }
-//    }
+    private int getResId(ViewGroup vg, String id) {
+        int getID = vg.getResources().getIdentifier(id, "id", getContext().getPackageName());
+        return getID;
+    }
 
+    private class drink {
+
+        protected CheckBox[] check_bts;
+        protected EditText input_drink_ans1;
+        protected EditText input_drink_ans2;
+        protected int checked = -1;
+
+        public drink(CheckBox[] cbs, EditText ipt1) {
+            check_bts = cbs;
+            input_drink_ans1 = ipt1;
+            input_drink_ans2 = null;
+
+            for (int i = 0; i < check_bts.length; i++) {
+                if(check_bts[i].isChecked()){
+                    checked = i;
+                    check_bts[i].setChecked(true);
+                }
+                else{
+                    check_bts[i].setChecked(false);
+                }
+                setBtListener(check_bts[i], i);
+            }
+
+            //없다, 미선택 시
+            if(checked == 0 || checked == -1) {
+                disableEditText(input_drink_ans1);
+            }
+            else{
+                enableEditText(input_drink_ans1);
+            }
+        }
+
+        public drink(CheckBox[] cbs, EditText ipt1, EditText ipt2) {
+            check_bts = cbs;
+            input_drink_ans1 = ipt1;
+            input_drink_ans2 = ipt2;
+
+            for (int i = 0; i < check_bts.length; i++) {
+                if(check_bts[i].isChecked()){
+                    checked = i;
+                    check_bts[i].setChecked(true);
+                }
+                else{
+                    check_bts[i].setChecked(false);
+                }
+                setBtListener(check_bts[i], i);
+            }
+
+            //없다, 미선택 시
+            if(checked == 0 || checked == -1) {
+                disableEditText(input_drink_ans1);
+                disableEditText(input_drink_ans2);
+            }
+            else{
+                enableEditText(input_drink_ans1);
+                enableEditText(input_drink_ans2);
+            }
+        }
+
+        private void setBtListener(CheckBox cb, int idx) {
+            cb.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    System.out.println("눌린 버튼 : " + idx + " 이전 버튼 : " + checked);
+                    if(idx != checked) {
+                        cb.setChecked(true);
+                        if(checked != -1)
+                            check_bts[checked].setChecked(false);
+                        checked = idx;
+                    }
+                    else{
+                        cb.setChecked(true);
+                    }
+
+                    //없다, 미선택 시
+                    if(checked == 0 || checked == -1) {
+                        disableEditText(input_drink_ans1);
+                        if(input_drink_ans2 != null)
+                            disableEditText(input_drink_ans2);
+                    }
+                    else{
+                        enableEditText(input_drink_ans1);
+                        if(input_drink_ans2 != null)
+                            enableEditText(input_drink_ans2);
+                    }
+                }
+            });
+        }
+    }
 }
 
