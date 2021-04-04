@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import androidx.fragment.app.Fragment;
 
@@ -18,16 +19,25 @@ import com.cbu.medical_survey_app.activities.StartActivity;
 
 public class SmokeFragment extends Fragment {
 
-//    private int radio_checked;
+//    private int radio_20smoke_checked;
 //    private boolean[] production_checked;
 //
     private ButtonListener btl;
 //    private position[] positions;
 //    private production[] productions;
-//    private RadioButton radio_mainjob_no;
+//    private RadioButton radio_20smoke_no_checked;
 //    private RadioButton radio_mainjob_yes;
 //    private EditText input_mainjob;
 //    private EditText input_mainjob_year;
+    private RadioGroup radiogroup_20smoke;
+    private EditText input_first_smoke;
+    private RadioGroup radiogroup_smoke_now;
+    private EditText input_smoke_now_year;
+    private RadioGroup radiogroup_smoke_now_amount;
+    private EditText input_smoke_now_amount;
+    private EditText input_smoke_stop1;
+    private EditText input_smoke_stop2;
+    private EditText input_smoke_stop3;
 
     public SmokeFragment() {
     }
@@ -52,12 +62,12 @@ public class SmokeFragment extends Fragment {
         // 프래그먼트에 데이터 세팅
 //        StartActivity.dtc.setDataToView(vg);
 
-//        initViews(vg);
+        initViews(vg);
 
         return vg;
     }
 
-//    private void initViews(ViewGroup vg) {
+    private void initViews(ViewGroup vg) {
 //        for (int posID = 0; posID < 11; posID++) {
 //            RadioButton radio_position = vg.findViewById(getResId(vg, "radio_position_" + (posID + 1)));
 //            EditText input_position = vg.findViewById(getResId(vg, "input_position_" + (posID + 1)));
@@ -77,7 +87,27 @@ public class SmokeFragment extends Fragment {
 //                productions[proID] = new production(check_production, input_production_other, input_production_year, proID);
 //            }
 //        }
-//
+
+//        radio_20smoke_no_checked = vg.findViewById(R.id.radio_20smoke_no);
+        radiogroup_20smoke = vg.findViewById(R.id.radiogroup_20smoke);
+        input_first_smoke = vg.findViewById(R.id.input_first_smoke);
+        radiogroup_smoke_now = vg.findViewById(R.id.radiogroup_smoke_now);
+        input_smoke_now_year = vg.findViewById(R.id.input_smoke_now_year);
+        radiogroup_smoke_now_amount = vg.findViewById(R.id.radiogroup_smoke_now_amount);
+        input_smoke_now_amount = vg.findViewById(R.id.input_smoke_now_amount);
+        input_smoke_stop1 = vg.findViewById(R.id.input_smoke_stop1);
+        input_smoke_stop2 = vg.findViewById(R.id.input_smoke_stop2);
+        input_smoke_stop3 = vg.findViewById(R.id.input_smoke_stop3);
+
+        smoke20Handler(radiogroup_20smoke, radiogroup_20smoke.getCheckedRadioButtonId());
+
+        radiogroup_20smoke.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                smoke20Handler(group, checkedId);
+            }
+        });
+
 //        radio_mainjob_no = vg.findViewById(R.id.radio_mainjob_no);
 //        radio_mainjob_yes = vg.findViewById(R.id.radio_mainjob_yes);
 //
@@ -120,10 +150,78 @@ public class SmokeFragment extends Fragment {
 //                input_mainjob_year.setTextColor(getResources().getColor(R.color.text_gray));
 //            }
 //        });
-//
-//    }
-//
-//    // 문자열 값으로 id를 얻어옴
+
+    }
+
+    private void disableEditText(EditText edt) {
+        edt.setFocusable(false);
+        edt.setClickable(false);
+        edt.setTextColor(getResources().getColor(R.color.text_gray));
+    }
+
+    private void enableEditText(EditText edt) {
+        edt.setFocusableInTouchMode(true);
+        edt.setFocusable(true);
+        edt.setTextColor(getResources().getColor(R.color.text_black));
+    }
+
+    private void disableRadioGroup(RadioGroup rg) {
+        for (int i = 0; i < rg.getChildCount(); i++) {
+            rg.getChildAt(i).setEnabled(false);
+        }
+    }
+
+    private void enableRadioGroup(RadioGroup rg) {
+        for (int i = 0; i < rg.getChildCount(); i++) {
+            rg.getChildAt(i).setEnabled(true);
+        }
+    }
+
+    private void disableSmokes() {
+        disableEditText(input_first_smoke);
+        disableEditText(input_smoke_now_year);
+        disableEditText(input_smoke_now_amount);
+        disableEditText(input_smoke_stop1);
+        disableEditText(input_smoke_stop2);
+        disableEditText(input_smoke_stop3);
+        disableRadioGroup(radiogroup_smoke_now);
+        disableRadioGroup(radiogroup_smoke_now_amount);
+    }
+
+    private void enableSmokes() {
+        enableEditText(input_first_smoke);
+        enableEditText(input_smoke_now_year);
+        enableEditText(input_smoke_now_amount);
+        enableEditText(input_smoke_stop1);
+        enableEditText(input_smoke_stop2);
+        enableEditText(input_smoke_stop3);
+        enableRadioGroup(radiogroup_smoke_now);
+        enableRadioGroup(radiogroup_smoke_now_amount);
+    }
+
+    private void smoke20Handler(RadioGroup rg, int checked) {
+        switch (checked){
+            case -1:
+                disableSmokes();
+                break;
+            case R.id.radio_20smoke_no:
+                rg.check(checked);
+                disableSmokes();
+                break;
+            case R.id.radio_20smoke_yes:
+//                radiogroup_20smoke.check(radiogroup_20smoke.getCheckedRadioButtonId());
+//                enableSmokes();
+//                break;
+            case R.id.radio_20smoke_yes_still:
+                rg.check(checked);
+                enableSmokes();
+                break;
+            default:
+                break;
+        }
+    }
+
+    // 문자열 값으로 id를 얻어옴
 //    private int getResId(ViewGroup vg, String id) {
 //        int getID = vg.getResources().getIdentifier(id, "id", getContext().getPackageName());
 //        return getID;

@@ -52,6 +52,7 @@ public class JobFragment extends Fragment {
         // 프래그먼트에 데이터 세팅
         StartActivity.dtc.setDataToView(vg);
 
+        // 버튼 활성화, 리스너 등록
         initViews(vg);
 
         return vg;
