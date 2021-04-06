@@ -229,6 +229,7 @@
             android:background="@color/bg_gray">
 
             <TextView
+                android:id="@+id/drink_name1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -489,6 +490,7 @@
             android:background="@color/bg_gray">
 
             <TextView
+                android:id="@+id/drink_name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -749,6 +751,7 @@
             android:background="@color/bg_gray">
 
             <TextView
+                android:id="@+id/drink_name3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1009,6 +1012,7 @@
             android:background="@color/bg_gray">
 
             <TextView
+                android:id="@+id/drink_name4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1304,6 +1308,7 @@
             android:background="@color/bg_gray">
 
             <TextView
+                android:id="@+id/drink_name5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -1923,7 +1928,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="  년"
+        android:text="  개피"
         android:textColor="@color/text_black"
         android:textSize="14sp"
         android:textStyle="bold"

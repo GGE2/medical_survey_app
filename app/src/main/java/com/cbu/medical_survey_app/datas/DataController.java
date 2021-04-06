@@ -30,12 +30,14 @@ public class DataController {
 
     final private LastData last_data;
     final private JobData job_data;
+    final private SmokeData smoke_data;
 
     public DataController(String name, String address) {
         origin_name = name;
         origin_address = address;
         last_data = new LastData();
         job_data = new JobData();
+        smoke_data = new SmokeData();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
@@ -50,11 +52,13 @@ public class DataController {
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
             job_data.saveData(context);
-            return job_data.check();
+//            return job_data.check();
+            return true;
         }
         else if(nowFragment instanceof SmokeFragment){
             System.out.println("흡연 및 음주 사항 Frag");
 
+            smoke_data.saveData(context);
             return true;
         }
         else {
@@ -98,7 +102,7 @@ public class DataController {
                 break;
             }
             case R.id.smoke_frag: {
-
+                smoke_data.setDataToView(vg);
                 break;
             }
         }

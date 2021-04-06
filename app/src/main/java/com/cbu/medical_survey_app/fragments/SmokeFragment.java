@@ -69,7 +69,7 @@ public class SmokeFragment extends Fragment {
         bt_smoke_next.setOnClickListener(btl);
 
         // 프래그먼트에 데이터 세팅
-//        StartActivity.dtc.setDataToView(vg);
+        StartActivity.dtc.setDataToView(vg);
 
         initViews(vg);
 
@@ -77,28 +77,6 @@ public class SmokeFragment extends Fragment {
     }
 
     private void initViews(ViewGroup vg) {
-//        for (int posID = 0; posID < 11; posID++) {
-//            RadioButton radio_position = vg.findViewById(getResId(vg, "radio_position_" + (posID + 1)));
-//            EditText input_position = vg.findViewById(getResId(vg, "input_position_" + (posID + 1)));
-//            EditText input_position_year = vg.findViewById(getResId(vg, "input_position_year_" + (posID + 1)));
-//
-//            positions[posID] = new position(radio_position, input_position, input_position_year, posID);
-//        }
-//
-//        for (int proID = 0; proID < 24; proID++) {
-//            CheckBox check_production = vg.findViewById(getResId(vg, "check_production_" + (proID + 1)));
-//            EditText input_production_year = vg.findViewById(getResId(vg, "input_production_year_" + (proID + 1)));
-//
-//            if(proID < 23)
-//                productions[proID] = new production(check_production, input_production_year, proID);
-//            else {
-//                EditText input_production_other = vg.findViewById(R.id.input_production_other);
-//                productions[proID] = new production(check_production, input_production_other, input_production_year, proID);
-//            }
-//        }
-
-//        radio_20smoke_no_checked = vg.findViewById(R.id.radio_20smoke_no);
-
         // 16 ~ 20번
         radiogroup_20smoke = vg.findViewById(R.id.radiogroup_20smoke);
         input_first_smoke = vg.findViewById(R.id.input_first_smoke);
@@ -384,7 +362,6 @@ public class SmokeFragment extends Fragment {
             cb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    System.out.println("눌린 버튼 : " + idx + " 이전 버튼 : " + checked);
                     if(idx != checked) {
                         cb.setChecked(true);
                         if(checked != -1)

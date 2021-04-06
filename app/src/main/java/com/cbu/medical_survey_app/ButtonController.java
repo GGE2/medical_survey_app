@@ -90,7 +90,7 @@ public class ButtonController {
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
-            title.setText(R.string.last_title);
+            title.setText(R.string.job_title);
             title_img.setImageResource(0);
 
             makeFrag(new JobFragment(nowContext));
