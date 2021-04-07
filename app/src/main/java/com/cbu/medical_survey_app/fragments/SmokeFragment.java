@@ -18,17 +18,8 @@ import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.activities.StartActivity;
 
 public class SmokeFragment extends Fragment {
-
-//    private int radio_20smoke_checked;
-//    private boolean[] production_checked;
 //
     private ButtonListener btl;
-//    private position[] positions;
-//    private production[] productions;
-//    private RadioButton radio_20smoke_no_checked;
-//    private RadioButton radio_mainjob_yes;
-//    private EditText input_mainjob;
-//    private EditText input_mainjob_year;
     private RadioGroup radiogroup_20smoke;
     private EditText input_first_smoke;
     private RadioGroup radiogroup_smoke_now;
@@ -53,10 +44,6 @@ public class SmokeFragment extends Fragment {
         input_smoke_families = new EditText[4];
         input_smoke_family_years = new EditText[4];
         drinks = new drink[5];
-//        positions = new position[11];
-//        productions = new production[24];
-//        radio_checked = -1;
-//        production_checked = new boolean[24];
     }
 
     @Override
@@ -281,9 +268,6 @@ public class SmokeFragment extends Fragment {
                 disableSmokes();
                 break;
             case R.id.radio_20smoke_yes:
-//                radiogroup_20smoke.check(radiogroup_20smoke.getCheckedRadioButtonId());
-//                enableSmokes();
-//                break;
             case R.id.radio_20smoke_yes_still:
                 rg.check(checked);
                 enableSmokes();

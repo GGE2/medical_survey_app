@@ -15,6 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.JobFragment;
+import com.cbu.medical_survey_app.fragments.SleepFragment;
 import com.cbu.medical_survey_app.fragments.SmokeFragment;
 
 public class SurveyActivity extends FragmentActivity {
@@ -32,13 +33,13 @@ public class SurveyActivity extends FragmentActivity {
 //        img.setImageResource(0);
 
         TextView title = (TextView)findViewById(R.id.top_title);
-        title.setText("흡연 및 음주사항");
+        title.setText("수면, 육체적 운동 및 활동사항");
         ImageView img = (ImageView)findViewById(R.id.title_img);
-        img.setImageResource(R.drawable.img_smoke_top);
+        img.setImageResource(R.drawable.img_sleep_top);
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new SmokeFragment(this));
+        fragmentTransaction.add(R.id.survey_content, new SleepFragment(this));
         fragmentTransaction.commit();
     }
 
