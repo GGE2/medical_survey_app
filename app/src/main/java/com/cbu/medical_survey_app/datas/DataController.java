@@ -45,21 +45,18 @@ public class DataController {
         Fragment nowFragment = ((FragmentActivity)context).getSupportFragmentManager().findFragmentById(R.id.survey_content);
 
         if(nowFragment instanceof LastFragment){
-            System.out.println("설문 완료 Frag");
             last_data.saveData(context);
             return last_data.check();
         }
         else if(nowFragment instanceof JobFragment){
-            System.out.println("직업사항 Frag");
             job_data.saveData(context);
-//            return job_data.check();
-            return true;
+            return job_data.check();
+//            return true;
         }
         else if(nowFragment instanceof SmokeFragment){
-            System.out.println("흡연 및 음주 사항 Frag");
-
             smoke_data.saveData(context);
-            return true;
+            return smoke_data.check();
+//            return true;
         }
         else {
             System.out.println("아님");

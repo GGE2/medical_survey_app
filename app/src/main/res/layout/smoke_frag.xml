@@ -2333,7 +2333,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:fontFamily="sans-serif"
-        android:text="20)   담배를 끊었다면, 언제부터 끊었습니까?"
+        android:text="20)   담배를 끊었다면, 언제부터 끊었습니까? (금연 시 기입)"
         android:textAllCaps="false"
         android:textColor="@color/text_black"
         android:textSize="14sp"
