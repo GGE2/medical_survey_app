@@ -79,16 +79,6 @@ public class SmokeData {
         RadioGroup rg_20smoke = ((Activity)nowContext).findViewById(R.id.radiogroup_20smoke);
         radio_20smoke_checked = rg_20smoke.getCheckedRadioButtonId();
 
-//        if(rg_20smoke.getCheckedRadioButtonId() == R.id.radio_20smoke_no) {
-//            radio_20smoke_checked = 1;
-//        }
-//        else if(rg_20smoke.getCheckedRadioButtonId() == R.id.radio_20smoke_yes){
-//            radio_20smoke_checked = 2;
-//        }
-//        else if(rg_20smoke.getCheckedRadioButtonId() == R.id.radio_20smoke_yes_still) {
-//            radio_20smoke_checked = 3;
-//        }
-
         input_first_smoke = getString(((Activity)nowContext).findViewById(R.id.input_first_smoke));
 
         RadioGroup rg_smoke_now = ((Activity)nowContext).findViewById(R.id.radiogroup_smoke_now);

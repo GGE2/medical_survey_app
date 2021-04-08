@@ -16,6 +16,7 @@ import com.cbu.medical_survey_app.activities.PopupActivity;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_2;
+import com.cbu.medical_survey_app.fragments.SleepFragment;
 import com.cbu.medical_survey_app.fragments.SmokeFragment;
 
 public class ButtonController {
@@ -56,6 +57,7 @@ public class ButtonController {
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
+            // 직업 -> 최종 제출 페이지
             title.setText(R.string.last_title);
             title_img.setImageResource(0);
 
@@ -71,10 +73,11 @@ public class ButtonController {
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
-            title.setText(R.string.smoke_title);
-            title_img.setImageResource(R.drawable.img_smoke_top);
+            // 일단 직업 -> 수면
+            title.setText(R.string.sleep_title);
+            title_img.setImageResource(R.drawable.img_sleep_top);
 
-            makeFrag(new SmokeFragment(nowContext));
+            makeFrag(new SleepFragment(nowContext));
         }
         else{
             // 유효성 검사 실패 -> 경고창
@@ -90,6 +93,39 @@ public class ButtonController {
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
+            // 흡연 -> 수면
+            title.setText(R.string.sleep_title);
+            title_img.setImageResource(R.drawable.img_sleep_top);
+
+            makeFrag(new SleepFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void sleepPrev() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 수면 -> 흡연
+            title.setText(R.string.smoke_title);
+            title_img.setImageResource(R.drawable.img_smoke_top);
+
+            makeFrag(new SmokeFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void sleepNext() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 일단은 수면 -> 직업
             title.setText(R.string.job_title);
             title_img.setImageResource(0);
 

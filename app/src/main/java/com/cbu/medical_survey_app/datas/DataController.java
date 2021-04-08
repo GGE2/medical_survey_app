@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentActivity;
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
+import com.cbu.medical_survey_app.fragments.SleepFragment;
 import com.cbu.medical_survey_app.fragments.SmokeFragment;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -31,13 +32,15 @@ public class DataController {
     final private LastData last_data;
     final private JobData job_data;
     final private SmokeData smoke_data;
+    final private SleepData sleep_data;
 
     public DataController(String name, String address) {
         origin_name = name;
         origin_address = address;
-        last_data = new LastData();
-        job_data = new JobData();
         smoke_data = new SmokeData();
+        sleep_data = new SleepData();
+        job_data = new JobData();
+        last_data = new LastData();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
@@ -57,6 +60,11 @@ public class DataController {
             smoke_data.saveData(context);
             return smoke_data.check();
 //            return true;
+        }
+        else if(nowFragment instanceof SleepFragment){
+//            sleep_data.saveData(context);
+//            return sleep_data.check();
+            return true;
         }
         else {
             System.out.println("아님");
@@ -100,6 +108,10 @@ public class DataController {
             }
             case R.id.smoke_frag: {
                 smoke_data.setDataToView(vg);
+                break;
+            }
+            case R.id.sleep_frag: {
+//                sleep_data.setDataToView(vg);
                 break;
             }
         }
