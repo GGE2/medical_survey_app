@@ -53,11 +53,11 @@ public class SmokeData {
 
     public SmokeData() {
         mapped_data = new LinkedHashMap<String, String>();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < input_smoke_families.length; i++) {
             input_smoke_families[i] = "";
             input_smoke_family_years[i] = "";
         }
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < drink_checked.length; i++) {
             drink_checked[i] = -1;
             drink_amount[i] = "";
         }
@@ -96,7 +96,7 @@ public class SmokeData {
         RadioGroup rg_other_20smoke = ((Activity)nowContext).findViewById(R.id.radiogroup_other_20smoke);
         radio_other_20smoke_checked = rg_other_20smoke.getCheckedRadioButtonId();
 
-        for (int famID = 0; famID < 4; famID++) {
+        for (int famID = 0; famID < input_smoke_families.length; famID++) {
             input_smoke_families[famID] = getString(((Activity)nowContext).findViewById(getResId(nowContext, "input_smoke_family" + (famID + 1))));
             input_smoke_family_years[famID] = getString(((Activity)nowContext).findViewById(getResId(nowContext, "input_smoke_family" + (famID + 1) + "_year")));
         }
@@ -112,14 +112,14 @@ public class SmokeData {
         mapped_data.put("하루 흡연량", radio_smoke_now_amount_checked == R.id.radio_smoke_now_amount_no ? "모르겠다" : input_smoke_now_amount + "개피");
         mapped_data.put("금연 기간", input_smoke_stop1 + "년전 또는 " + input_smoke_stop2 + "년도 또는 " + input_smoke_stop3 + "살 때");
         mapped_data.put("주변 흡연 여부(20갑 이상)", radio_other_20smoke_checked == -1 ? "" : radio_other_20smoke_checked == R.id.radio_other_20smoke_no ? "아니오" : radio_other_20smoke_checked == R.id.radio_other_20smoke_yes ? "예" : "모르겠다");
-        for (int famID = 0; famID < 4; famID++) {
+        for (int famID = 0; famID < input_smoke_families.length; famID++) {
             mapped_data.put("가족(누구)_" + famID, input_smoke_families[famID] + "");
             mapped_data.put("기간(년)_" + famID, input_smoke_family_years[famID] + "년");
         }
         mapped_data.put("음주 여부", radio_drink_checked == -1 ? "" : radio_drink_checked == R.id.radio_drink_no ? "아니오" : radio_drink_checked == R.id.radio_drink_yes_before ? "예, 지금은 안 마신다.(" + input_drink_yes_before + "년에 끊음)" : "예, 지금도 마신다");
         mapped_data.put("총 음주 기간", input_drink_all_year + "년");
 
-        for (int drinkID = 0; drinkID < 5; drinkID++) {
+        for (int drinkID = 0; drinkID < drink_checked.length; drinkID++) {
 
             TextView drink_name = ((Activity)nowContext).findViewById(getResId(nowContext, "drink_name" + (drinkID + 1)));
 
@@ -188,7 +188,7 @@ public class SmokeData {
             ((RadioButton)vg.findViewById(R.id.radio_other_20smoke_dont)).setChecked(true);
         }
 
-        for (int famID = 0; famID < 4; famID++) {
+        for (int famID = 0; famID < input_smoke_families.length; famID++) {
             ((EditText)vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1)))).setText(input_smoke_families[famID]);
             ((EditText)vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1) + "_year"))).setText(input_smoke_family_years[famID]);
         }
@@ -207,7 +207,7 @@ public class SmokeData {
         ((EditText)vg.findViewById(R.id.input_drink_yes_before)).setText(input_drink_yes_before);
         ((EditText)vg.findViewById(R.id.input_drink_all_year)).setText(input_drink_all_year);
 
-        for (int drinkID = 0; drinkID < 5; drinkID++) {
+        for (int drinkID = 0; drinkID < drink_checked.length; drinkID++) {
 
             if(drink_checked[drinkID] != -1){
                 ((CheckBox)vg.findViewById(getResId(vg, "check_drink" + (drinkID + 1) + "_ans" + (drink_checked[drinkID] + 1)))).setChecked(true);

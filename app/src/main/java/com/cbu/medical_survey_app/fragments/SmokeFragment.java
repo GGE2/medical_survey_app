@@ -127,7 +127,7 @@ public class SmokeFragment extends Fragment {
         // 21번
         radiogroup_other_20smoke = vg.findViewById(R.id.radiogroup_other_20smoke);
 
-        for (int famID = 0; famID < 4; famID++) {
+        for (int famID = 0; famID < input_smoke_families.length; famID++) {
             input_smoke_families[famID] = vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1)));
             input_smoke_family_years[famID] = vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1) + "_year"));
         }
@@ -173,10 +173,10 @@ public class SmokeFragment extends Fragment {
             }
         });
 
-        for (int drinkID = 0; drinkID < 5; drinkID++) {
+        for (int drinkID = 0; drinkID < drinks.length; drinkID++) {
             CheckBox[] cbs = new CheckBox[8];
 
-            for (int ansID = 0; ansID < 8; ansID++) {
+            for (int ansID = 0; ansID < cbs.length; ansID++) {
                 cbs[ansID] = vg.findViewById(getResId(vg, "check_drink" + (drinkID + 1) + "_ans" + (ansID + 1)));
             }
 

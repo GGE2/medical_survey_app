@@ -2,6 +2,7 @@ package com.cbu.medical_survey_app.datas;
 
 import android.app.Activity;
 import android.content.Context;
+import android.provider.MediaStore;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -11,55 +12,26 @@ import android.widget.TextView;
 
 import com.cbu.medical_survey_app.R;
 
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 
 public class SleepData {
 
     final private LinkedHashMap<String, String> mapped_data;
 
-    // 16 ~ 20번 (본인 흡연)
-//    private int radio_20smoke_checked = -1;
-//    private String input_first_smoke = "";
-//    private int radio_smoke_now_year_checked = -1;
-//    private String input_smoke_now_year = "";
-//    private int radio_smoke_now_amount_checked = -1;
-//    private String input_smoke_now_amount = "";
-//    private String input_smoke_stop1 = "";
-//    private String input_smoke_stop2 = "";
-//    private String input_smoke_stop3 = "";
+    private int radio_sleep_hour_checked = -1;
+    private int[] seat_checked = new int[5];
+    private int[] activity_checked = new int[3];
+    private int radio_activity_week_checked = -1;
 
-    // 21번 (주변 흡연)
-
-//    private int radio_other_20smoke_checked = -1;
-//    private String[] input_smoke_families = new String[4];
-//    private String[] input_smoke_family_years = new String[4];
-
-    // 22 ~ 24번 (음주)
-
-//    private int radio_drink_checked = -1;
-//    private String input_drink_yes_before = "";
-//    private String input_drink_all_year = "";
-//    private int[] drink_checked = new int[5];               // 음주 횟수
-//    private String[] drink_amount = new String[5];          // 음주 평균 양
-//
-//    // 맥주
-//    private String drink_amount_sub = "";
-//
-//    private String[] drink_count_str = {"없다", "월 1회", "월 2~3회", "주 1회", "주 2~3회", "주 4~6회", "매일 1회", "매일 2회 이상"};
-//    private String[] drink_amount_str = {"되", "홉", "홉", "깡통", "잔"};
-//    private String[] radio_20smoke_str = {"", "아니오", "예", "예, 지금도 피웁니다"};
-//    private String[] radio_drink = {"", "아니오", "예, 지금은 안 마신다", "예, 지금도 마신다"};
+    private String[] seat_hour_str = {"없음", "하루 1시간 미만", "하루 1~2시간", "하루 3~4시간", "하루 5~6시간", "하루 7~10시간", "하루 11시간 이상"};
+    private String[] activity_hour_str = {"없음(30분 미만)", "주 1/2~1시간", "주 2~3시간", "주 4~6시간", "주 7~10시간", "주 21~30시간", "주 31시간 이상"};
 
     public SleepData() {
         mapped_data = new LinkedHashMap<String, String>();
-//        for (int i = 0; i < 4; i++) {
-//            input_smoke_families[i] = "";
-//            input_smoke_family_years[i] = "";
-//        }
-//        for (int i = 0; i < 5; i++) {
-//            drink_checked[i] = -1;
-//            drink_amount[i] = "";
-//        }
+
+        Arrays.fill(seat_checked, -1);
+        Arrays.fill(activity_checked, -1);
     }
 
     private String getString(EditText view) {
@@ -75,159 +47,101 @@ public class SleepData {
     }
 
     public void saveData(Context nowContext) {
-//        RadioGroup rg_20smoke = ((Activity)nowContext).findViewById(R.id.radiogroup_20smoke);
-//        radio_20smoke_checked = rg_20smoke.getCheckedRadioButtonId();
-//
-////        if(rg_20smoke.getCheckedRadioButtonId() == R.id.radio_20smoke_no) {
-////            radio_20smoke_checked = 1;
-////        }
-////        else if(rg_20smoke.getCheckedRadioButtonId() == R.id.radio_20smoke_yes){
-////            radio_20smoke_checked = 2;
-////        }
-////        else if(rg_20smoke.getCheckedRadioButtonId() == R.id.radio_20smoke_yes_still) {
-////            radio_20smoke_checked = 3;
-////        }
-//
-//        input_first_smoke = getString(((Activity)nowContext).findViewById(R.id.input_first_smoke));
-//
-//        RadioGroup rg_smoke_now = ((Activity)nowContext).findViewById(R.id.radiogroup_smoke_now);
-//        radio_smoke_now_year_checked = rg_smoke_now.getCheckedRadioButtonId();
-//        input_smoke_now_year = getString(((Activity)nowContext).findViewById(R.id.input_smoke_now_year));
-//
-//        RadioGroup rg_smoke_now_amount = ((Activity)nowContext).findViewById(R.id.radiogroup_smoke_now_amount);
-//        radio_smoke_now_amount_checked = rg_smoke_now_amount.getCheckedRadioButtonId();
-//        input_smoke_now_amount = getString(((Activity)nowContext).findViewById(R.id.input_smoke_now_amount));
-//
-//        input_smoke_stop1 = getString(((Activity)nowContext).findViewById(R.id.input_smoke_stop1));
-//        input_smoke_stop2 = getString(((Activity)nowContext).findViewById(R.id.input_smoke_stop2));
-//        input_smoke_stop3 = getString(((Activity)nowContext).findViewById(R.id.input_smoke_stop3));
-//
-//        RadioGroup rg_other_20smoke = ((Activity)nowContext).findViewById(R.id.radiogroup_other_20smoke);
-//        radio_other_20smoke_checked = rg_other_20smoke.getCheckedRadioButtonId();
-//
-//        for (int famID = 0; famID < 4; famID++) {
-//            input_smoke_families[famID] = getString(((Activity)nowContext).findViewById(getResId(nowContext, "input_smoke_family" + (famID + 1))));
-//            input_smoke_family_years[famID] = getString(((Activity)nowContext).findViewById(getResId(nowContext, "input_smoke_family" + (famID + 1) + "_year")));
-//        }
-//
-//        RadioGroup rg_drink = ((Activity)nowContext).findViewById(R.id.radiogroup_drink);
-//        radio_drink_checked = rg_drink.getCheckedRadioButtonId();
-//        input_drink_yes_before = getString(((Activity)nowContext).findViewById(R.id.input_drink_yes_before));
-//        input_drink_all_year = getString(((Activity)nowContext).findViewById(R.id.input_drink_all_year));
-//
-//        mapped_data.put("흡연 여부(20갑 이상)", radio_20smoke_checked == -1 ? "" : radio_20smoke_checked == R.id.radio_20smoke_no ? "아니오" : radio_20smoke_checked == R.id.radio_20smoke_yes ? "예" : "예, 지금도 피웁니다");
-//        mapped_data.put("첫 흡연 나이", "만 " + input_first_smoke + "세");
-//        mapped_data.put("흡연 기간", radio_smoke_now_year_checked == R.id.radio_smoke_now_no ? "모르겠다" : input_smoke_now_year + "년");
-//        mapped_data.put("하루 흡연량", radio_smoke_now_amount_checked == R.id.radio_smoke_now_amount_no ? "모르겠다" : input_smoke_now_amount + "개피");
-//        mapped_data.put("금연 기간", input_smoke_stop1 + "년전 또는 " + input_smoke_stop2 + "년도 또는 " + input_smoke_stop3 + "살 때");
-//        mapped_data.put("주변 흡연 여부(20갑 이상)", radio_other_20smoke_checked == -1 ? "" : radio_other_20smoke_checked == R.id.radio_other_20smoke_no ? "아니오" : radio_other_20smoke_checked == R.id.radio_other_20smoke_yes ? "예" : "모르겠다");
-//        for (int famID = 0; famID < 4; famID++) {
-//            mapped_data.put("가족(누구)_" + famID, input_smoke_families[famID] + "");
-//            mapped_data.put("기간(년)_" + famID, input_smoke_family_years[famID] + "년");
-//        }
-//        mapped_data.put("음주 여부", radio_drink_checked == -1 ? "" : radio_drink_checked == R.id.radio_drink_no ? "아니오" : radio_drink_checked == R.id.radio_drink_yes_before ? "예, 지금은 안 마신다.(" + input_drink_yes_before + "년에 끊음)" : "예, 지금도 마신다");
-//        mapped_data.put("총 음주 기간", input_drink_all_year + "년");
-//
-//        for (int drinkID = 0; drinkID < 5; drinkID++) {
-//
-//            TextView drink_name = ((Activity)nowContext).findViewById(getResId(nowContext, "drink_name" + (drinkID + 1)));
-//
-//            for (int ansID = 0; ansID < 8; ansID++) {
-//                CheckBox drink_ans = ((Activity)nowContext).findViewById(getResId(nowContext, "check_drink" + (drinkID + 1) + "_ans" + (ansID + 1)));
-//
-//                if(drink_ans.isChecked()){
-//                    drink_checked[drinkID] = ansID;
-//                }
-//            }
-//            EditText input_drink_ans1 = ((Activity)nowContext).findViewById(getResId(nowContext, "input_drink" + (drinkID + 1) + "_ans1"));
-//            drink_amount[drinkID] = getString(input_drink_ans1);
-//
-//            if(drinkID == 3) {
-//                EditText input_drink_ans2 = ((Activity)nowContext).findViewById(getResId(nowContext, "input_drink" + (drinkID + 1) + "_ans2"));
-//                drink_amount_sub = getString(input_drink_ans2);
-//            }
-//
-//            mapped_data.put("1년 음주 평균 횟수(" + getString(drink_name) + ")", drink_checked[drinkID] == -1 ? "" : drink_count_str[drink_checked[drinkID]]);
-//            mapped_data.put("1회 평균 음주량(" + getString(drink_name) + ")", drinkID == 3 ? drink_amount[drinkID] + drink_amount_str[drinkID] + ", " + drink_amount_sub + "(큰)병" : drink_amount[drinkID] + drink_amount_str[drinkID]);
-//        }
+
+        RadioGroup rg_sleep_hour = ((Activity)nowContext).findViewById(R.id.radiogroup_sleep_hour);
+        radio_sleep_hour_checked = rg_sleep_hour.getCheckedRadioButtonId();
+
+        for (int seatID = 0; seatID < seat_checked.length; seatID++) {
+
+            TextView seat_name = ((Activity)nowContext).findViewById(getResId(nowContext, "seat_name" + (seatID + 1)));
+
+            for (int ansID = 0; ansID < 7; ansID++) {
+                CheckBox seat_ans = ((Activity)nowContext).findViewById(getResId(nowContext, "check_seat" + (seatID + 1) + "_ans" + (ansID + 1)));
+
+                if(seat_ans.isChecked()){
+                    seat_checked[seatID] = ansID;
+                }
+            }
+
+            mapped_data.put("1년 동안 앉은 평균 시간 - " + getString(seat_name), seat_checked[seatID] == -1 ? "" : seat_hour_str[seat_checked[seatID]]);
+        }
+
+        for (int actID = 0; actID < activity_checked.length; actID++) {
+
+            TextView activity_name = ((Activity)nowContext).findViewById(getResId(nowContext, "activity_name" + (actID + 1)));
+
+            for (int ansID = 0; ansID < 7; ansID++) {
+                CheckBox activity_ans = ((Activity)nowContext).findViewById(getResId(nowContext, "check_activity" + (actID + 1) + "_ans" + (ansID + 1)));
+
+                if(activity_ans.isChecked()){
+                    activity_checked[actID] = ansID;
+                }
+            }
+
+            mapped_data.put("1년 간 육체적 활동 주 평균 시간 - " + getString(activity_name), activity_checked[actID] == -1 ? "" : activity_hour_str[activity_checked[actID]]);
+        }
+
+        RadioGroup rg_activity_week = ((Activity)nowContext).findViewById(R.id.radiogroup_activity_week);
+        radio_activity_week_checked = rg_activity_week.getCheckedRadioButtonId();
     }
 
     public void setDataToView(ViewGroup vg) {
-//        if(radio_20smoke_checked == R.id.radio_20smoke_no){
-//            ((RadioButton)vg.findViewById(R.id.radio_20smoke_no)).setChecked(true);
-//        }
-//        else if(radio_20smoke_checked == R.id.radio_20smoke_yes) {
-//            ((RadioButton)vg.findViewById(R.id.radio_20smoke_yes)).setChecked(true);
-//        }
-//        else if(radio_20smoke_checked == R.id.radio_20smoke_yes_still) {
-//            ((RadioButton)vg.findViewById(R.id.radio_20smoke_yes_still)).setChecked(true);
-//        }
-//
-//        ((EditText)vg.findViewById(R.id.input_first_smoke)).setText(input_first_smoke);
-//
-//        if(radio_smoke_now_year_checked == R.id.radio_smoke_now_year) {
-//            ((RadioButton)vg.findViewById(R.id.radio_smoke_now_year)).setChecked(true);
-//        }
-//        else if(radio_smoke_now_year_checked == R.id.radio_smoke_now_no) {
-//            ((RadioButton)vg.findViewById(R.id.radio_smoke_now_no)).setChecked(true);
-//        }
-//
-//        ((EditText)vg.findViewById(R.id.input_smoke_now_year)).setText(input_smoke_now_year);
-//
-//        if(radio_smoke_now_amount_checked == R.id.radio_smoke_now_amount) {
-//            ((RadioButton)vg.findViewById(R.id.radio_smoke_now_amount)).setChecked(true);
-//        }
-//        else if(radio_smoke_now_amount_checked == R.id.radio_smoke_now_amount_no) {
-//            ((RadioButton)vg.findViewById(R.id.radio_smoke_now_amount_no)).setChecked(true);
-//        }
-//
-//        ((EditText)vg.findViewById(R.id.input_smoke_now_amount)).setText(input_smoke_now_amount);
-//
-//        ((EditText)vg.findViewById(R.id.input_smoke_stop1)).setText(input_smoke_stop1);
-//        ((EditText)vg.findViewById(R.id.input_smoke_stop2)).setText(input_smoke_stop2);
-//        ((EditText)vg.findViewById(R.id.input_smoke_stop3)).setText(input_smoke_stop3);
-//
-//        if(radio_other_20smoke_checked == R.id.radio_other_20smoke_no) {
-//            ((RadioButton)vg.findViewById(R.id.radio_other_20smoke_no)).setChecked(true);
-//        }
-//        else if(radio_other_20smoke_checked == R.id.radio_other_20smoke_yes) {
-//            ((RadioButton)vg.findViewById(R.id.radio_other_20smoke_yes)).setChecked(true);
-//        }
-//        else if(radio_other_20smoke_checked == R.id.radio_other_20smoke_dont) {
-//            ((RadioButton)vg.findViewById(R.id.radio_other_20smoke_dont)).setChecked(true);
-//        }
-//
-//        for (int famID = 0; famID < 4; famID++) {
-//            ((EditText)vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1)))).setText(input_smoke_families[famID]);
-//            ((EditText)vg.findViewById(getResId(vg, "input_smoke_family" + (famID + 1) + "_year"))).setText(input_smoke_family_years[famID]);
-//        }
-//
-//        if(radio_drink_checked == R.id.radio_drink_no) {
-//            ((RadioButton)vg.findViewById(R.id.radio_drink_no)).setChecked(true);
-//        }
-//        else if(radio_drink_checked == R.id.radio_drink_yes_before) {
-//            ((RadioButton)vg.findViewById(R.id.radio_drink_yes_before)).setChecked(true);
-//
-//        }
-//        else if(radio_drink_checked == R.id.radio_drink_yes_now) {
-//            ((RadioButton)vg.findViewById(R.id.radio_drink_yes_now)).setChecked(true);
-//        }
-//
-//        ((EditText)vg.findViewById(R.id.input_drink_yes_before)).setText(input_drink_yes_before);
-//        ((EditText)vg.findViewById(R.id.input_drink_all_year)).setText(input_drink_all_year);
-//
-//        for (int drinkID = 0; drinkID < 5; drinkID++) {
-//
-//            if(drink_checked[drinkID] != -1){
-//                ((CheckBox)vg.findViewById(getResId(vg, "check_drink" + (drinkID + 1) + "_ans" + (drink_checked[drinkID] + 1)))).setChecked(true);
-//            }
-//
-//            ((EditText)vg.findViewById(getResId(vg, "input_drink" + (drinkID + 1) + "_ans1"))).setText(drink_amount[drinkID]);
-//
-//            if(drinkID == 3) {
-//                ((EditText)vg.findViewById(getResId(vg, "input_drink" + (drinkID + 1) + "_ans2"))).setText(drink_amount_sub);
-//            }
-//        }
+
+        if(radio_sleep_hour_checked == R.id.radio_sleep_hour_1){
+            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_1)).setChecked(true);
+        }
+        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_2){
+            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_2)).setChecked(true);
+        }
+        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_3){
+            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_3)).setChecked(true);
+        }
+        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_4){
+            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_4)).setChecked(true);
+        }
+        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_5){
+            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_5)).setChecked(true);
+        }
+        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_6){
+            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_6)).setChecked(true);
+        }
+
+        for (int seatID = 0; seatID < seat_checked.length; seatID++) {
+            if(seat_checked[seatID] != -1){
+                ((CheckBox)vg.findViewById(getResId(vg, "check_seat" + (seatID + 1) + "_ans" + (seat_checked[seatID] + 1)))).setChecked(true);
+            }
+        }
+
+        for (int actID = 0; actID < activity_checked.length; actID++) {
+            if(activity_checked[actID] != -1){
+                ((CheckBox)vg.findViewById(getResId(vg, "check_activity" + (actID + 1) + "_ans" + (activity_checked[actID] + 1)))).setChecked(true);
+            }
+        }
+
+
+        if(radio_activity_week_checked == R.id.radio_activity_week_1){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_1)).setChecked(true);
+        }
+        else if(radio_activity_week_checked == R.id.radio_activity_week_2){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_2)).setChecked(true);
+        }
+        else if(radio_activity_week_checked == R.id.radio_activity_week_3){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_3)).setChecked(true);
+        }
+        else if(radio_activity_week_checked == R.id.radio_activity_week_4){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_4)).setChecked(true);
+        }
+        else if(radio_activity_week_checked == R.id.radio_activity_week_5){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_5)).setChecked(true);
+        }
+        else if(radio_activity_week_checked == R.id.radio_activity_week_6){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_6)).setChecked(true);
+        }
+        else if(radio_activity_week_checked == R.id.radio_activity_week_7){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_7)).setChecked(true);
+        }else if(radio_activity_week_checked == R.id.radio_activity_week_8){
+            ((RadioButton)vg.findViewById(R.id.radio_activity_week_8)).setChecked(true);
+        }
     }
 
     private int getResId(Context nowContext, String id) {
@@ -241,6 +155,22 @@ public class SleepData {
     }
 
     public boolean check() {
+
+        if(radio_sleep_hour_checked == -1)  return false;
+
+        for (int seatID = 0; seatID < seat_checked.length; seatID++) {
+            if(seat_checked[seatID] == -1){
+                return false;
+            }
+        }
+
+        for (int actID = 0; actID < activity_checked.length; actID++) {
+            if(activity_checked[actID] == -1){
+                return false;
+            }
+        }
+
+        if(radio_activity_week_checked == -1) return false;
 
 //        if(radio_20smoke_checked == R.id.radio_20smoke_yes || radio_20smoke_checked == R.id.radio_20smoke_yes_still){
 //            // 흡연 여부 "예", "예, 지금도 피웁니다" -> 17 ~ 20번 유효성 검사

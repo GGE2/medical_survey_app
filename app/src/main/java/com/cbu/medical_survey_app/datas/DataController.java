@@ -62,9 +62,9 @@ public class DataController {
 //            return true;
         }
         else if(nowFragment instanceof SleepFragment){
-//            sleep_data.saveData(context);
-//            return sleep_data.check();
-            return true;
+            sleep_data.saveData(context);
+            return sleep_data.check();
+//            return true;
         }
         else {
             System.out.println("아님");
@@ -95,8 +95,6 @@ public class DataController {
 
     public void setDataToView(ViewGroup vg) {
 
-        System.out.println(vg.getId());
-
         switch (vg.getId()) {
             case R.id.last_frag: {
                 last_data.setDataToView(vg);
@@ -111,7 +109,7 @@ public class DataController {
                 break;
             }
             case R.id.sleep_frag: {
-//                sleep_data.setDataToView(vg);
+                sleep_data.setDataToView(vg);
                 break;
             }
         }
