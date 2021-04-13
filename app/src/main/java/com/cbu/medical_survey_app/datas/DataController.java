@@ -53,18 +53,18 @@ public class DataController {
         }
         else if(nowFragment instanceof JobFragment){
             job_data.saveData(context);
-            return job_data.check();
-//            return true;
+//            return job_data.check();
+            return true;
         }
         else if(nowFragment instanceof SmokeFragment){
             smoke_data.saveData(context);
-            return smoke_data.check();
-//            return true;
+//            return smoke_data.check();
+            return true;
         }
         else if(nowFragment instanceof SleepFragment){
             sleep_data.saveData(context);
-            return sleep_data.check();
-//            return true;
+//            return sleep_data.check();
+            return true;
         }
         else {
             System.out.println("아님");

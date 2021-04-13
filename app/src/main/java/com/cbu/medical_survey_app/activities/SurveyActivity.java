@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.fragments.FoodFragment_1;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.SleepFragment;
 import com.cbu.medical_survey_app.fragments.SmokeFragment;
@@ -32,8 +33,13 @@ public class SurveyActivity extends FragmentActivity {
 //        ImageView img = (ImageView)findViewById(R.id.title_img);
 //        img.setImageResource(0);
 
+//        TextView title = (TextView)findViewById(R.id.top_title);
+//        title.setText("수면, 육체적 운동 및 활동사항");
+//        ImageView img = (ImageView)findViewById(R.id.title_img);
+//        img.setImageResource(R.drawable.img_sleep_top);
+
         TextView title = (TextView)findViewById(R.id.top_title);
-        title.setText("수면, 육체적 운동 및 활동사항");
+        title.setText(R.string.sleep_title);
         ImageView img = (ImageView)findViewById(R.id.title_img);
         img.setImageResource(R.drawable.img_sleep_top);
 
