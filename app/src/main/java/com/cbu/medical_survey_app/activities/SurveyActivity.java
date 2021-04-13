@@ -45,7 +45,7 @@ public class SurveyActivity extends FragmentActivity {
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new SleepFragment(this));
+        fragmentTransaction.replace(R.id.survey_content, new SmokeFragment(this));
         fragmentTransaction.commit();
     }
 

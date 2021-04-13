@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.ButtonListener;
 import com.cbu.medical_survey_app.R;
@@ -33,6 +36,19 @@ public class FoodFragment_1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
         ViewGroup vg = (ViewGroup) inflater.inflate(R.layout.food_frag_1, container, false);
+
+//        ConstraintLayout content = vg.findViewById(R.id.survey_content);
+//        ConstraintLayout warning = vg.findViewById(R.id.survey_warning);
+//
+//        System.out.println(content);
+//        System.out.println(warning);
+//
+//        ConstraintSet cs = new ConstraintSet();
+//        cs.clone(content);
+//
+//        cs.connect(content.getId(), ConstraintSet.TOP, warning.getId(), ConstraintSet.BOTTOM, 0);
+//        cs.applyTo(content);
+
 
 //        Button bt_smoke_prev = (Button) vg.findViewById(R.id.bt_sleep_prev);
 //        Button bt_smoke_next = (Button) vg.findViewById(R.id.bt_sleep_next);
