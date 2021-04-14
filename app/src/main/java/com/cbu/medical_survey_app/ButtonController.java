@@ -136,15 +136,15 @@ public class ButtonController {
             title.setText(R.string.food_title);
             title_img.setImageResource(R.drawable.img_food_top);
 
-//            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
-//            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//
-//            fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
-//            fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
-//
-//            fragmentTransaction.commit();
+            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
 
-            makeFrag(new JobFragment(nowContext));
+            fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+            fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
+
+            fragmentTransaction.commit();
+
+//            makeFrag(new JobFragment(nowContext));
         }
         else{
             // 유효성 검사 실패 -> 경고창
