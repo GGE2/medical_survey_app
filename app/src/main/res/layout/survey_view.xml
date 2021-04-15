@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".activities.SurveyActivity"
+    >
 
     <ScrollView
         android:id="@+id/main_scroll"
@@ -29,10 +29,10 @@
 
                 <ImageView
                     android:id="@+id/title_img"
-                    android:layout_width="230dp"
+                    android:layout_width="238dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/img_default"
-                    android:src="@drawable/normal_top" />
+                    android:src="@drawable/sample" />
 
                 <TextView
                     android:id="@+id/top_title"
@@ -53,7 +53,7 @@
                 android:layout_height="match_parent"
 
                 android:layout_marginTop="-30dp"
-                android:background="@drawable/rounded">
+                android:background="@drawable/round_page">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/survey_content"
