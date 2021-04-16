@@ -1,11 +1,5 @@
 package com.cbu.medical_survey_app.datas;
 
-import android.content.Context;
-import android.view.ViewGroup;
-import android.widget.EditText;
-
-import com.cbu.medical_survey_app.R;
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.ViewGroup;
@@ -56,7 +50,6 @@ public class JobData {
     }
 
     public void saveData(Context nowContext) {
-
         checkedList = new ArrayList<>();
         for (int posID = 0; posID < 11; posID++) {
             RadioButton radio_position = ((Activity)nowContext).findViewById(getResId(nowContext, "radio_position_" + (posID + 1)));

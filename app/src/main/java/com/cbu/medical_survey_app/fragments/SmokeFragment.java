@@ -2,7 +2,6 @@ package com.cbu.medical_survey_app.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +18,6 @@ import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.activities.StartActivity;
 
 public class SmokeFragment extends Fragment {
-    //
     private ButtonListener btl;
     private RadioGroup radiogroup_20smoke;
     private EditText input_first_smoke;
@@ -295,10 +293,9 @@ public class SmokeFragment extends Fragment {
             check_bts = cbs;
             input_drink_ans1 = ipt1;
             input_drink_ans2 = null;
-            Log.e("checked",Integer.toString(checked));
+
             for (int i = 0; i < check_bts.length; i++) {
                 if(check_bts[i].isChecked()){
-                    Log.e("is checked","is checked");
                     checked = i;
                     check_bts[i].setChecked(true);
                 }

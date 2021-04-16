@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/food_frag_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="30dp"
+        android:background="@color/list_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/rice1_1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/rice1_2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/rice1_3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 1-1. 밥 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 1-2. 밥 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 1-3. 밥 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="29)   지난 1년 동안 다음의 음식들을 각기 얼마나 자주 드셨는지 그 횟수와 양을 표시해 주십시오."
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
