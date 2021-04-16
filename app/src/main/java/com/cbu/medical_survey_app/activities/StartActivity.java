@@ -84,12 +84,12 @@ public class StartActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(StartActivity.this, SubActivity.class);
                 startActivity(intent);
-//                if(checkText()) {
-//                    startActivity(intent);
-//                }
-//                else{
-//                    openPopup();
-//                }
+                if(checkText()) {
+                    startActivity(intent);
+                }
+                else{
+                    openPopup();
+                }
 
 
 
