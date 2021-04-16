@@ -282,8 +282,10 @@ public class NormalData_3 {
         //14번
 
         for(int RowID=0;RowID<operation_check.length;RowID++){
-                if(RowID==11)
+                if(RowID==11) {
+                    if(!operation_etc.equals(""))
                     ((EditText)vg.findViewById(getResId(vg,"pro14_input"))).setText(operation_etc);
+                }
                 if(operation_check[RowID]!=-1){
                     if(operation_check[RowID]==0)
                     ((RadioButton)vg.findViewById(getResId(vg,"normal3_pro14_radio_position_"+(RowID+1)+"_1"))).setChecked(true);

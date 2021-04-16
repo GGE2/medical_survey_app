@@ -14,6 +14,7 @@ import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
 import com.cbu.medical_survey_app.fragments.NormalFragment_2;
 import com.cbu.medical_survey_app.fragments.NormalFragment_3;
+import com.cbu.medical_survey_app.fragments.NormalFragment_4;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -67,6 +68,11 @@ public class DataController {
             System.out.println("일반 사항3 Frag");
             normal_data3.saveData(context);
             //return normal_data3.check();
+        }
+        else if(nowFragment instanceof NormalFragment_4){
+            System.out.println("일반 사항4 Frag");
+            normal_data4.saveData(context);
+           // return normal_data4.check();
         }
 
         else if(nowFragment instanceof LastFragment){
@@ -122,11 +128,10 @@ public class DataController {
                 normal_data3.setDataToView(vg);
                 break;
             }
-//            case R.id.normalfrag_4:{
-//                normal_data3.setDataToView(vg);
-//                break;
-//            }
-
+            case R.id.normalfrag_4:{
+                normal_data4.setDataToView(vg);
+                break;
+            }
             case R.id.last_frag: {
                 last_data.setDataToView(vg);
                 break;

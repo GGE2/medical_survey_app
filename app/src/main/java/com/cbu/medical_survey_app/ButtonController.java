@@ -90,13 +90,13 @@ public class ButtonController {
     }
     public void normal2_pre () {
         // 현재 뷰의 데이터들을 저장
-        StartActivity.dtc.saveData(nowContext);
-        Fragment fragment = new NormalFragment_1(nowContext);
-        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.survey_content, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+            StartActivity.dtc.saveData(nowContext);
+            Fragment fragment = new NormalFragment_1(nowContext);
+            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+            fragmentTransaction.replace(R.id.survey_content, fragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
 
 //        ((FragmentActivity)nowContext).startActivity(intent);
         // 데이터 엑셀에 저장
@@ -126,7 +126,7 @@ public class ButtonController {
     }
     public void normal3_pre () {
         // 현재 뷰의 데이터들을 저장
-        StartActivity.dtc.saveData(nowContext);
+             StartActivity.dtc.saveData(nowContext);
             Fragment fragment = new NormalFragment_2(nowContext);
             FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
@@ -147,12 +147,16 @@ public class ButtonController {
     }
     public void normal3_next () {
         // 현재 뷰의 데이터들을 저장
-        StartActivity.dtc.saveData(nowContext);
-        Fragment fragment = new NormalFragment_4(nowContext);
-        FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.survey_content, fragment);
-        fragmentTransaction.commit();
+
+        if(StartActivity.dtc.saveData(nowContext)) {
+            Fragment fragment = new NormalFragment_4(nowContext);
+            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+            fragmentTransaction.replace(R.id.survey_content, fragment);
+            fragmentTransaction.commit();
+        }
+        else
+            openPopup();
 
 
 //        ((FragmentActivity)nowContext).startActivity(intent);
@@ -166,6 +170,43 @@ public class ButtonController {
             ((Activity)nowContext).startActivity(intent);
             System.exit(0);*/
     }
+    public void normal4_pre () {
+        // 현재 뷰의 데이터들을 저장
+        StartActivity.dtc.saveData(nowContext);
+            Fragment fragment = new NormalFragment_3(nowContext);
+            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+            fragmentTransaction.replace(R.id.survey_content, fragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+
+    }
+    public void normal4_next () {
+        // 현재 뷰의 데이터들을 저장
+        if(StartActivity.dtc.saveData(nowContext)) {
+            Fragment fragment = new NormalFragment_3(nowContext);
+            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+            fragmentTransaction.replace(R.id.survey_content, fragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+        else
+            openPopup();
+
+//        ((FragmentActivity)nowContext).startActivity(intent);
+        // 데이터 엑셀에 저장
+        //MainActivity.dtc.saveExcel(nowContext);
+
+        // 설문 완료 시 앱 재시작
+            /*
+            Intent intent = new Intent(nowContext, MainActivity.class);
+            ((Activity)nowContext).finishAffinity();
+            ((Activity)nowContext).startActivity(intent);
+            System.exit(0);*/
+    }
+
+
 
     private void openPopup() {
         Intent intent = new Intent(nowContext, PopupActivity.class);

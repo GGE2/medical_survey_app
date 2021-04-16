@@ -2,6 +2,7 @@ package com.cbu.medical_survey_app.datas;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -22,8 +23,8 @@ public class NormalData_4 {
 
         //15번
 
-        private int[] medi_eat = new int[6];
-        private int[] medi_year = new int[3];
+        private int[] medi_eat = new int[9];
+        private int[] medi_year = new int[9];
         private String[] medi_eat_str={"없다","주1~3알","주4~6알","매일 1알","매일 2알","매일 3알"};
         private String[] medi_year_str={"1년이하","2~4년","5년이상"};
 
@@ -49,17 +50,18 @@ public class NormalData_4 {
 
 
         public void saveData(Context nowcontext) {
+            //14번
                 for(int RowID=0;RowID<4;RowID++){
                     TextView ray_name = ((Activity)nowcontext).findViewById(getResId(nowcontext,"normal4_text_position_"+(RowID+1)));
                     for(int ColID=0;ColID<10;ColID++){
                         RadioButton rb = ((Activity)nowcontext).findViewById(getResId(nowcontext,"normal4_radio_position_"+(RowID+1)+"_"+(ColID+1)));
-
                         if(rb.isChecked()){
                             ray[RowID] = ColID;
                         }
                     }
                     mapped_data.put(getString(ray_name),ray[RowID]==-1?"":ray_str[ray[RowID]]);
                 }
+                //15번
                 for(int RowID=0;RowID<9;RowID++){
                     TextView medi_name = ((Activity)nowcontext).findViewById(getResId(nowcontext,"medi_name_"+(RowID+1)));
                     for(int ColID=0;ColID<6;ColID++){
@@ -79,16 +81,61 @@ public class NormalData_4 {
                         mapped_data.put(getString(medi_name),medi_eat[RowID]==-1?"":medi_eat_str[medi_eat[RowID]]);
                     }
                     else {
-                        mapped_data.put(getString(medi_name) + "총 복용량 :",medi_eat_str[medi_eat[RowID]]);
-                        mapped_data.put(getString(medi_name) + "총 복용기간 :",medi_year_str[medi_year[RowID]]);
+                        if(medi_eat[RowID]!=-1) {
+                            mapped_data.put(getString(medi_name) + "총 복용량 :", medi_eat[RowID]==-1?"":medi_eat_str[medi_eat[RowID]]);
+                            mapped_data.put(getString(medi_name) + "총 복용기간 :", medi_year[RowID]==-1?"":medi_year_str[medi_year[RowID]]);
+                        }
                     }
                 }
 
 
         }
 
-        public void setDataToview(ViewGroup vg){
+        public void setDataToView(ViewGroup vg){
+            //14번
+            for(int RowID=0;RowID<4;RowID++){
+                if(ray[RowID]!=-1){
+                    ((RadioButton)vg.findViewById(getResId(vg,"normal4_radio_position_"+(RowID+1)+"_"+(ray[RowID]+1)))).setChecked(true);
+                }
+            }
+            //15번
+            for(int RowID=0;RowID<9;RowID++){
+                if(medi_eat[RowID]!=-1){
+                    if(medi_eat[RowID]==0){
+                        ((RadioButton)vg.findViewById(getResId(vg,"medi_eat_radio"+(RowID+1)+"_"+(medi_eat[RowID]+1)))).setChecked(true);
+                    }
+                    else{
+                        ((RadioButton)vg.findViewById(getResId(vg,"medi_eat_radio"+(RowID+1)+"_"+(medi_eat[RowID]+1)))).setChecked(true);
+                        ((RadioButton)vg.findViewById(getResId(vg,"medi_year_radio"+(RowID+1)+"_"+(medi_year[RowID]+1)))).setChecked(true);
+                    }
 
+
+                }
+            }
+
+        }
+        public boolean check(){
+            //14번 유효성 검사
+            for(int RowID=0;RowID<4;RowID++){
+                if(ray[RowID]==-1||ray[RowID]==1){
+                    return false;
+                }
+            }
+
+            //15번 유효성 검사
+            for(int RowID=0;RowID<9;RowID++){
+                if(medi_eat[RowID]==-1){
+                    return false;
+                }
+                if(medi_eat[RowID]!=0&&medi_eat[RowID]!=-1){
+                    if(medi_year[RowID]==-1)
+                        return false;
+                }
+
+            }
+
+
+            return true;
         }
         private String getString(EditText view) {
 
