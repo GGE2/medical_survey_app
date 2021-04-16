@@ -83,7 +83,6 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(StartActivity.this, SubActivity.class);
-                startActivity(intent);
                 if(checkText()) {
                     startActivity(intent);
                 }
