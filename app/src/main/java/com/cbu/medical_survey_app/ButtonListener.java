@@ -43,11 +43,26 @@ public class ButtonListener implements Button.OnClickListener {
             case R.id.bt_normal4_prev:
                 btc.normal4_pre();
                 break;
-            case R.id.bt_job_next:
-                btc.jobComplete();
+            case R.id.bt_normal4_next:
+                btc.normal4_next();
+                break;
+            case R.id.bt_smoke_prev:
+                btc.smokePrev();
+                break;
+            case R.id.bt_smoke_next:
+                btc.smokeNext();
+                break;
+            case R.id.bt_sleep_prev:
+                btc.sleepPrev();
+                break;
+            case R.id.bt_sleep_next:
+                btc.sleepNext();
                 break;
             case R.id.bt_job_prev:
-
+                btc.jobPrev();
+                break;
+            case R.id.bt_job_next:
+                btc.jobNext();
                 break;
 
             default:

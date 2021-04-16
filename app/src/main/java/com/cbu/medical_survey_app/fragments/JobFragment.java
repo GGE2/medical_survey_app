@@ -44,19 +44,22 @@ public class JobFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
         ViewGroup vg = (ViewGroup) inflater.inflate(R.layout.job_frag, container, false);
 
+        Button bt_job_prev = (Button) vg.findViewById(R.id.bt_job_prev);
         Button bt_job_next = (Button) vg.findViewById(R.id.bt_job_next);
+        bt_job_prev.setOnClickListener(btl);
         bt_job_next.setOnClickListener(btl);
 
         // 프래그먼트에 데이터 세팅
         StartActivity.dtc.setDataToView(vg);
 
+        // 버튼 활성화, 리스너 등록
         initViews(vg);
 
         return vg;
     }
 
     private void initViews(ViewGroup vg) {
-        for (int posID = 0; posID < 11; posID++) {
+        for (int posID = 0; posID < positions.length; posID++) {
             RadioButton radio_position = vg.findViewById(getResId(vg, "radio_position_" + (posID + 1)));
             EditText input_position = vg.findViewById(getResId(vg, "input_position_" + (posID + 1)));
             EditText input_position_year = vg.findViewById(getResId(vg, "input_position_year_" + (posID + 1)));
@@ -64,7 +67,7 @@ public class JobFragment extends Fragment {
             positions[posID] = new position(radio_position, input_position, input_position_year, posID);
         }
 
-        for (int proID = 0; proID < 24; proID++) {
+        for (int proID = 0; proID < productions.length; proID++) {
             CheckBox check_production = vg.findViewById(getResId(vg, "check_production_" + (proID + 1)));
             EditText input_production_year = vg.findViewById(getResId(vg, "input_production_year_" + (proID + 1)));
 

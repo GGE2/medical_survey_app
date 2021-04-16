@@ -15,6 +15,8 @@ import com.cbu.medical_survey_app.fragments.NormalFragment_1;
 import com.cbu.medical_survey_app.fragments.NormalFragment_2;
 import com.cbu.medical_survey_app.fragments.NormalFragment_3;
 import com.cbu.medical_survey_app.fragments.NormalFragment_4;
+import com.cbu.medical_survey_app.fragments.SleepFragment;
+import com.cbu.medical_survey_app.fragments.SmokeFragment;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -33,12 +35,14 @@ public class DataController {
     final private String origin_name;
     final private String origin_address;
 
-    final private LastData last_data;
-    final private JobData job_data;
     final private NormalData_1 normal_data1;
     final private NormalData_2 normal_data2;
     final private NormalData_3 normal_data3;
     final private NormalData_4 normal_data4;
+    final private SmokeData smoke_data;
+    final private SleepData sleep_data;
+    final private JobData job_data;
+    final private LastData last_data;
 
     public DataController(String name, String address) {
         origin_name = name;
@@ -49,6 +53,9 @@ public class DataController {
         normal_data2 = new NormalData_2();
         normal_data3 = new NormalData_3();
         normal_data4 = new NormalData_4();
+        smoke_data = new SmokeData();
+        sleep_data = new SleepData();
+
     }
 
 //    // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
@@ -57,35 +64,48 @@ public class DataController {
         if(nowFragment instanceof NormalFragment_1){
             System.out.println("일반 사항1 Frag");
             normal_data1.saveData(context);
-            //return normal_data1.check();
+            return normal_data1.check();
         }
         else if(nowFragment instanceof NormalFragment_2){
             System.out.println("일반 사항2 Frag");
             normal_data2.saveData(context);
-            //return normal_data2.check();
+            return normal_data2.check();
         }
         else if(nowFragment instanceof NormalFragment_3){
             System.out.println("일반 사항3 Frag");
             normal_data3.saveData(context);
-            //return normal_data3.check();
+            return normal_data3.check();
         }
         else if(nowFragment instanceof NormalFragment_4){
             System.out.println("일반 사항4 Frag");
             normal_data4.saveData(context);
-           // return normal_data4.check();
+           return normal_data4.check();
+        }
+        else if(nowFragment instanceof SmokeFragment){
+            System.out.println("흡연 및 음주 Frag");
+              smoke_data.saveData(context);
+               return smoke_data.check();
+        }
+        else if(nowFragment instanceof SleepFragment){
+            System.out.println("수면 육체 활동사항 Frag");
+                sleep_data.saveData(context);
+                return sleep_data.check();
+
+        }
+        else if(nowFragment instanceof JobFragment){
+            System.out.println("직업사항 Frag");
+                job_data.saveData(context);
+            return job_data.check();
+
         }
 
         else if(nowFragment instanceof LastFragment){
             System.out.println("설문 완료 Frag");
             last_data.saveData(context);
-            //return vc.lastChecker(last_data.getData());
+            //return last_data.check();
         }
 
-        else if(nowFragment instanceof JobFragment){
-            System.out.println("직업사항 Frag");
-            job_data.saveData(context);
 
-        }
         else {
             System.out.println("아님");
         }
@@ -132,12 +152,20 @@ public class DataController {
                 normal_data4.setDataToView(vg);
                 break;
             }
-            case R.id.last_frag: {
-                last_data.setDataToView(vg);
+            case R.id.smoke_frag: {
+                smoke_data.setDataToView(vg);
+                break;
+            }
+            case R.id.sleep_frag:{
+                sleep_data.setDataToView(vg);
                 break;
             }
             case R.id.job_frag: {
                 job_data.setDataToView(vg);
+                break;
+            }
+            case R.id.last_frag: {
+                last_data.setDataToView(vg);
                 break;
             }
         }

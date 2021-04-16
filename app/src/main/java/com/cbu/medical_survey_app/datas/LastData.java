@@ -12,6 +12,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class LastData {
 
@@ -82,5 +83,18 @@ public class LastData {
         ((EditText) vg.findViewById(R.id.input_address_myself)).setText(input_address_myself);
         ((EditText) vg.findViewById(R.id.input_ph_first_myself2)).setText(input_ph_first_myself2);
         ((EditText) vg.findViewById(R.id.input_ph_second_myself2)).setText(input_ph_second_myself2);
+    }
+
+    public boolean check() {
+        boolean isValid = true;
+
+        for (Map.Entry<String, String> entry: mapped_data.entrySet()) {
+            if(entry.getValue().equals("")){
+                isValid = false;
+                break;
+            }
+        }
+
+        return isValid;
     }
 }
