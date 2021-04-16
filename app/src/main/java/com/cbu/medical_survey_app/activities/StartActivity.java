@@ -13,11 +13,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.datas.DataController;
 
 public class StartActivity extends AppCompatActivity {
 
     Button btn_main_1;
     EditText main_input_name,main_input_address;
+
+    public static DataController dtc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ public class StartActivity extends AppCompatActivity {
         main_input_name = (EditText)findViewById((R.id.main_input_name));
         main_input_address = (EditText)findViewById((R.id.main_input_address));
 
+        dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
 
         btn_main_1.setOnClickListener(new View.OnClickListener(){
 

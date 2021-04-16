@@ -23,13 +23,18 @@ import java.util.Map;
 
 public class DataController {
 
+    final private String origin_name;
+    final private String origin_address;
+
     final private ValidChecker vc = new ValidChecker();
     final private LastData last_data;
     final private JobData job_data;
 
-    public DataController() {
-        last_data = new LastData();
+    public DataController(String name, String address) {
+        origin_name = name;
+        origin_address = address;
         job_data = new JobData();
+        last_data = new LastData();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기

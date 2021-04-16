@@ -8,6 +8,7 @@
     <string name="smoke_title">흡연 및 음주 습관사항</string>
     <string name="sleep_title">수면, 육체적 운동 및 활동사항</string>
     <string name="food_title">식품 섭취 빈도 조사법</string>
+    <string name="job_title">직업 사항</string>
     <string name="last_title">최종 정보 입력</string>
 
     <!-- Buttons -->

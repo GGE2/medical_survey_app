@@ -8,7 +8,7 @@
     android:background="@color/white"
     tools:context=".activities.SurveyActivity"
     android:orientation="vertical"
-    android:id="@+id/normal_frag1">
+    android:id="@+id/normal_frag_1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -200,6 +200,7 @@
         <EditText
             android:id="@+id/pro3_3"
             android:layout_width="70dp"
+            android:maxLength="3"
             android:layout_height="wrap_content"
             android:textColor="@color/text_black"
             android:textSize="14sp"
@@ -605,8 +606,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <EditText
+                <RadioButton
                     android:id="@+id/pro8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/pro8_2"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:textColor="@color/text_black"
@@ -619,14 +624,13 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:textStyle="bold"/>
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <RadioButton
-                    android:id="@+id/pro8_2"
+                    android:id="@+id/pro8_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="모르겠다."
@@ -676,7 +680,7 @@
 
 
     <Button
-        android:id="@+id/next_btn_1"
+        android:id="@+id/normal1_next_btn_1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"

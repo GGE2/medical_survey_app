@@ -1,7 +1,6 @@
 package com.cbu.medical_survey_app.activities;
 
 import android.content.Context;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,11 +20,11 @@ import com.cbu.medical_survey_app.fragments.Job_Fragment;
 import com.cbu.medical_survey_app.fragments.Last_Fragment;
 
 import org.w3c.dom.Text;
+import com.cbu.medical_survey_app.fragments.JobFragment;
 
 public class SurveyActivity extends FragmentActivity {
 
-    private InputMethodManager imm;
-    public static DataController dtc = new DataController();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +38,9 @@ public class SurveyActivity extends FragmentActivity {
         ImageView img = (ImageView)findViewById(R.id.title_img);
         img.setImageResource(0);
 
-        imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new Job_Fragment(this));
+        fragmentTransaction.add(R.id.survey_content, new JobFragment(this));
         fragmentTransaction.commit();
     }
 
