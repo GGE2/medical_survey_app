@@ -105,7 +105,9 @@ public class NormalData_4 {
                         ((RadioButton)vg.findViewById(getResId(vg,"medi_eat_radio"+(RowID+1)+"_"+(medi_eat[RowID]+1)))).setChecked(true);
                     }
                     else{
+
                         ((RadioButton)vg.findViewById(getResId(vg,"medi_eat_radio"+(RowID+1)+"_"+(medi_eat[RowID]+1)))).setChecked(true);
+                        if(medi_year[RowID]!=-1)
                         ((RadioButton)vg.findViewById(getResId(vg,"medi_year_radio"+(RowID+1)+"_"+(medi_year[RowID]+1)))).setChecked(true);
                     }
 
