@@ -51,6 +51,8 @@ public class SleepData {
         RadioGroup rg_sleep_hour = ((Activity)nowContext).findViewById(R.id.radiogroup_sleep_hour);
         radio_sleep_hour_checked = rg_sleep_hour.getCheckedRadioButtonId();
 
+        mapped_data.put("1년 동안 하루 평균 수면시간", radio_sleep_hour_checked == -1 ? "" : ((RadioButton)((Activity)nowContext).findViewById(radio_sleep_hour_checked)).getText().toString());
+
         for (int seatID = 0; seatID < seat_checked.length; seatID++) {
 
             TextView seat_name = ((Activity)nowContext).findViewById(getResId(nowContext, "seat_name" + (seatID + 1)));
@@ -83,6 +85,8 @@ public class SleepData {
 
         RadioGroup rg_activity_week = ((Activity)nowContext).findViewById(R.id.radiogroup_activity_week);
         radio_activity_week_checked = rg_activity_week.getCheckedRadioButtonId();
+
+        mapped_data.put("1년 동안 평균 운동, 육체적 노동 횟수", radio_activity_week_checked == -1 ? "" : ((RadioButton)((Activity)nowContext).findViewById(radio_activity_week_checked)).getText().toString());
     }
 
     public void setDataToView(ViewGroup vg) {

@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.fragments.FoodFragment_1;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
@@ -37,6 +38,7 @@ public class DataController {
     final private NormalData_2 normal_data2;
     final private NormalData_3 normal_data3;
     final private NormalData_4 normal_data4;
+    final private FoodData_1 food_data1;
     final private LastData last_data;
     final private JobData job_data;
     final private SmokeData smoke_data;
@@ -49,6 +51,7 @@ public class DataController {
         normal_data2 = new NormalData_2();
         normal_data3 = new NormalData_3();
         normal_data4 = new NormalData_4();
+        food_data1 = new FoodData_1();
         smoke_data = new SmokeData();
         sleep_data = new SleepData();
         job_data = new JobData();
@@ -100,6 +103,12 @@ public class DataController {
             System.out.println("설문 완료 Frag");
             last_data.saveData(context);
             //return last_data.check();
+            return true;
+        }
+        else if(nowFragment instanceof FoodFragment_1){
+            food_data1.saveData(context);
+
+            return true;
         }
 
 

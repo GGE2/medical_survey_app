@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioGroup;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
@@ -22,6 +23,8 @@ public class FoodFragment_1 extends Fragment {
     private ButtonListener btl;
 //
     private table[] rices;
+    private RadioGroup radiogroup_rice_sub1;
+    private RadioGroup radiogroup_rice_sub2;
 //    private table[] activities;
 
     public FoodFragment_1() {
@@ -52,14 +55,50 @@ public class FoodFragment_1 extends Fragment {
 
     private void initViews(ViewGroup vg) {
 
+        radiogroup_rice_sub1 = vg.findViewById(R.id.radiogroup_rice_sub1);
+        radiogroup_rice_sub2 = vg.findViewById(R.id.radiogroup_rice_sub2);
+
+        riceHandler(radiogroup_rice_sub1, radiogroup_rice_sub1.getCheckedRadioButtonId());
+
+        radiogroup_rice_sub1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                riceHandler(group, checkedId);
+            }
+        });
+
         for (int riceID = 0; riceID < rices.length; riceID++) {
             CheckBox[] cbs = new CheckBox[9];
 
             for (int ansID = 0; ansID < cbs.length; ansID++) {
                 cbs[ansID] = vg.findViewById(getResId(vg, "check_rice" + (riceID + 1) + "_ans" + (ansID + 1)));
-                System.out.println(cbs[ansID]);
             }
             rices[riceID] = new table(cbs);
+        }
+    }
+
+    public void riceHandler(RadioGroup rg, int checked) {
+        switch (checked){
+            case -1:
+            case R.id.radio_rice_sub1_ans1:
+                disableRadioGroup(radiogroup_rice_sub2);
+                break;
+            default:
+                rg.check(checked);
+                enableRadioGroup(radiogroup_rice_sub2);
+                break;
+        }
+    }
+
+    private void disableRadioGroup(RadioGroup rg) {
+        for (int i = 0; i < rg.getChildCount(); i++) {
+            rg.getChildAt(i).setEnabled(false);
+        }
+    }
+
+    private void enableRadioGroup(RadioGroup rg) {
+        for (int i = 0; i < rg.getChildCount(); i++) {
+            rg.getChildAt(i).setEnabled(true);
         }
     }
 
