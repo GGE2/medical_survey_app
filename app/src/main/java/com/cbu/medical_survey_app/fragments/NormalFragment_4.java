@@ -168,14 +168,14 @@ public class NormalFragment_4 extends Fragment {
                     else
                         rb.setChecked(true);
 
-                        if(checked==-1||checked==0){
-                            for(int i=0;i<yrb.length;i++)
-                                disableRadio_no_click(yrb[i]);
-                        }
-                        else{
-                            for(int i=0;i<yrb.length;i++)
-                                enableRadio(yrb[i]);
-                        }
+                    if(checked==-1||checked==0){
+                        for(int i=0;i<yrb.length;i++)
+                            disableRadio_no_click(yrb[i]);
+                    }
+                    else{
+                        for(int i=0;i<yrb.length;i++)
+                            enableRadio(yrb[i]);
+                    }
 
                 }
             });
@@ -270,7 +270,7 @@ public class NormalFragment_4 extends Fragment {
             });
 
 
-    }
+        }
 
 
 

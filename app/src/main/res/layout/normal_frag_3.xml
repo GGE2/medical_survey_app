@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".activities.SurveyActivity"
     android:background="@color/white"
     android:id="@+id/normalfrag_3">
 
@@ -965,7 +966,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_1_1" />
+                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_1_1"
+                    android:layout_marginLeft="40dp" />
                 <EditText
                     android:id="@+id/cancer_input_1_1"
                     android:layout_width="60dp"
@@ -974,7 +976,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/caner_text_1_1"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="40dp" />
 
                 <TextView
                     android:id="@+id/cancer_text_2_1"
@@ -1043,7 +1046,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_2" />
+                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_2"
+                    android:layout_marginLeft="40dp" />
                 <EditText
                     android:id="@+id/cancer_input_1_2"
                     android:layout_width="60dp"
@@ -1052,7 +1056,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/caner_text_2_1"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="40dp" />
 
                 <TextView
                     android:id="@+id/cancer_text_2_2"
@@ -1120,7 +1125,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_3" />
+                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_3"
+                    android:layout_marginLeft="40dp" />
                 <EditText
                     android:id="@+id/cancer_input_1_3"
                     android:layout_width="60dp"
@@ -1129,7 +1135,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/caner_text_1_3"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="40dp" />
 
                 <TextView
                     android:id="@+id/cancer_text_2_3"
@@ -1197,7 +1204,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_4" />
+                    app:layout_constraintTop_toBottomOf="@id/normal3_radio_position_6_4"
+                    android:layout_marginLeft="40dp" />
                 <EditText
                     android:id="@+id/cancer_input_1_4"
                     android:layout_width="60dp"
@@ -1206,7 +1214,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/caner_text_1_4"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="40dp" />
 
                 <TextView
                     android:id="@+id/cancer_text_2_4"
@@ -1301,7 +1310,8 @@
             android:textColor="@color/text_black"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/pro13_radioYes" />
+            app:layout_constraintTop_toBottomOf="@id/pro13_radioYes"
+            android:layout_marginLeft="84dp" />
         <TextView
             android:id="@+id/pro13_text4"
             android:layout_width="wrap_content"
@@ -3009,7 +3019,8 @@
                         android:textColor="@color/text_black"
                         android:textSize="14sp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginLeft="4dp" />
 
                     <EditText
                         android:id="@+id/pro14_input"

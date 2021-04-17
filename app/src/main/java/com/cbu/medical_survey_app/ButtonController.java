@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -21,6 +23,8 @@ import com.cbu.medical_survey_app.fragments.NormalFragment_3;
 import com.cbu.medical_survey_app.fragments.NormalFragment_4;
 import com.cbu.medical_survey_app.fragments.SleepFragment;
 import com.cbu.medical_survey_app.fragments.SmokeFragment;
+import com.cbu.medical_survey_app.fragments.FoodFragment_1;
+import com.cbu.medical_survey_app.fragments.WarningFragment;
 
 public class ButtonController {
 
@@ -56,18 +60,113 @@ public class ButtonController {
         }
     }
 
-    public void jobComplete() {
+    public void jobNext() {
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
+            // 직업 -> 최종 제출 페이지
             title.setText(R.string.last_title);
             title_img.setImageResource(0);
 
-            Fragment fragment = new JobFragment(nowContext);
+            makeFrag(new LastFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void jobPrev() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 일단 직업 -> 수면
+            title.setText(R.string.sleep_title);
+            title_img.setImageResource(R.drawable.img_sleep_top);
+
+            makeFrag(new SleepFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void smokePrev() {
+        // 흡연 -> 일반
+
+    }
+
+    public void smokeNext() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 흡연 -> 수면
+            title.setText(R.string.sleep_title);
+            title_img.setImageResource(R.drawable.img_sleep_top);
+
+            makeFrag(new SleepFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void sleepPrev() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 수면 -> 흡연
+            title.setText(R.string.smoke_title);
+            title_img.setImageResource(R.drawable.img_smoke_top);
+
+            makeFrag(new SmokeFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void sleepNext() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 수면 -> 음식
+            title.setText(R.string.food_title);
+            title_img.setImageResource(R.drawable.img_food_top);
+
             FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
-            fragmentTransaction.replace(R.id.survey_content, fragment);
+
+            fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+            fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
+
             fragmentTransaction.commit();
+
+//            makeFrag(new JobFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void food1_Next() {
+        // 음식1 -> 음식2
+
+    }
+
+    public void food1_Prev() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 음식 -> 수면
+            title.setText(R.string.sleep_title);
+            title_img.setImageResource(R.drawable.img_sleep_top);
+
+            makeFrag(new SleepFragment(nowContext));
         }
         else{
             // 유효성 검사 실패 -> 경고창
@@ -77,6 +176,7 @@ public class ButtonController {
 
     public void normalComplete () {
         // 현재 뷰의 데이터들을 저장
+
         if(StartActivity.dtc.saveData(nowContext)) {
             StartActivity.dtc.saveData(nowContext);
             Fragment fragment = new NormalFragment_2(nowContext);
@@ -209,131 +309,22 @@ public class ButtonController {
             ((Activity)nowContext).startActivity(intent);
             System.exit(0);*/
     }
-    public void smokePrev() {
-
-            title.setText(R.string.normal_title);
-            title_img.setImageResource(R.drawable.normal_top);
-            Fragment fragment = new NormalFragment_4(nowContext);
-            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-            fragmentTransaction.replace(R.id.survey_content, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-
-    }
-
-
-    public void smokeNext() {
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
-
-            // 흡연 -> 수면
-            title.setText(R.string.sleep_title);
-            title_img.setImageResource(R.drawable.img_sleep_top);
-            Fragment fragment = new SleepFragment(nowContext);
-            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-            fragmentTransaction.replace(R.id.survey_content, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-
-
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
-    }
-    public void sleepPrev() {
-
-            // 수면 -> 흡연
-            title.setText(R.string.smoke_title);
-            title_img.setImageResource(R.drawable.img_smoke_top);
-        Fragment fragment = new SmokeFragment(nowContext);
-        FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.survey_content, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-
-
-
-    }
-    public void sleepNext() {
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
-
-            // 흡연 -> 수면
-            title.setText(R.string.job_title);
-            title_img.setImageResource(R.drawable.img_sleep_top);   ////???
-            Fragment fragment = new JobFragment(nowContext);
-            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-            fragmentTransaction.replace(R.id.survey_content, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
-    }
-
-    public void jobPrev() {
-
-        // 수면 -> 흡연
-        title.setText(R.string.sleep_title);
-        title_img.setImageResource(R.drawable.img_food_top);
-        Fragment fragment = new SleepFragment(nowContext);
-        FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.survey_content, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-
-
-
-    }
-    public void jobNext(){
-        if(StartActivity.dtc.saveData(nowContext)){
-
-            title.setText(R.string.last_title);
-            Fragment fragment = new LastFragment(nowContext);
-            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-            fragmentTransaction.replace(R.id.survey_content, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-
-
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
-
-
-    }
-    public void lastprev(){
-        title.setText(R.string.job_title);
-        title_img.setImageResource(R.drawable.img_sleep_top);
-        Fragment fragment = new SmokeFragment(nowContext);
-        FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.survey_content, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-
-
-    }
-
-
 
 
 
     private void openPopup() {
         Intent intent = new Intent(nowContext, PopupActivity.class);
         ((Activity)nowContext).startActivityForResult(intent, 1);
+    }
+
+    private void makeFrag(Fragment fragment) {
+        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        fragmentTransaction.replace(R.id.survey_content, fragment);
+//        Fragment replaceFrag = fm.findFragmentByTag("now_fragment");
+//
+//        fragmentTransaction.replace(replaceFrag.getId(), fragment);
+
+        fragmentTransaction.commit();
     }
 }

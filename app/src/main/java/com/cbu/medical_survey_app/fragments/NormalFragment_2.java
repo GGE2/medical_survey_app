@@ -71,17 +71,17 @@ public class NormalFragment_2 extends Fragment {
         for (int posRowID = 0; posRowID <nor.length; posRowID++) {
             RadioButton[] radio = new RadioButton[4];
 
-                for(int posColID=0;posColID<radio.length;posColID++) {
-                    radio[posColID] = vg.findViewById(getResId(vg,"normal_radio_position_"+(posRowID+1)+"_"+(posColID+1)));
-                }
-                EditText input_year = vg.findViewById(getResId(vg,"normal_input_position_"+(posRowID+1)+"_1"));
-                EditText input_age = vg.findViewById(getResId(vg,"normal_input_position_"+(posRowID+1)+"_2"));
-                nor[posRowID] = new normal_position(radio,input_year,input_age);
-
+            for(int posColID=0;posColID<radio.length;posColID++) {
+                radio[posColID] = vg.findViewById(getResId(vg,"normal_radio_position_"+(posRowID+1)+"_"+(posColID+1)));
             }
-
+            EditText input_year = vg.findViewById(getResId(vg,"normal_input_position_"+(posRowID+1)+"_1"));
+            EditText input_age = vg.findViewById(getResId(vg,"normal_input_position_"+(posRowID+1)+"_2"));
+            nor[posRowID] = new normal_position(radio,input_year,input_age);
 
         }
+
+
+    }
 
 
     private int getResId(ViewGroup vg, String id) {
@@ -154,7 +154,7 @@ public class NormalFragment_2 extends Fragment {
                         rb.setChecked(true);
                         if(checked!=-1)
                             radio_bt[checked].setChecked(false);
-                       checked=idx;
+                        checked=idx;
                     }
                     else{
                         rb.setChecked(true);

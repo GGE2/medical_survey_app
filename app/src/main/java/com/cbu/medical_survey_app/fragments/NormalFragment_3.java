@@ -247,17 +247,17 @@ public class NormalFragment_3 extends Fragment {
 
             for (int k = 0; k < op.length; k++) {
                 if (cbs[k].isChecked()) {
-                        cbs[k].setChecked(true);
-                        ch = k;
-                    }
-                 else
-                     {
+                    cbs[k].setChecked(true);
+                    ch = k;
+                }
+                else
+                {
                     cbs[k].setChecked(false);
                     if(k==3||k==5){
                         if(!(cbs[2].isChecked()))
-                        disableRadio_no_click(cbs[3]);
+                            disableRadio_no_click(cbs[3]);
                         if(!(cbs[4].isChecked()))
-                        disableRadio_no_click(cbs[5]);
+                            disableRadio_no_click(cbs[5]);
                     }
                 }
                 setBtListener2(cbs[k], k);

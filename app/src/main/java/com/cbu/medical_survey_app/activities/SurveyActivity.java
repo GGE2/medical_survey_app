@@ -16,10 +16,13 @@ import androidx.fragment.app.FragmentTransaction;
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 
+import com.cbu.medical_survey_app.fragments.FoodFragment_1;
+import com.cbu.medical_survey_app.fragments.JobFragment;
+import com.cbu.medical_survey_app.fragments.NormalFragment_1;
+import com.cbu.medical_survey_app.fragments.SleepFragment;
+import com.cbu.medical_survey_app.fragments.SmokeFragment;
+
 public class SurveyActivity extends FragmentActivity {
-
-    private InputMethodManager imm;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +31,24 @@ public class SurveyActivity extends FragmentActivity {
         setContentView(R.layout.survey_page);
 
         // 프래그먼트 교체 부분
-        TextView title = (TextView)findViewById(R.id.top_title);
-        title.setText("직업 사항");
-        ImageView img = (ImageView)findViewById(R.id.title_img);
-        img.setImageResource(0);
+//        TextView title = (TextView)findViewById(R.id.top_title);
+//        title.setText("직업 사항");
+//        ImageView img = (ImageView)findViewById(R.id.title_img);
+//        img.setImageResource(0);
 
-        imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+//        TextView title = (TextView)findViewById(R.id.top_title);
+//        title.setText("수면, 육체적 운동 및 활동사항");
+//        ImageView img = (ImageView)findViewById(R.id.title_img);
+//        img.setImageResource(R.drawable.img_sleep_top);
+
+        TextView title = (TextView)findViewById(R.id.top_title);
+        title.setText(R.string.normal_title);
+        ImageView img = (ImageView)findViewById(R.id.title_img);
+        img.setImageResource(R.drawable.img_normal_top);
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.survey_content, new JobFragment(this));
+        fragmentTransaction.replace(R.id.survey_content, new NormalFragment_1(this));
         fragmentTransaction.commit();
     }
 

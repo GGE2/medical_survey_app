@@ -81,7 +81,7 @@ public class NormalData_1 {
             user_sex = getString((RadioButton)( ((Activity) nowContext).findViewById(user_sex_id)));
         if(user_married_status_id!=-1)
             user_married_status = getString((RadioButton) ((Activity) nowContext).findViewById(user_married_status_id));
-         if(user_final_education_id!=-1)
+        if(user_final_education_id!=-1)
             user_final_education = getString((RadioButton)((Activity)nowContext).findViewById(user_final_education_id));
 
         user_birth = getString((TextView)((Activity)nowContext).findViewById(R.id.pro3_1));
@@ -182,7 +182,7 @@ public class NormalData_1 {
         }
         //생년월일 , 띠 , 출생시 어머니 나이 , 주민등록번호, 키 , 몸무게 , 20대 몸무게,40대 몸무게, 최고 몸무게, 가족 전체 수입 미기입
         if(user_birth.equals("")||user_czs.equals("")||user_mom_age.equals("")||user_id_front.equals("")||
-        user_id_back.equals("")||user_height.equals("")||user_weight.equals("")||user_weight_20th.equals("")||user_weight_30th.equals("")||user_weight_best.equals("")||user_salary.equals("")) {
+                user_id_back.equals("")||user_height.equals("")||user_weight.equals("")||user_weight_20th.equals("")||user_weight_30th.equals("")||user_weight_best.equals("")||user_salary.equals("")) {
             return false;
         }
         //사시는 지역 기간 미기입
