@@ -81,10 +81,10 @@ public class ButtonController {
             // 유효성 검사 통과
 
             // 일단 직업 -> 수면
-            title.setText(R.string.sleep_title);
-            title_img.setImageResource(R.drawable.img_sleep_top);
+            title.setText(R.string.food_title);
+            title_img.setImageResource(R.drawable.img_food_top);
 
-            makeFrag(new SleepFragment(nowContext));
+            makeFrag(new FoodFragment_1(nowContext));
         }
         else{
             // 유효성 검사 실패 -> 경고창
@@ -94,7 +94,19 @@ public class ButtonController {
 
     public void smokePrev() {
         // 흡연 -> 일반
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
 
+            // 흡연 -> 수면
+            title.setText(R.string.normal_title);
+            title_img.setImageResource(R.drawable.img_normal_top);
+
+            makeFrag(new NormalFragment_4(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
     }
 
     public void smokeNext() {
@@ -155,7 +167,27 @@ public class ButtonController {
 
     public void food1_Next() {
         // 음식1 -> 음식2
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
 
+            // 수면 -> 직업(일단)
+            title.setText(R.string.job_title);
+            title_img.setImageResource(0);
+
+            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
+            fragmentTransaction.replace(R.id.survey_warning, new Fragment());
+            fragmentTransaction.replace(R.id.survey_content, new JobFragment(nowContext));
+
+            fragmentTransaction.commit();
+
+//            makeFrag(new JobFragment(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
     }
 
     public void food1_Prev() {

@@ -64,39 +64,44 @@ public class DataController {
         if(nowFragment instanceof NormalFragment_1){
             System.out.println("일반 사항1 Frag");
             normal_data1.saveData(context);
-            return normal_data1.check();
+//            return normal_data1.check();
+            return true;
         }
         else if(nowFragment instanceof NormalFragment_2){
             System.out.println("일반 사항2 Frag");
             normal_data2.saveData(context);
-            return normal_data2.check();
+//            return normal_data2.check();
+            return true;
         }
         else if(nowFragment instanceof NormalFragment_3){
             System.out.println("일반 사항3 Frag");
             normal_data3.saveData(context);
-            return normal_data3.check();
+//            return normal_data3.check();
+            return true;
         }
         else if(nowFragment instanceof NormalFragment_4){
             System.out.println("일반 사항4 Frag");
             normal_data4.saveData(context);
-            return normal_data4.check();
+//            return normal_data4.check();
+            return true;
         }
         else if(nowFragment instanceof SmokeFragment){
             System.out.println("흡연 및 음주 Frag");
             smoke_data.saveData(context);
-            return smoke_data.check();
+//            return smoke_data.check();
+            return true;
         }
         else if(nowFragment instanceof SleepFragment){
             System.out.println("수면 육체 활동사항 Frag");
             sleep_data.saveData(context);
-            return sleep_data.check();
-
+//            return sleep_data.check();
+            return true;
         }
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
             job_data.saveData(context);
-            return job_data.check();
-
+//            return job_data.check();
+            return true;
         }
 
         else if(nowFragment instanceof LastFragment){
@@ -157,6 +162,10 @@ public class DataController {
             }
             case R.id.normalfrag_4:{
                 normal_data4.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_1: {
+                food_data1.setDataToView(vg);
                 break;
             }
             case R.id.smoke_frag: {

@@ -46,7 +46,7 @@ public class FoodFragment_1 extends Fragment {
         bt_food_1_next.setOnClickListener(btl);
 
         // 프래그먼트에 데이터 세팅
-//        StartActivity.dtc.setDataToView(vg);
+        StartActivity.dtc.setDataToView(vg);
 
         initViews(vg);
 

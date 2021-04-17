@@ -23,17 +23,14 @@ public class FoodData_1 {
 
     private int radio_rice_sub1_checked = -1;
     private int radio_rice_sub2_checked = -1;
-//    private int radio_activity_week_checked = -1;
-//
+
     private String[] rice_str = {"거의 안먹음", "월 1회", "월 2~3회", "주 1~2회", "주 3~4회", "주 5~6회", "일 1회", "일 2회", "일 3회"};
-//    private String[] activity_hour_str = {"없음(30분 미만)", "주 1/2~1시간", "주 2~3시간", "주 4~6시간", "주 7~10시간", "주 21~30시간", "주 31시간 이상"};
 
     public FoodData_1() {
         mapped_data = new LinkedHashMap<String, String>();
 
         Arrays.fill(rice_checked, -1);
         Arrays.fill(radio_rice_checked, -1);
-//        Arrays.fill(activity_checked, -1);
     }
 
     private String getString(EditText view) {
@@ -100,18 +97,37 @@ public class FoodData_1 {
 //        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_6){
 //            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_6)).setChecked(true);
 //        }
+
+        if(radio_rice_sub1_checked == R.id.radio_rice_sub1_ans1){
+            ((RadioButton)vg.findViewById(R.id.radio_rice_sub1_ans1)).setChecked(true);
+        }
+        else if(radio_rice_sub1_checked == R.id.radio_rice_sub1_ans2){
+            ((RadioButton)vg.findViewById(R.id.radio_rice_sub1_ans2)).setChecked(true);
+        }
+        else if(radio_rice_sub1_checked == R.id.radio_rice_sub1_ans3){
+            ((RadioButton)vg.findViewById(R.id.radio_rice_sub1_ans3)).setChecked(true);
+        }
+
+        if(radio_rice_sub2_checked == R.id.radio_rice_sub2_ans1){
+            ((RadioButton)vg.findViewById(R.id.radio_rice_sub2_ans1)).setChecked(true);
+        }
+        else if(radio_rice_sub2_checked == R.id.radio_rice_sub2_ans2){
+            ((RadioButton)vg.findViewById(R.id.radio_rice_sub2_ans2)).setChecked(true);
+        }
 //
-//        for (int seatID = 0; seatID < seat_checked.length; seatID++) {
-//            if(seat_checked[seatID] != -1){
-//                ((CheckBox)vg.findViewById(getResId(vg, "check_seat" + (seatID + 1) + "_ans" + (seat_checked[seatID] + 1)))).setChecked(true);
-//            }
-//        }
-//
-//        for (int actID = 0; actID < activity_checked.length; actID++) {
-//            if(activity_checked[actID] != -1){
-//                ((CheckBox)vg.findViewById(getResId(vg, "check_activity" + (actID + 1) + "_ans" + (activity_checked[actID] + 1)))).setChecked(true);
-//            }
-//        }
+        for (int riceID = 0; riceID < rice_checked.length; riceID++) {
+            if(rice_checked[riceID] != -1){
+                ((CheckBox)vg.findViewById(getResId(vg, "check_rice" + (riceID + 1) + "_ans" + (rice_checked[riceID] + 1)))).setChecked(true);
+            }
+        }
+
+        for (int riceID = 0; riceID < radio_rice_checked.length; riceID++) {
+            if(radio_rice_checked[riceID] != -1){
+                ((RadioButton)vg.findViewById(radio_rice_checked[riceID])).setChecked(true);
+            }
+        }
+
+
 //
 //
 //        if(radio_activity_week_checked == R.id.radio_activity_week_1){

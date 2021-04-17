@@ -48,7 +48,7 @@ public class SurveyActivity extends FragmentActivity {
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(this));
+        fragmentTransaction.replace(R.id.survey_content, new NormalFragment_1(this));
         fragmentTransaction.commit();
     }
 
