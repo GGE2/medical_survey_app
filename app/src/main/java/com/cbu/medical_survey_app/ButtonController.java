@@ -78,7 +78,7 @@ public class ButtonController {
     }
 
     public void jobPrev() {
-        if(StartActivity.dtc.saveData(nowContext)){
+//        if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
             // 일단 직업 -> 수면
@@ -86,16 +86,16 @@ public class ButtonController {
             title_img.setImageResource(R.drawable.img_food_top);
 
             makeFrag(new FoodFragment_1(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+//        }
+//        else{
+//            // 유효성 검사 실패 -> 경고창
+//            openPopup();
+//        }
     }
 
     public void smokePrev() {
         // 흡연 -> 일반
-        if(StartActivity.dtc.saveData(nowContext)){
+//        if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
             // 흡연 -> 수면
@@ -103,11 +103,11 @@ public class ButtonController {
             title_img.setImageResource(R.drawable.img_normal_top);
 
             makeFrag(new NormalFragment_4(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+//        }
+//        else{
+//            // 유효성 검사 실패 -> 경고창
+//            openPopup();
+//        }
     }
 
     public void smokeNext() {
@@ -127,7 +127,7 @@ public class ButtonController {
     }
 
     public void sleepPrev() {
-        if(StartActivity.dtc.saveData(nowContext)){
+//        if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
             // 수면 -> 흡연
@@ -135,11 +135,11 @@ public class ButtonController {
             title_img.setImageResource(R.drawable.img_smoke_top);
 
             makeFrag(new SmokeFragment(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+//        }
+//        else{
+//            // 유효성 검사 실패 -> 경고창
+//            openPopup();
+//        }
     }
 
 //    public void sleepNext() {
@@ -215,7 +215,7 @@ public void sleepNext() {
     }
 
     public void food1_Prev() {
-        if(StartActivity.dtc.saveData(nowContext)){
+//        if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
             // 음식 -> 수면
@@ -223,11 +223,11 @@ public void sleepNext() {
             title_img.setImageResource(R.drawable.img_sleep_top);
 
             makeFrag(new SleepFragment(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+//        }
+//        else{
+//            // 유효성 검사 실패 -> 경고창
+//            openPopup();
+//        }
     }
 
     public void normalComplete () {

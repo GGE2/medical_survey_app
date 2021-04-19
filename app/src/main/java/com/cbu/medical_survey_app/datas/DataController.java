@@ -115,7 +115,7 @@ public class DataController {
         }
         else if(nowFragment instanceof FoodFragment_1){
             food_data1.saveData(context);
-
+//            return food_data1.check();
             return true;
         }
         else if(nowFragment instanceof FoodFragment_7){

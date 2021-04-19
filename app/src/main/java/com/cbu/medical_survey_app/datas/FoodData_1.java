@@ -19,7 +19,6 @@ public class FoodData_1 {
     final private LinkedHashMap<String, String> mapped_data;
 
     private int[] rice_checked = new int[7];
-
     private int[] radio_rice_checked = new int[7];
 
     private int radio_rice_sub1_checked = -1;
@@ -87,25 +86,6 @@ public class FoodData_1 {
 
     public void setDataToView(ViewGroup vg) {
 
-//        if(radio_sleep_hour_checked == R.id.radio_sleep_hour_1){
-//            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_1)).setChecked(true);
-//        }
-//        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_2){
-//            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_2)).setChecked(true);
-//        }
-//        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_3){
-//            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_3)).setChecked(true);
-//        }
-//        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_4){
-//            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_4)).setChecked(true);
-//        }
-//        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_5){
-//            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_5)).setChecked(true);
-//        }
-//        else if(radio_sleep_hour_checked == R.id.radio_sleep_hour_6){
-//            ((RadioButton)vg.findViewById(R.id.radio_sleep_hour_6)).setChecked(true);
-//        }
-
         if(radio_rice_sub1_checked == R.id.radio_rice_sub1_ans1){
             ((RadioButton)vg.findViewById(R.id.radio_rice_sub1_ans1)).setChecked(true);
         }
@@ -122,7 +102,7 @@ public class FoodData_1 {
         else if(radio_rice_sub2_checked == R.id.radio_rice_sub2_ans2){
             ((RadioButton)vg.findViewById(R.id.radio_rice_sub2_ans2)).setChecked(true);
         }
-//
+
         for (int riceID = 0; riceID < rice_checked.length; riceID++) {
             if(rice_checked[riceID] != -1){
                 ((CheckBox)vg.findViewById(getResId(vg, "check_rice" + (riceID + 1) + "_ans" + (rice_checked[riceID] + 1)))).setChecked(true);
@@ -134,33 +114,6 @@ public class FoodData_1 {
                 ((CheckBox)vg.findViewById(getResId(vg, "radio_rice" + (riceID + 1) + "_ans" + (radio_rice_checked[riceID] + 1)))).setChecked(true);
             }
         }
-
-
-//
-//
-//        if(radio_activity_week_checked == R.id.radio_activity_week_1){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_1)).setChecked(true);
-//        }
-//        else if(radio_activity_week_checked == R.id.radio_activity_week_2){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_2)).setChecked(true);
-//        }
-//        else if(radio_activity_week_checked == R.id.radio_activity_week_3){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_3)).setChecked(true);
-//        }
-//        else if(radio_activity_week_checked == R.id.radio_activity_week_4){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_4)).setChecked(true);
-//        }
-//        else if(radio_activity_week_checked == R.id.radio_activity_week_5){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_5)).setChecked(true);
-//        }
-//        else if(radio_activity_week_checked == R.id.radio_activity_week_6){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_6)).setChecked(true);
-//        }
-//        else if(radio_activity_week_checked == R.id.radio_activity_week_7){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_7)).setChecked(true);
-//        }else if(radio_activity_week_checked == R.id.radio_activity_week_8){
-//            ((RadioButton)vg.findViewById(R.id.radio_activity_week_8)).setChecked(true);
-//        }
     }
 
     private int getResId(Context nowContext, String id) {
@@ -175,21 +128,22 @@ public class FoodData_1 {
 
     public boolean check() {
 
-//        if(radio_sleep_hour_checked == -1)  return false;
-//
-//        for (int seatID = 0; seatID < seat_checked.length; seatID++) {
-//            if(seat_checked[seatID] == -1){
-//                return false;
-//            }
-//        }
-//
-//        for (int actID = 0; actID < activity_checked.length; actID++) {
-//            if(activity_checked[actID] == -1){
-//                return false;
-//            }
-//        }
-//
-//        if(radio_activity_week_checked == -1) return false;
+        for (int riceID = 0; riceID < rice_checked.length; riceID++) {
+            if(rice_checked[riceID] == -1){
+                return false;
+            }
+        }
+
+        for (int riceID = 0; riceID < radio_rice_checked.length; riceID++) {
+            if(radio_rice_checked[riceID] == -1){
+                return false;
+            }
+        }
+
+        if(radio_rice_sub1_checked == -1)   return false;
+        else if(radio_rice_sub1_checked != R.id.radio_rice_sub1_ans1){
+            if(radio_rice_sub2_checked == -1)   return false;
+        }
 
         return true;
     }
