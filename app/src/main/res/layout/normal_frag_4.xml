@@ -65,7 +65,7 @@
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="횟수\n(모두 합하여)"
+                android:text="횟수(모두 합하여)"
                 android:textColor="@color/text_black"
                 android:textSize="14sp" />
 

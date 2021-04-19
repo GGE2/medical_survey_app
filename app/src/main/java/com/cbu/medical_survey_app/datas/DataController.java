@@ -107,6 +107,7 @@ public class DataController {
         else if(nowFragment instanceof FoodFragment_7){
             System.out.println("식품 사항7 Frag:");
             food_data7.saveData(context);
+            return food_data7.check();
         }
 
 
@@ -165,6 +166,10 @@ public class DataController {
                 sleep_data.setDataToView(vg);
                 break;
             }
+            case R.id.food_frag_7:{
+                food_data7.setDataToView(vg);
+                break;
+            }
             case R.id.job_frag: {
                 job_data.setDataToView(vg);
                 break;
@@ -173,6 +178,7 @@ public class DataController {
                 last_data.setDataToView(vg);
                 break;
             }
+
         }
 
     }

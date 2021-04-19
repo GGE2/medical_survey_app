@@ -403,7 +403,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_1"
+                android:id="@+id/food7_text_name_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -734,7 +734,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_2"
+                android:id="@+id/food7_text_name_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1065,7 +1065,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_3"
+                android:id="@+id/food7_text_name_3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1395,7 +1395,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_4"
+                android:id="@+id/food7_text_name_4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1725,7 +1725,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_5"
+                android:id="@+id/food7_text_name_5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2056,7 +2056,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_6"
+                android:id="@+id/food7_text_name_6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2388,7 +2388,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_7"
+                android:id="@+id/food7_text_name_7"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2719,7 +2719,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/foo7_text_name_8"
+                android:id="@+id/food7_text_name_8"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2983,7 +2983,7 @@
                     android:id="@+id/avg_text8_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="죽 반그릇/반팩"
+                    android:text="죽 반그릇\n한팩"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
@@ -2993,7 +2993,7 @@
                     android:id="@+id/food7_sec_radio_avg8_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="30dp"
                     android:button="@drawable/radio_bt"
                     android:fontFamily="@font/roboto_bold"
                     android:paddingLeft="5dp"
@@ -3010,15 +3010,15 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="죽 한그릇/한팩"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_1"
+                    android:text="죽 한그릇\n한팩"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_2"
                     app:layout_constraintTop_toBottomOf="@id/avg_text8_1"/>
 
                 <RadioButton
                     android:id="@+id/food7_sec_radio_avg8_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="30dp"
                     android:button="@drawable/radio_bt"
                     android:fontFamily="@font/roboto_bold"
                     android:paddingLeft="5dp"
@@ -3033,7 +3033,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="죽 한그릇반/1팩반"
+                    android:text="죽 한그릇반\n한팩반"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text8_2"
@@ -3049,6 +3049,62 @@
 
 
     </TableLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="525dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiotable_boodang">
+
+        <Button
+            android:id="@+id/bt_food7_prev"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:background="@drawable/white_bt"
+            android:drawableStart="@drawable/bt_arrow_prev"
+            android:drawableLeft="@drawable/bt_arrow_prev"
+            android:drawablePadding="-30dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:text="이전 페이지로"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/bt_food7_next"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:background="@drawable/green_bt"
+            android:drawableEnd="@drawable/bt_arrow_next"
+            android:drawableRight="@drawable/bt_arrow_next"
+            android:drawablePadding="-30dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="다음 페이지로"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.cbu.medical_survey_app.activities.StartActivity;
 import com.cbu.medical_survey_app.activities.PopupActivity;
 import com.cbu.medical_survey_app.fragments.FoodFragment_7;
+import com.cbu.medical_survey_app.fragments.FoodFragment_8;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
@@ -176,6 +177,37 @@ public void sleepNext() {
         openPopup();
     }
 }
+
+public void food7_prev(){
+    if(StartActivity.dtc.saveData(nowContext)){
+        // 유효성 검사 통과
+
+        title.setText(R.string.sleep_title);
+        title_img.setImageResource(R.drawable.img_sleep_top);
+
+        makeFrag(new SleepFragment(nowContext));
+    }
+    else{
+        // 유효성 검사 실패 -> 경고창
+        openPopup();
+    }
+
+}
+    public void food7_next(){
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            title.setText(R.string.food_title);
+            title_img.setImageResource(R.drawable.img_food_top);
+
+            makeFrag(new FoodFragment_8(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+
+    }
 
     public void food1_Next() {
         // 음식1 -> 음식2
