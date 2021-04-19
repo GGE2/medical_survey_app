@@ -42,13 +42,13 @@ public class SurveyActivity extends FragmentActivity {
 //        img.setImageResource(R.drawable.img_sleep_top);
 
         TextView title = (TextView)findViewById(R.id.top_title);
-        title.setText(R.string.normal_title);
+        title.setText(R.string.food_title);
         ImageView img = (ImageView)findViewById(R.id.title_img);
-        img.setImageResource(R.drawable.img_normal_top);
+        img.setImageResource(R.drawable.img_food_top);
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.survey_content, new NormalFragment_1(this));
+        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(this));
         fragmentTransaction.commit();
     }
 

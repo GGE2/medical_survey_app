@@ -541,8 +541,8 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="496dp"
+                    android:layout_height="163dp"
                     android:layout_margin="1dp"
                     android:background="@color/white"
                     android:padding="10dp"
@@ -697,7 +697,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice1_ans3"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice1_ans3" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice1_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -724,7 +724,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice1_ans2"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice1_ans2" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice1_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -738,7 +738,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/radio_rice1_ans1_text" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice1_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -748,8 +748,10 @@
                     android:text="1"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.289" />
 
                 <TextView
                     android:id="@+id/radio_rice1_ans1_text"
@@ -1019,7 +1021,7 @@
                 android:background="@color/white"
                 android:padding="10dp">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice2_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1045,7 +1047,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice2_ans1"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice2_ans1" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice2_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1072,7 +1074,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice2_ans2"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice2_ans2" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice2_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1353,7 +1355,7 @@
                 android:background="@color/white"
                 android:padding="10dp">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice3_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1379,7 +1381,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice3_ans1"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice3_ans1" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice3_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1406,7 +1408,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice3_ans2"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice3_ans2" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice3_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1686,7 +1688,7 @@
                 android:background="@color/white"
                 android:padding="10dp">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice4_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1712,7 +1714,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice4_ans1"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice4_ans1" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice4_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1739,7 +1741,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice4_ans2"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice4_ans2" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice4_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2021,7 +2023,7 @@
                 android:background="@color/white"
                 android:padding="10dp">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice5_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2047,7 +2049,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice5_ans1"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice5_ans1" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice5_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2074,7 +2076,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice5_ans2"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice5_ans2" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice5_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2355,7 +2357,7 @@
                 android:background="@color/white"
                 android:padding="10dp">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice6_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2381,7 +2383,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice6_ans1"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice6_ans1" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice6_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2408,7 +2410,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice6_ans2"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice6_ans2" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice6_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2689,7 +2691,7 @@
                 android:background="@color/white"
                 android:padding="10dp">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice7_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2715,7 +2717,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice7_ans1"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice7_ans1" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice7_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -2742,7 +2744,7 @@
                     app:layout_constraintStart_toEndOf="@+id/radio_rice7_ans2"
                     app:layout_constraintTop_toTopOf="@+id/radio_rice7_ans2" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radio_rice7_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -23,6 +23,7 @@ public class FoodFragment_1 extends Fragment {
     private ButtonListener btl;
 //
     private table[] rices;
+    private table[] rices_radio;
     private RadioGroup radiogroup_rice_sub1;
     private RadioGroup radiogroup_rice_sub2;
 //    private table[] activities;
@@ -33,6 +34,7 @@ public class FoodFragment_1 extends Fragment {
     public FoodFragment_1(Context context) {
         btl = new ButtonListener(context);
         rices = new table[7];
+        rices_radio = new table[7];
 //        activities = new table[3];
     }
 
@@ -74,6 +76,15 @@ public class FoodFragment_1 extends Fragment {
                 cbs[ansID] = vg.findViewById(getResId(vg, "check_rice" + (riceID + 1) + "_ans" + (ansID + 1)));
             }
             rices[riceID] = new table(cbs);
+        }
+
+        for (int riceID = 0; riceID < rices_radio.length; riceID++) {
+            CheckBox[] cbs = new CheckBox[3];
+
+            for (int ansID = 0; ansID < cbs.length; ansID++) {
+                cbs[ansID] = vg.findViewById(getResId(vg, "radio_rice" + (riceID + 1) + "_ans" + (ansID + 1)));
+            }
+            rices_radio[riceID] = new table(cbs);
         }
     }
 

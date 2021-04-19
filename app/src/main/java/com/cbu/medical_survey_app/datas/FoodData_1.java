@@ -19,6 +19,7 @@ public class FoodData_1 {
     final private LinkedHashMap<String, String> mapped_data;
 
     private int[] rice_checked = new int[7];
+
     private int[] radio_rice_checked = new int[7];
 
     private int radio_rice_sub1_checked = -1;
@@ -55,25 +56,32 @@ public class FoodData_1 {
         for (int riceID = 0; riceID < rice_checked.length; riceID++) {
 
             TextView rice_name = ((Activity)nowContext).findViewById(getResId(nowContext, "rice_name" + (riceID + 1)));
-            RadioGroup rg_rice = ((Activity)nowContext).findViewById(getResId(nowContext, "radiogroup_rice" + (riceID + 1)));
 
             for (int ansID = 0; ansID < 9; ansID++) {
-                CheckBox seat_ans = ((Activity)nowContext).findViewById(getResId(nowContext, "check_rice" + (riceID + 1) + "_ans" + (ansID + 1)));
+                CheckBox rice_ans = ((Activity)nowContext).findViewById(getResId(nowContext, "check_rice" + (riceID + 1) + "_ans" + (ansID + 1)));
 
-                if(seat_ans.isChecked()){
+                if(rice_ans.isChecked()){
                     rice_checked[riceID] = ansID;
                 }
             }
 
-            radio_rice_checked[riceID] = rg_rice.getCheckedRadioButtonId();
+            for (int ansID = 0; ansID < 3; ansID++) {
+                CheckBox radio_rice_ans = ((Activity)nowContext).findViewById(getResId(nowContext, "radio_rice" + (riceID + 1) + "_ans" + (ansID + 1)));
+
+                if(radio_rice_ans.isChecked()){
+                    radio_rice_checked[riceID] = ansID;
+                }
+            }
 
             mapped_data.put("지난 1년간 섭취 횟수(" + getString(rice_name) + ")", rice_checked[riceID] == -1 ? "" : rice_str[rice_checked[riceID]]);
-            mapped_data.put("평균 1회 섭취분량(" + getString(rice_name) + ")", radio_rice_checked[riceID] == -1 ? "" : ((RadioButton)((Activity)nowContext).findViewById(radio_rice_checked[riceID])).getText().toString());
+            mapped_data.put("평균 1회 섭취분량(" + getString(rice_name) + ")", radio_rice_checked[riceID] == -1 ? "" : getString((TextView) ((Activity)nowContext).findViewById(getResId(nowContext, "radio_rice" + (riceID + 1) + "_ans" + (radio_rice_checked[riceID] + 1) + "_text"))));
 
             if(riceID == 0) {
                 mapped_data.put("주로 먹는 밥 종류", radio_rice_sub1_checked == -1 ? "" : ((RadioButton)((Activity)nowContext).findViewById(radio_rice_sub1_checked)).getText().toString());
                 mapped_data.put("잡곡밥 종류", radio_rice_sub2_checked == -1 ? "" : ((RadioButton)((Activity)nowContext).findViewById(radio_rice_sub2_checked)).getText().toString());
             }
+
+            System.out.println(mapped_data.get("평균 1회 섭취분량(" + getString(rice_name) + ")"));
         }
     }
 
@@ -123,7 +131,7 @@ public class FoodData_1 {
 
         for (int riceID = 0; riceID < radio_rice_checked.length; riceID++) {
             if(radio_rice_checked[riceID] != -1){
-                ((RadioButton)vg.findViewById(radio_rice_checked[riceID])).setChecked(true);
+                ((CheckBox)vg.findViewById(getResId(vg, "radio_rice" + (riceID + 1) + "_ans" + (radio_rice_checked[riceID] + 1)))).setChecked(true);
             }
         }
 
