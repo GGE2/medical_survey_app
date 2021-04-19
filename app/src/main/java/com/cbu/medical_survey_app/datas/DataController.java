@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.fragments.FoodFragment_7;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
@@ -41,6 +42,7 @@ public class DataController {
     final private JobData job_data;
     final private SmokeData smoke_data;
     final private SleepData sleep_data;
+    final private FoodData_7 food_data7;
 
     public DataController(String name, String address) {
         origin_name = name;
@@ -53,6 +55,7 @@ public class DataController {
         sleep_data = new SleepData();
         job_data = new JobData();
         last_data = new LastData();
+        food_data7 = new FoodData_7();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
@@ -61,38 +64,38 @@ public class DataController {
         if(nowFragment instanceof NormalFragment_1){
             System.out.println("일반 사항1 Frag");
             normal_data1.saveData(context);
-            return normal_data1.check();
+            //return normal_data1.check();
         }
         else if(nowFragment instanceof NormalFragment_2){
             System.out.println("일반 사항2 Frag");
             normal_data2.saveData(context);
-            return normal_data2.check();
+            //return normal_data2.check();
         }
         else if(nowFragment instanceof NormalFragment_3){
             System.out.println("일반 사항3 Frag");
             normal_data3.saveData(context);
-            return normal_data3.check();
+            //return normal_data3.check();
         }
         else if(nowFragment instanceof NormalFragment_4){
             System.out.println("일반 사항4 Frag");
             normal_data4.saveData(context);
-            return normal_data4.check();
+            //return normal_data4.check();
         }
         else if(nowFragment instanceof SmokeFragment){
             System.out.println("흡연 및 음주 Frag");
             smoke_data.saveData(context);
-            return smoke_data.check();
+            //return smoke_data.check();
         }
         else if(nowFragment instanceof SleepFragment){
             System.out.println("수면 육체 활동사항 Frag");
             sleep_data.saveData(context);
-            return sleep_data.check();
+            //return sleep_data.check();
 
         }
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
             job_data.saveData(context);
-            return job_data.check();
+            //return job_data.check();
 
         }
 
@@ -100,6 +103,10 @@ public class DataController {
             System.out.println("설문 완료 Frag");
             last_data.saveData(context);
             //return last_data.check();
+        }
+        else if(nowFragment instanceof FoodFragment_7){
+            System.out.println("식품 사항7 Frag:");
+            food_data7.saveData(context);
         }
 
 

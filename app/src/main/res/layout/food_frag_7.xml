@@ -1,0 +1,3056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/food_frag_7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp">
+
+
+    <TableLayout
+        android:id="@+id/imgtable_boodang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/list_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+        <ImageView
+            android:id="@+id/img_boo_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/boo_1" />
+
+        <ImageView
+            android:id="@+id/img_boo_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/boo_2" />
+
+        <ImageView
+            android:id="@+id/img_boo_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/boo_3" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+
+            <TextView
+                android:id="@+id/boo_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 11-1. 부추 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/boo_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 11-2. 부추 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/boo_text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 11-3. 부추 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+            <ImageView
+                android:id="@+id/img_dang_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/dang_1" />
+
+            <ImageView
+                android:id="@+id/img_dang_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/dang_2" />
+
+            <ImageView
+                android:id="@+id/img_dang_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/dang_3" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+
+            <TextView
+                android:id="@+id/dang_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 12-1. 당근 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dang_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 12-2. 당근 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dang_text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 12-3. 당근 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/radiotable_boodang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/list_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgtable_boodang">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_top"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/bg_gray"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="30dp"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/bg_gray"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:text="지난 1년 동안 섭취한 평균 횟수"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView41">
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="69dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="거의\n안먹음"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="월\n1회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView43"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="월\n2~3회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView44"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="주 1~2회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView45"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="주\n3~4회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView46"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="주\n5~6회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView47"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="일\n1회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView49"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="일\n2회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView50"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_gray"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="일\n2회"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView51"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/bg_gray"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="평균 1회\n섭취 분량"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="고춧잎/참나물/취나물"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c1"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c2"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c4"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c5"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c4"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c6"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c5"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c7"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c6"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c8"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c7"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c9"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c8"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio1_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 11-1"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg1_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg1_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="사진 11-2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg1_2"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text1_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg1_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="사진 11-3"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text1_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg1_3"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="쑥갓/부추/미나리"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c10"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c11"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c10"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c12"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c11"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c13"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c12"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c14"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c13"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c15"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c14"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c16"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c15"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c17"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c16"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c18"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c17"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio2_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 11-1"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg2_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg2_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="사진 11-2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg2_1"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text2_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg2_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="사진 11-3"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text2_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg2_3"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="오 이"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c19"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c20"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c19"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c21"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c20"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c22"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c21"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c23"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c22"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c24"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c23"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c25"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c24"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c26"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c25"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c27"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c26"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio3_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 12-1"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg3_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg3_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="사진 12-2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg3_1"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text3_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg3_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="사진 12-3"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text3_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg3_3"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="당근/당근주스"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c28"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c29"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c28"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c30"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c29"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c31"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c30"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c32"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c31"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c33"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c32"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c34"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c33"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c35"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c34"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c36"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c35"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio4_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 12-1"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg4_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg4_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="사진 12-2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg4_1"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text4_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg4_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="사진 12-3"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text4_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg4_3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="양 파"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c37"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c38"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c37"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c39"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c38"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c40"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c39"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c41"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c40"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c42"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c41"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c43"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c42"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c44"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c43"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c45"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c44"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio5_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 12-1"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg5_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg5_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="사진 12-2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg5_1"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text5_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg5_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="사진 12-3"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text5_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg5_3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="풋고추"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c46"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c47"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c46"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c48"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c47"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c49"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c48"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c50"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c49"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c51"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c50"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c52"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c51"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c53"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c52"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c54"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c53"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio6_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1개"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg6_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg6_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="2개"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg6_1"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text6_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg6_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg6_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text6_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="3개"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text6_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg6_3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="애호박"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c55"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c56"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c55"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c57"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c56"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c58"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c57"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c59"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c58"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c60"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c59"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c61"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c60"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c62"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c61"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c63"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c62"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio7_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 12-1"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg7_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg7_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="사진 12-2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg7_1"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text7_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg7_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg7_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text7_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="사진 12-3"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text7_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg7_3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray">
+
+            <TextView
+                android:id="@+id/foo7_text_name_8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="늙은호박/당호박/\n호박즙"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c64"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c65"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c64"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c66"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c65"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c67"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c66"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c68"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c67"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c69"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c68"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c70"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c69"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c71"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c70"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c72"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/c71"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/food7_fir_radio8_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="죽 반그릇/반팩"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_1"/>
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg8_1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:text="죽 한그릇/한팩"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_1"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text8_1"/>
+
+                <RadioButton
+                    android:id="@+id/food7_sec_radio_avg8_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg8_2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/avg_text8_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="죽 한그릇반/1팩반"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/avg_text8_2"
+                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
