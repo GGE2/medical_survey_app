@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.FoodFragment_1;
+import com.cbu.medical_survey_app.fragments.FoodFragment_7;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
@@ -43,6 +44,7 @@ public class DataController {
     final private JobData job_data;
     final private SmokeData smoke_data;
     final private SleepData sleep_data;
+    final private FoodData_7 food_data7;
 
     public DataController(String name, String address) {
         origin_name = name;
@@ -56,6 +58,7 @@ public class DataController {
         sleep_data = new SleepData();
         job_data = new JobData();
         last_data = new LastData();
+        food_data7 = new FoodData_7();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
@@ -114,6 +117,10 @@ public class DataController {
             food_data1.saveData(context);
 
             return true;
+        }
+        else if(nowFragment instanceof FoodFragment_7){
+            System.out.println("식품 사항7 Frag:");
+            food_data7.saveData(context);
         }
 
 

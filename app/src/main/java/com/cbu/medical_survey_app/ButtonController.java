@@ -15,6 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.activities.StartActivity;
 import com.cbu.medical_survey_app.activities.PopupActivity;
+import com.cbu.medical_survey_app.fragments.FoodFragment_7;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
@@ -141,29 +142,52 @@ public class ButtonController {
         }
     }
 
-    public void sleepNext() {
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
+//    public void sleepNext() {
+//        if(StartActivity.dtc.saveData(nowContext)){
+//            // 유효성 검사 통과
+//
+//            // 수면 -> 음식
+//            title.setText(R.string.food_title);
+//            title_img.setImageResource(R.drawable.img_food_top);
+//
+//            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+//            fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+//            fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
+//
+//            fragmentTransaction.commit();
+//
+////            makeFrag(new JobFragment(nowContext));
+//        }
+//        else{
+//            // 유효성 검사 실패 -> 경고창
+//            openPopup();
+//        }
+//    }
+public void sleepNext() {
+    if(StartActivity.dtc.saveData(nowContext)){
+        // 유효성 검사 통과
 
-            // 수면 -> 음식
-            title.setText(R.string.food_title);
-            title_img.setImageResource(R.drawable.img_food_top);
+        // 수면 -> 음식
+        title.setText(R.string.food_title);
+        title_img.setImageResource(R.drawable.img_food_top);
 
-            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
 
-            fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
-            fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
+        //fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_7(nowContext));
 
-            fragmentTransaction.commit();
+        fragmentTransaction.commit();
 
 //            makeFrag(new JobFragment(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
     }
+    else{
+        // 유효성 검사 실패 -> 경고창
+        openPopup();
+    }
+}
 
     public void food1_Next() {
         // 음식1 -> 음식2
