@@ -8,6 +8,88 @@
     android:layout_margin="1dp">
 
 
+    <TableLayout
+        android:id="@+id/dooboo_img1"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/list_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/dooboo1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/dooboo2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/dooboo3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/border_white_gray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 6-1. 두부 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 6-2. 두부 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="&lt; 사진 6-3. 두부 &gt;"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="525dp"
         android:layout_height="wrap_content"
@@ -16,10 +98,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/table_rice">
+        app:layout_constraintTop_toBottomOf="@+id/table_dooboo">
 
         <Button
-            android:id="@+id/bt_food_1_prev"
+            android:id="@+id/bt_food_2_prev"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:background="@drawable/white_bt"
@@ -40,7 +122,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/bt_food_1_next"
+            android:id="@+id/bt_food_2_next"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:background="@drawable/green_bt"
@@ -61,7 +143,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TableLayout
-        android:id="@+id/table_rice"
+        android:id="@+id/table_dooboo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -69,7 +151,7 @@
         android:layout_marginTop="30dp"
         android:background="@color/list_line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+        app:layout_constraintTop_toBottomOf="@+id/dooboo_img2">
 
         <TableRow
             android:layout_width="match_parent"
@@ -291,11 +373,11 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/rice_name1"
+                android:id="@+id/dooboo_name1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -306,372 +388,232 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="밥"
+                android:text="계란/\n메추리알"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
+
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:id="@+id/constraintLayout72"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout80"
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="45dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout"
-                        android:layout_width="45dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout10"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout10"
-                        android:layout_width="45dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout9"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout9"
-                        android:layout_width="60dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout8"
-                        android:layout_width="60dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout6"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout6"
-                        android:layout_width="60dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout5"
-                        android:layout_width="60dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout3"
-                        android:layout_width="45dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout2"
-                        android:layout_width="69dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="1dp"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <CheckBox
-                            android:id="@+id/check_rice1_ans1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_bt"
-                            android:button="@color/transparency"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="496dp"
-                    android:layout_height="163dp"
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
                     android:layout_margin="1dp"
                     android:background="@color/white"
                     android:padding="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout10"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout10"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout9"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout9"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout8"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout6"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout6"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout80">
+                    app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
-                        android:id="@+id/textView69"
+                    <CheckBox
+                        android:id="@+id/check_dooboo1_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="(집에서 잡수시는 것 뿐 아니라 회사나 식당에서 드시는 것도 포함하여 생각하십시오.)"
-                        android:textColor="@color/text_black"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/radiogroup_rice_sub2" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                    <RadioGroup
-                        android:id="@+id/radiogroup_rice_sub1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView67">
-
-                        <RadioButton
-                            android:id="@+id/radio_rice_sub1_ans1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:button="@drawable/radio_bt"
-                            android:fontFamily="@font/roboto_bold"
-                            android:paddingLeft="5dp"
-                            android:text="쌀밥"
-                            android:textColor="@color/text_black"
-                            android:textSize="14sp" />
-
-                        <RadioButton
-                            android:id="@+id/radio_rice_sub1_ans2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:button="@drawable/radio_bt"
-                            android:fontFamily="@font/roboto_bold"
-                            android:paddingLeft="5dp"
-                            android:text="잡곡밥"
-                            android:textColor="@color/text_black"
-                            android:textSize="14sp" />
-
-                        <RadioButton
-                            android:id="@+id/radio_rice_sub1_ans3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:button="@drawable/radio_bt"
-                            android:fontFamily="@font/roboto_bold"
-                            android:paddingLeft="5dp"
-                            android:text="쌀밥과 잡곡밥을 비슷하게 먹는다"
-                            android:textColor="@color/text_black"
-                            android:textSize="14sp" />
-
-                    </RadioGroup>
-
-                    <TextView
-                        android:id="@+id/textView68"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="잡곡밥의 종류는?"
-                        android:textColor="@color/text_black"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/radiogroup_rice_sub1" />
-
-                    <RadioGroup
-                        android:id="@+id/radiogroup_rice_sub2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView68">
-
-                        <RadioButton
-                            android:id="@+id/radio_rice_sub2_ans1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:button="@drawable/radio_bt"
-                            android:fontFamily="@font/roboto_bold"
-                            android:paddingLeft="5dp"
-                            android:text="콩밥"
-                            android:textColor="@color/text_black"
-                            android:textSize="14sp" />
-
-                        <RadioButton
-                            android:id="@+id/radio_rice_sub2_ans2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:button="@drawable/radio_bt"
-                            android:fontFamily="@font/roboto_bold"
-                            android:paddingLeft="5dp"
-                            android:text="기타 잡곡밥"
-                            android:textColor="@color/text_black"
-                            android:textSize="14sp" />
-
-                    </RadioGroup>
-
-                    <TextView
-                        android:id="@+id/textView67"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="주로 드시는 밥의 종류는?"
-                        android:textColor="@color/text_black"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/radiogroup_sleep_hour" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -684,20 +626,20 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/radio_rice1_ans3_text"
+                    android:id="@+id/radio_dooboo1_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="사진 1-3\n(1공기 반)"
+                    android:text="계란 1개 반/\n메추리알\n8개"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice1_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice1_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo1_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo1_ans3" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice1_ans3"
+                    android:id="@+id/radio_dooboo1_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -708,23 +650,23 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice1_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo1_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice1_ans2_text"
+                    android:id="@+id/radio_dooboo1_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="사진 1-2\n(1공기)"
+                    android:text="계란 1개/\n메추리알\n5개"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice1_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice1_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo1_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo1_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice1_ans2"
+                    android:id="@+id/radio_dooboo1_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -735,10 +677,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice1_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo1_ans1_text" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice1_ans1"
+                    android:id="@+id/radio_dooboo1_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -747,23 +689,21 @@
                     android:text="1"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.289" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_rice1_ans1_text"
+                    android:id="@+id/radio_dooboo1_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text="사진 1-1\n(0.5공기)"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="계란 0.5개/\n메추리알\n3개"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice1_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice1_ans1"
-                    android:fontFamily="@font/roboto_bold" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo1_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo1_ans1" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -775,7 +715,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/rice_name2"
+                android:id="@+id/dooboo_name2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -786,7 +726,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="라면"
+                android:text="두  부\n(순두부,\n두부찌개,\n된장찌개에\n들어간\n두부 포함)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -807,7 +747,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans9"
+                        android:id="@+id/check_dooboo2_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -831,7 +771,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans8"
+                        android:id="@+id/check_dooboo2_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -855,7 +795,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans7"
+                        android:id="@+id/check_dooboo2_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -879,7 +819,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans6"
+                        android:id="@+id/check_dooboo2_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -903,7 +843,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans5"
+                        android:id="@+id/check_dooboo2_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -927,7 +867,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans4"
+                        android:id="@+id/check_dooboo2_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -951,7 +891,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans3"
+                        android:id="@+id/check_dooboo2_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -975,7 +915,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans2"
+                        android:id="@+id/check_dooboo2_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -999,7 +939,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice2_ans1"
+                        android:id="@+id/check_dooboo2_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1021,7 +961,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_rice2_ans1"
+                    android:id="@+id/radio_dooboo2_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -1034,20 +974,20 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_rice2_ans1_text"
+                    android:id="@+id/radio_dooboo2_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="0.5그릇"
+                    android:text="사진 6-1\n(1쪽)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice2_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice2_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo2_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo2_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice2_ans2"
+                    android:id="@+id/radio_dooboo2_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1058,23 +998,23 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice2_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo2_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice2_ans2_text"
+                    android:id="@+id/radio_dooboo2_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇"
+                    android:text="사진 6-2\n(2쪽)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice2_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice2_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo2_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo2_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice2_ans3"
+                    android:id="@+id/radio_dooboo2_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1085,20 +1025,20 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice2_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo2_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice2_ans3_text"
+                    android:id="@+id/radio_dooboo2_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇 반"
+                    android:text="사진 6-3\n(3쪽)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice2_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice2_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo2_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo2_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -1109,7 +1049,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/rice_name3"
+                android:id="@+id/dooboo_name3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1120,7 +1060,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="칼국수/\n장국국수/\n우동"
+                android:text="묵"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1141,7 +1081,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans9"
+                        android:id="@+id/check_dooboo3_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1165,7 +1105,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans8"
+                        android:id="@+id/check_dooboo3_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1189,7 +1129,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans7"
+                        android:id="@+id/check_dooboo3_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1213,7 +1153,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans6"
+                        android:id="@+id/check_dooboo3_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1237,7 +1177,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans5"
+                        android:id="@+id/check_dooboo3_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1261,7 +1201,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans4"
+                        android:id="@+id/check_dooboo3_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1285,7 +1225,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans3"
+                        android:id="@+id/check_dooboo3_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1309,7 +1249,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans2"
+                        android:id="@+id/check_dooboo3_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1333,7 +1273,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice3_ans1"
+                        android:id="@+id/check_dooboo3_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1355,7 +1295,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_rice3_ans1"
+                    android:id="@+id/radio_dooboo3_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -1368,20 +1308,20 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_rice3_ans1_text"
+                    android:id="@+id/radio_dooboo3_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="0.5그릇"
+                    android:text="사진 6-1\n(1쪽)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice3_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice3_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo3_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo3_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice3_ans2"
+                    android:id="@+id/radio_dooboo3_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1392,47 +1332,47 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice3_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo3_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice3_ans2_text"
+                    android:id="@+id/radio_dooboo3_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇"
+                    android:text="사진 6-2\n(2쪽)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice3_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice3_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo3_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo3_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice3_ans3"
+                    android:id="@+id/radio_dooboo3_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:button="@drawable/radio_bt"
                     android:fontFamily="@font/roboto_bold"
                     android:paddingLeft="5dp"
-                    android:text="2"
+                    android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice3_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo3_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice3_ans3_text"
+                    android:id="@+id/radio_dooboo3_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇 반"
+                    android:text="사진 6-3\n(3쪽)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice3_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice3_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo3_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo3_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -1443,7 +1383,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/rice_name4"
+                android:id="@+id/dooboo_name4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1453,7 +1393,7 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="25dp"
                 android:paddingBottom="25dp"
-                android:text="짜장면/\n짬뽕"
+                android:text="감  자\n(찐감자,\n감자튀김,\n감자국,\n감자찌개,\n감자지짐\n등)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1474,7 +1414,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans9"
+                        android:id="@+id/check_dooboo4_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1498,7 +1438,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans8"
+                        android:id="@+id/check_dooboo4_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1522,7 +1462,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans7"
+                        android:id="@+id/check_dooboo4_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1546,7 +1486,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans6"
+                        android:id="@+id/check_dooboo4_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1570,7 +1510,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans5"
+                        android:id="@+id/check_dooboo4_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1594,7 +1534,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans4"
+                        android:id="@+id/check_dooboo4_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1618,7 +1558,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans3"
+                        android:id="@+id/check_dooboo4_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1642,7 +1582,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans2"
+                        android:id="@+id/check_dooboo4_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1666,7 +1606,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice4_ans1"
+                        android:id="@+id/check_dooboo4_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1688,9 +1628,10 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_rice4_ans1"
+                    android:id="@+id/radio_dooboo4_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:button="@drawable/radio_bt"
                     android:fontFamily="@font/roboto_bold"
                     android:paddingLeft="5dp"
@@ -1701,20 +1642,20 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_rice4_ans1_text"
+                    android:id="@+id/radio_dooboo4_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="0.5그릇"
+                    android:text="사진 7-1\n(중 1/8개)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice4_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice4_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo4_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo4_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice4_ans2"
+                    android:id="@+id/radio_dooboo4_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1725,23 +1666,23 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice4_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo4_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice4_ans2_text"
+                    android:id="@+id/radio_dooboo4_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇"
+                    android:text="사진 7-2\n(중 1/4개)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice4_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice4_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo4_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo4_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice4_ans3"
+                    android:id="@+id/radio_dooboo4_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1752,20 +1693,20 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice4_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo4_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice4_ans3_text"
+                    android:id="@+id/radio_dooboo4_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇 반"
+                    android:text="사진 7-3\n(중 1/3개)"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice4_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice4_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo4_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo4_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -1776,7 +1717,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/rice_name5"
+                android:id="@+id/dooboo_name5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1787,7 +1728,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="냉면/\n메밀국수"
+                android:text="고구마\n(찐고구마,\n맛탕 등)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1809,7 +1750,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans9"
+                        android:id="@+id/check_dooboo5_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1833,7 +1774,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans8"
+                        android:id="@+id/check_dooboo5_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1857,7 +1798,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans7"
+                        android:id="@+id/check_dooboo5_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1881,7 +1822,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans6"
+                        android:id="@+id/check_dooboo5_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1905,7 +1846,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans5"
+                        android:id="@+id/check_dooboo5_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1929,7 +1870,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans4"
+                        android:id="@+id/check_dooboo5_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1953,7 +1894,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans3"
+                        android:id="@+id/check_dooboo5_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1977,7 +1918,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans2"
+                        android:id="@+id/check_dooboo5_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2001,7 +1942,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice5_ans1"
+                        android:id="@+id/check_dooboo5_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2023,7 +1964,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_rice5_ans1"
+                    android:id="@+id/radio_dooboo5_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -2036,20 +1977,20 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_rice5_ans1_text"
+                    android:id="@+id/radio_dooboo5_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="0.5그릇"
+                    android:text="중 0.5개"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice5_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice5_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo5_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo5_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice5_ans2"
+                    android:id="@+id/radio_dooboo5_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2060,23 +2001,23 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice5_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo5_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice5_ans2_text"
+                    android:id="@+id/radio_dooboo5_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇"
+                    android:text="중 1개"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice5_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice5_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo5_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo5_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice5_ans3"
+                    android:id="@+id/radio_dooboo5_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2087,20 +2028,20 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice5_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo5_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice5_ans3_text"
+                    android:id="@+id/radio_dooboo5_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇 반"
+                    android:text="중 1개 반"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice5_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice5_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo5_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo5_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -2111,7 +2052,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/rice_name6"
+                android:id="@+id/dooboo_name6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2122,7 +2063,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="만두/\n만두국"
+                android:text="잡채(당면)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -2143,7 +2084,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans9"
+                        android:id="@+id/check_dooboo6_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2167,7 +2108,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans8"
+                        android:id="@+id/check_dooboo6_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2191,7 +2132,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans7"
+                        android:id="@+id/check_dooboo6_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2215,7 +2156,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans6"
+                        android:id="@+id/check_dooboo6_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2239,7 +2180,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans5"
+                        android:id="@+id/check_dooboo6_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2263,7 +2204,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans4"
+                        android:id="@+id/check_dooboo6_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2287,7 +2228,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans3"
+                        android:id="@+id/check_dooboo6_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2311,7 +2252,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans2"
+                        android:id="@+id/check_dooboo6_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2335,7 +2276,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_rice6_ans1"
+                        android:id="@+id/check_dooboo6_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2357,9 +2298,10 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_rice6_ans1"
+                    android:id="@+id/radio_dooboo6_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:button="@drawable/radio_bt"
                     android:fontFamily="@font/roboto_bold"
                     android:paddingLeft="5dp"
@@ -2370,20 +2312,20 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_rice6_ans1_text"
+                    android:id="@+id/radio_dooboo6_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="냉동만두\n5개/0.5그릇"
+                    android:text="0.5접시"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice6_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice6_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo6_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo6_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice6_ans2"
+                    android:id="@+id/radio_dooboo6_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2394,23 +2336,23 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice6_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo6_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice6_ans2_text"
+                    android:id="@+id/radio_dooboo6_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="냉동만두\n10개/1그릇"
+                    android:text="1접시"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice6_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice6_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo6_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo6_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_rice6_ans3"
+                    android:id="@+id/radio_dooboo6_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2421,354 +2363,20 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice6_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_dooboo6_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_rice6_ans3_text"
+                    android:id="@+id/radio_dooboo6_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="냉동만두\n15개/1그릇 반"
+                    android:text="1접시 반"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice6_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice6_ans3" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/bg_gray">
-
-            <TextView
-                android:id="@+id/rice_name7"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                android:gravity="center"
-                android:padding="10dp"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:text="흰떡/\n떡국"
-                android:textColor="@color/text_black_gray"
-                android:textSize="14sp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="107dp"
-                tools:layout_editor_absoluteY="3dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout72"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout72"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout73"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout73"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout74"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout74"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout75"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout75"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout76"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout76"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout77"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout77"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout78"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout78"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout79"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout79"
-                    android:layout_width="69dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <CheckBox
-                        android:id="@+id/check_rice7_ans1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="124dp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="@color/white"
-                android:padding="10dp">
-
-                <CheckBox
-                    android:id="@+id/radio_rice7_ans1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/radio_bt"
-                    android:fontFamily="@font/roboto_bold"
-                    android:paddingLeft="5dp"
-                    android:text="1"
-                    android:textColor="@color/text_black"
-                    android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/radio_rice7_ans1_text"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="0.5그릇"
-                    android:textColor="@color/text_black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice7_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice7_ans1" />
-
-                <CheckBox
-                    android:id="@+id/radio_rice7_ans2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:button="@drawable/radio_bt"
-                    android:fontFamily="@font/roboto_bold"
-                    android:paddingLeft="5dp"
-                    android:text="2"
-                    android:textColor="@color/text_black"
-                    android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice7_ans1_text" />
-
-                <TextView
-                    android:id="@+id/radio_rice7_ans2_text"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇"
-                    android:textColor="@color/text_black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice7_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice7_ans2" />
-
-                <CheckBox
-                    android:id="@+id/radio_rice7_ans3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:button="@drawable/radio_bt"
-                    android:fontFamily="@font/roboto_bold"
-                    android:paddingLeft="5dp"
-                    android:text="3"
-                    android:textColor="@color/text_black"
-                    android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_rice7_ans2_text" />
-
-                <TextView
-                    android:id="@+id/radio_rice7_ans3_text"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="1그릇 반"
-                    android:textColor="@color/text_black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_rice7_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_rice7_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_dooboo6_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_dooboo6_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -2776,7 +2384,7 @@
     </TableLayout>
 
     <TableLayout
-        android:id="@+id/tableLayout"
+        android:id="@+id/dooboo_img2"
         android:layout_width="wrap_content"
 
 
@@ -2784,7 +2392,7 @@
         android:layout_marginTop="30dp"
         android:background="@color/list_line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView58">
+        app:layout_constraintTop_toBottomOf="@+id/dooboo_img1">
 
         <TableRow
             android:layout_width="match_parent"
@@ -2792,31 +2400,28 @@
             android:background="@color/border_white_gray">
 
             <ImageView
-                android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/rice1" />
+                android:src="@drawable/dooboo4" />
 
             <ImageView
-                android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/rice2" />
+                android:src="@drawable/dooboo5" />
 
             <ImageView
-                android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/rice3" />
+                android:src="@drawable/dooboo6" />
         </TableRow>
 
         <TableRow
@@ -2825,38 +2430,35 @@
             android:background="@color/border_white_gray">
 
             <TextView
-                android:id="@+id/textView62"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 1-1. 밥 &gt;"
+                android:text="&lt; 사진 7-1. 감자 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/textView61"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 1-2. 밥 &gt;"
+                android:text="&lt; 사진 7-2. 감자 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/textView59"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 1-3. 밥 &gt;"
+                android:text="&lt; 사진 7-3. 감자 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
         </TableRow>

@@ -26,7 +26,6 @@ public class FoodFragment_1 extends Fragment {
     private table[] rices_radio;
     private RadioGroup radiogroup_rice_sub1;
     private RadioGroup radiogroup_rice_sub2;
-//    private table[] activities;
 
     public FoodFragment_1() {
     }
@@ -35,7 +34,6 @@ public class FoodFragment_1 extends Fragment {
         btl = new ButtonListener(context);
         rices = new table[7];
         rices_radio = new table[7];
-//        activities = new table[3];
     }
 
     @Override
