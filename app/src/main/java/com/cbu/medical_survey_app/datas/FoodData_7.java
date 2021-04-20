@@ -28,7 +28,7 @@ public class FoodData_7 {
 
 
     }
-    public void setDataToview(ViewGroup vg){
+    public void setDataToView(ViewGroup vg){
 
 
     }

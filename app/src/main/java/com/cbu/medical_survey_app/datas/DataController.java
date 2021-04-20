@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.FoodFragment_1;
+import com.cbu.medical_survey_app.fragments.FoodFragment_2;
 import com.cbu.medical_survey_app.fragments.FoodFragment_7;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
@@ -39,12 +40,13 @@ public class DataController {
     final private NormalData_2 normal_data2;
     final private NormalData_3 normal_data3;
     final private NormalData_4 normal_data4;
-    final private FoodData_1 food_data1;
-    final private LastData last_data;
-    final private JobData job_data;
     final private SmokeData smoke_data;
     final private SleepData sleep_data;
+    final private FoodData_1 food_data1;
+    final private FoodData_2 food_data2;
     final private FoodData_7 food_data7;
+    final private JobData job_data;
+    final private LastData last_data;
 
     public DataController(String name, String address) {
         origin_name = name;
@@ -53,12 +55,13 @@ public class DataController {
         normal_data2 = new NormalData_2();
         normal_data3 = new NormalData_3();
         normal_data4 = new NormalData_4();
-        food_data1 = new FoodData_1();
         smoke_data = new SmokeData();
         sleep_data = new SleepData();
-        job_data = new JobData();
-        last_data = new LastData();
+        food_data1 = new FoodData_1();
+        food_data2 = new FoodData_2();
         food_data7 = new FoodData_7();
+        last_data = new LastData();
+        job_data = new JobData();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
@@ -100,6 +103,23 @@ public class DataController {
 //            return sleep_data.check();
             return true;
         }
+
+        else if(nowFragment instanceof FoodFragment_1){
+            System.out.println("식품 사항1 Frag:");
+            food_data1.saveData(context);
+//            return food_data1.check();
+            return true;
+        }
+        else if(nowFragment instanceof FoodFragment_2){
+            System.out.println("식품 사항2 Frag:");
+            food_data2.saveData(context);
+//            return food_data1.check();
+            return true;
+        }
+        else if(nowFragment instanceof FoodFragment_7){
+            System.out.println("식품 사항7 Frag:");
+            food_data7.saveData(context);
+        }
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
             job_data.saveData(context);
@@ -113,16 +133,6 @@ public class DataController {
             //return last_data.check();
             return true;
         }
-        else if(nowFragment instanceof FoodFragment_1){
-            food_data1.saveData(context);
-//            return food_data1.check();
-            return true;
-        }
-        else if(nowFragment instanceof FoodFragment_7){
-            System.out.println("식품 사항7 Frag:");
-            food_data7.saveData(context);
-        }
-
 
         else {
             System.out.println("아님");
@@ -171,16 +181,24 @@ public class DataController {
                 normal_data4.setDataToView(vg);
                 break;
             }
-            case R.id.food_frag_1: {
-                food_data1.setDataToView(vg);
-                break;
-            }
             case R.id.smoke_frag: {
                 smoke_data.setDataToView(vg);
                 break;
             }
             case R.id.sleep_frag:{
                 sleep_data.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_1: {
+                food_data1.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_2: {
+                food_data2.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_7: {
+                food_data7.setDataToView(vg);
                 break;
             }
             case R.id.job_frag: {

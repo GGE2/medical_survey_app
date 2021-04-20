@@ -21,7 +21,7 @@ import com.cbu.medical_survey_app.activities.StartActivity;
 public class FoodFragment_1 extends Fragment {
 
     private ButtonListener btl;
-//
+
     private table[] rices;
     private table[] rices_radio;
     private RadioGroup radiogroup_rice_sub1;

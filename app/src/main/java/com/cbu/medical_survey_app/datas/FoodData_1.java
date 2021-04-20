@@ -79,8 +79,6 @@ public class FoodData_1 {
                 mapped_data.put("주로 먹는 밥 종류", radio_rice_sub1_checked == -1 ? "" : ((RadioButton)((Activity)nowContext).findViewById(radio_rice_sub1_checked)).getText().toString());
                 mapped_data.put("잡곡밥 종류", radio_rice_sub2_checked == -1 ? "" : ((RadioButton)((Activity)nowContext).findViewById(radio_rice_sub2_checked)).getText().toString());
             }
-
-            System.out.println(mapped_data.get("평균 1회 섭취분량(" + getString(rice_name) + ")"));
         }
     }
 
