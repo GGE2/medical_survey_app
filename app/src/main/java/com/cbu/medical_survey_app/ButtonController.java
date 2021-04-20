@@ -16,6 +16,10 @@ import androidx.fragment.app.FragmentTransaction;
 import com.cbu.medical_survey_app.activities.StartActivity;
 import com.cbu.medical_survey_app.activities.PopupActivity;
 import com.cbu.medical_survey_app.fragments.FoodFragment_2;
+import com.cbu.medical_survey_app.fragments.FoodFragment_3;
+import com.cbu.medical_survey_app.fragments.FoodFragment_4;
+import com.cbu.medical_survey_app.fragments.FoodFragment_5;
+import com.cbu.medical_survey_app.fragments.FoodFragment_6;
 import com.cbu.medical_survey_app.fragments.FoodFragment_7;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
@@ -298,11 +302,176 @@ public void sleepNext() {
     }
 
     public void food2_Next() {
-        // 음식2 -> 음식3
+
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
-            // 음식2 -> 직업(일단)
+            // 음식2 -> 음식3
+//            title.setText(R.string.job_title);
+//            title_img.setImageResource(0);
+
+//            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+//            fragmentTransaction.replace(R.id.survey_warning, new Fragment());
+//            fragmentTransaction.replace(R.id.survey_content, new JobFragment(nowContext));
+//
+//            fragmentTransaction.commit();
+
+            makeFrag(new FoodFragment_3(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void food3_Prev() {
+        StartActivity.dtc.saveData(nowContext);
+
+        // 음식3 -> 음식2
+//        title.setText(R.string.sleep_title);
+//        title_img.setImageResource(R.drawable.img_sleep_top);
+
+//        title.setText(R.string.food_title);
+//        title_img.setImageResource(R.drawable.img_food_top);
+
+//        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+////        fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+//        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_2(nowContext));
+//
+//        fragmentTransaction.commit();
+        makeFrag(new FoodFragment_2(nowContext));
+    }
+
+    public void food3_Next() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 음식3 -> 음식4
+            makeFrag(new FoodFragment_4(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void food4_Prev() {
+        StartActivity.dtc.saveData(nowContext);
+
+        // 음식4 -> 음식3
+//        title.setText(R.string.sleep_title);
+//        title_img.setImageResource(R.drawable.img_sleep_top);
+
+//        title.setText(R.string.food_title);
+//        title_img.setImageResource(R.drawable.img_food_top);
+
+//        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+////        fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+//        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
+//
+//        fragmentTransaction.commit();
+        makeFrag(new FoodFragment_3(nowContext));
+    }
+
+    public void food4_Next() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 음식4 -> 음식5
+//            title.setText(R.string.job_title);
+//            title_img.setImageResource(0);
+
+//            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+//            fragmentTransaction.replace(R.id.survey_warning, new Fragment());
+//            fragmentTransaction.replace(R.id.survey_content, new JobFragment(nowContext));
+//
+//            fragmentTransaction.commit();
+
+            makeFrag(new FoodFragment_5(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void food5_Prev() {
+        StartActivity.dtc.saveData(nowContext);
+
+        // 음식5 -> 음식4
+//        title.setText(R.string.sleep_title);
+//        title_img.setImageResource(R.drawable.img_sleep_top);
+
+//        title.setText(R.string.food_title);
+//        title_img.setImageResource(R.drawable.img_food_top);
+
+//        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+//        fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+//        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
+//
+//        fragmentTransaction.commit();
+        makeFrag(new FoodFragment_4(nowContext));
+    }
+
+    public void food5_Next() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 음식5 -> 음식6
+//            title.setText(R.string.job_title);
+//            title_img.setImageResource(0);
+
+//            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+//            fragmentTransaction.replace(R.id.survey_warning, new Fragment());
+//            fragmentTransaction.replace(R.id.survey_content, new JobFragment(nowContext));
+//
+//            fragmentTransaction.commit();
+
+            makeFrag(new FoodFragment_6(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+    public void food6_Prev() {
+        StartActivity.dtc.saveData(nowContext);
+
+        // 음식6 -> 음식5
+//        title.setText(R.string.sleep_title);
+//        title_img.setImageResource(R.drawable.img_sleep_top);
+
+//        title.setText(R.string.food_title);
+//        title_img.setImageResource(R.drawable.img_food_top);
+
+//        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//
+//        fragmentTransaction.replace(R.id.survey_warning, new WarningFragment(nowContext));      // 이후 지워줘야 함
+//        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_1(nowContext));
+//
+//        fragmentTransaction.commit();
+        makeFrag(new FoodFragment_5(nowContext));
+    }
+
+    public void food6_Next() {
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            // 음식6 -> 직업(일단)
             title.setText(R.string.job_title);
             title_img.setImageResource(0);
 
@@ -322,16 +491,14 @@ public void sleepNext() {
         }
     }
 
-
-
     public void jobPrev() {
         StartActivity.dtc.saveData(nowContext);
 
-        // 직업 -> 음식2(일단)
+        // 직업 -> 음식6(일단)
         title.setText(R.string.food_title);
         title_img.setImageResource(R.drawable.img_food_top);
 
-        makeFrag(new FoodFragment_2(nowContext));
+        makeFrag(new FoodFragment_6(nowContext));
     }
 
     public void jobNext() {

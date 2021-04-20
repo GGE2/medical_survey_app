@@ -9,6 +9,10 @@ import androidx.fragment.app.FragmentActivity;
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.FoodFragment_1;
 import com.cbu.medical_survey_app.fragments.FoodFragment_2;
+import com.cbu.medical_survey_app.fragments.FoodFragment_3;
+import com.cbu.medical_survey_app.fragments.FoodFragment_4;
+import com.cbu.medical_survey_app.fragments.FoodFragment_5;
+import com.cbu.medical_survey_app.fragments.FoodFragment_6;
 import com.cbu.medical_survey_app.fragments.FoodFragment_7;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
@@ -44,6 +48,10 @@ public class DataController {
     final private SleepData sleep_data;
     final private FoodData_1 food_data1;
     final private FoodData_2 food_data2;
+    final private FoodData_3 food_data3;
+    final private FoodData_4 food_data4;
+    final private FoodData_5 food_data5;
+    final private FoodData_6 food_data6;
     final private FoodData_7 food_data7;
     final private JobData job_data;
     final private LastData last_data;
@@ -59,6 +67,10 @@ public class DataController {
         sleep_data = new SleepData();
         food_data1 = new FoodData_1();
         food_data2 = new FoodData_2();
+        food_data3 = new FoodData_3();
+        food_data4 = new FoodData_4();
+        food_data5 = new FoodData_5();
+        food_data6 = new FoodData_6();
         food_data7 = new FoodData_7();
         last_data = new LastData();
         job_data = new JobData();
@@ -113,12 +125,38 @@ public class DataController {
         else if(nowFragment instanceof FoodFragment_2){
             System.out.println("식품 사항2 Frag:");
             food_data2.saveData(context);
-//            return food_data1.check();
+//            return food_data2.check();
+            return true;
+        }
+        else if(nowFragment instanceof FoodFragment_3){
+            System.out.println("식품 사항3 Frag:");
+            food_data3.saveData(context);
+//            return food_data3.check();
+            return true;
+        }
+        else if(nowFragment instanceof FoodFragment_4){
+            System.out.println("식품 사항4 Frag:");
+            food_data4.saveData(context);
+//            return food_data4.check();
+            return true;
+        }
+        else if(nowFragment instanceof FoodFragment_5){
+            System.out.println("식품 사항5 Frag:");
+            food_data5.saveData(context);
+//            return food_data5.check();
+            return true;
+        }
+        else if(nowFragment instanceof FoodFragment_6){
+            System.out.println("식품 사항6 Frag:");
+            food_data6.saveData(context);
+//            return food_data6.check();
             return true;
         }
         else if(nowFragment instanceof FoodFragment_7){
             System.out.println("식품 사항7 Frag:");
             food_data7.saveData(context);
+//            return food_data7.check();
+            return true;
         }
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
@@ -195,6 +233,22 @@ public class DataController {
             }
             case R.id.food_frag_2: {
                 food_data2.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_3: {
+                food_data3.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_4: {
+                food_data4.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_5: {
+                food_data5.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_6: {
+                food_data6.setDataToView(vg);
                 break;
             }
             case R.id.food_frag_7: {

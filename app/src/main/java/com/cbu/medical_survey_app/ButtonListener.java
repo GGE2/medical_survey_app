@@ -69,7 +69,30 @@ public class ButtonListener implements Button.OnClickListener {
             case R.id.bt_food_2_next:
                 btc.food2_Next();
                 break;
-
+            case R.id.bt_food_3_prev:
+                btc.food3_Prev();
+                break;
+            case R.id.bt_food_3_next:
+                btc.food3_Next();
+                break;
+            case R.id.bt_food_4_prev:
+                btc.food4_Prev();
+                break;
+            case R.id.bt_food_4_next:
+                btc.food4_Next();
+                break;
+            case R.id.bt_food_5_prev:
+                btc.food5_Prev();
+                break;
+            case R.id.bt_food_5_next:
+                btc.food5_Next();
+                break;
+            case R.id.bt_food_6_prev:
+                btc.food6_Prev();
+                break;
+            case R.id.bt_food_6_next:
+                btc.food6_Next();
+                break;
             case R.id.bt_job_prev:
                 btc.jobPrev();
                 break;
