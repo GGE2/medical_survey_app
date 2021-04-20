@@ -101,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/table_dooboo">
 
         <Button
-            android:id="@+id/bt_food_2_prev"
+            android:id="@+id/bt_food_4_prev"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:background="@drawable/white_bt"
@@ -122,7 +122,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/bt_food_2_next"
+            android:id="@+id/bt_food_4_next"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:background="@drawable/green_bt"

@@ -9,7 +9,7 @@
 
 
     <TableLayout
-        android:id="@+id/peanut_img1"
+        android:id="@+id/namul_img1"
         android:layout_width="wrap_content"
 
 
@@ -30,7 +30,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/peanut1" />
+                android:src="@drawable/namul1" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/peanut2" />
+                android:src="@drawable/namul2" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/peanut3" />
+                android:src="@drawable/namul3" />
         </TableRow>
 
         <TableRow
@@ -61,7 +61,7 @@
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 4-1. 땅콩 &gt;"
+                android:text="&lt; 사진 10-1. 나물무침 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -72,7 +72,7 @@
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 4-2. 땅콩 &gt;"
+                android:text="&lt; 사진 10-2. 나물무침 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -83,7 +83,7 @@
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 4-3. 땅콩 &gt;"
+                android:text="&lt; 사진 10-3. 나물무침 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
         </TableRow>
@@ -98,7 +98,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/table_peanut">
+        app:layout_constraintTop_toBottomOf="@+id/table_namul">
 
         <Button
             android:id="@+id/bt_food_3_prev"
@@ -143,7 +143,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TableLayout
-        android:id="@+id/table_peanut"
+        android:id="@+id/table_namul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -151,7 +151,7 @@
         android:layout_marginTop="30dp"
         android:background="@color/list_line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/peanut_img2">
+        app:layout_constraintTop_toBottomOf="@+id/namul_img1">
 
         <TableRow
             android:layout_width="match_parent"
@@ -377,7 +377,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name1"
+                android:id="@+id/namul_name1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -388,7 +388,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="케익/\n초코파이"
+                android:text="시금치/\n(시금치\n나물,\n국 등)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -412,7 +412,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans9"
+                        android:id="@+id/check_namul1_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -436,7 +436,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans8"
+                        android:id="@+id/check_namul1_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -460,7 +460,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans7"
+                        android:id="@+id/check_namul1_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -484,7 +484,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans6"
+                        android:id="@+id/check_namul1_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -508,7 +508,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans5"
+                        android:id="@+id/check_namul1_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -532,7 +532,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans4"
+                        android:id="@+id/check_namul1_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -556,7 +556,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans3"
+                        android:id="@+id/check_namul1_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -580,7 +580,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans2"
+                        android:id="@+id/check_namul1_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -604,7 +604,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut1_ans1"
+                        android:id="@+id/check_namul1_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -626,7 +626,7 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/radio_peanut1_ans3_text"
+                    android:id="@+id/radio_namul1_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -635,11 +635,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut1_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut1_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul1_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul1_ans3" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut1_ans3"
+                    android:id="@+id/radio_namul1_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -650,10 +650,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut1_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul1_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut1_ans2_text"
+                    android:id="@+id/radio_namul1_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -662,11 +662,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut1_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut1_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul1_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul1_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut1_ans2"
+                    android:id="@+id/radio_namul1_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -677,10 +677,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut1_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul1_ans1_text" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut1_ans1"
+                    android:id="@+id/radio_namul1_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -693,7 +693,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut1_ans1_text"
+                    android:id="@+id/radio_namul1_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -702,8 +702,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut1_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut1_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul1_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul1_ans1" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -715,7 +715,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name2"
+                android:id="@+id/namul_name2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -726,7 +726,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="피자/\n햄버거"
+                android:text="상추/\n(쌈, 무침\n등)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -747,7 +747,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans9"
+                        android:id="@+id/check_namul2_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -771,7 +771,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans8"
+                        android:id="@+id/check_namul2_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -795,7 +795,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans7"
+                        android:id="@+id/check_namul2_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -819,7 +819,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans6"
+                        android:id="@+id/check_namul2_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -843,7 +843,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans5"
+                        android:id="@+id/check_namul2_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -867,7 +867,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans4"
+                        android:id="@+id/check_namul2_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -891,7 +891,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans3"
+                        android:id="@+id/check_namul2_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -915,7 +915,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans2"
+                        android:id="@+id/check_namul2_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -939,7 +939,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut2_ans1"
+                        android:id="@+id/check_namul2_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -961,7 +961,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_peanut2_ans1"
+                    android:id="@+id/radio_namul2_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -974,7 +974,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut2_ans1_text"
+                    android:id="@+id/radio_namul2_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -983,11 +983,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut2_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut2_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul2_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul2_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut2_ans2"
+                    android:id="@+id/radio_namul2_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -998,10 +998,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut2_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul2_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut2_ans2_text"
+                    android:id="@+id/radio_namul2_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1010,11 +1010,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut2_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut2_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul2_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul2_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut2_ans3"
+                    android:id="@+id/radio_namul2_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1025,10 +1025,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut2_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul2_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut2_ans3_text"
+                    android:id="@+id/radio_namul2_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1037,8 +1037,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut2_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut2_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul2_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul2_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -1049,7 +1049,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name3"
+                android:id="@+id/namul_name3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1060,7 +1060,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="선식/\n미숫가루"
+                android:text="들깻잎"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1081,7 +1081,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans9"
+                        android:id="@+id/check_namul3_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1105,7 +1105,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans8"
+                        android:id="@+id/check_namul3_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1129,7 +1129,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans7"
+                        android:id="@+id/check_namul3_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1153,7 +1153,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans6"
+                        android:id="@+id/check_namul3_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1177,7 +1177,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans5"
+                        android:id="@+id/check_namul3_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1201,7 +1201,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans4"
+                        android:id="@+id/check_namul3_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1225,7 +1225,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans3"
+                        android:id="@+id/check_namul3_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1249,7 +1249,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans2"
+                        android:id="@+id/check_namul3_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1273,7 +1273,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut3_ans1"
+                        android:id="@+id/check_namul3_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1295,7 +1295,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_peanut3_ans1"
+                    android:id="@+id/radio_namul3_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -1308,7 +1308,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut3_ans1_text"
+                    android:id="@+id/radio_namul3_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1317,11 +1317,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut3_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut3_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul3_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul3_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut3_ans2"
+                    android:id="@+id/radio_namul3_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1332,10 +1332,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut3_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul3_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut3_ans2_text"
+                    android:id="@+id/radio_namul3_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1344,11 +1344,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut3_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut3_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul3_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul3_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut3_ans3"
+                    android:id="@+id/radio_namul3_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1359,10 +1359,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut3_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul3_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut3_ans3_text"
+                    android:id="@+id/radio_namul3_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1371,8 +1371,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut3_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut3_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul3_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul3_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -1383,7 +1383,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name4"
+                android:id="@+id/namul_name4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1393,7 +1393,7 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="25dp"
                 android:paddingBottom="25dp"
-                android:text="쿠키/\n크래커/\n스넥"
+                android:text="야채쌈/\n야채샐러드\n(양배추,\n양상추.\n케일,\n치커리,\n청경채,\n브로콜리\n등)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1414,7 +1414,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans9"
+                        android:id="@+id/check_namul4_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1438,7 +1438,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans8"
+                        android:id="@+id/check_namul4_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1462,7 +1462,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans7"
+                        android:id="@+id/check_namul4_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1486,7 +1486,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans6"
+                        android:id="@+id/check_namul4_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1510,7 +1510,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans5"
+                        android:id="@+id/check_namul4_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1534,7 +1534,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans4"
+                        android:id="@+id/check_namul4_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1558,7 +1558,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans3"
+                        android:id="@+id/check_namul4_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1582,7 +1582,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans2"
+                        android:id="@+id/check_namul4_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1606,7 +1606,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut4_ans1"
+                        android:id="@+id/check_namul4_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1628,7 +1628,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_peanut4_ans1"
+                    android:id="@+id/radio_namul4_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -1641,7 +1641,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut4_ans1_text"
+                    android:id="@+id/radio_namul4_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1650,11 +1650,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut4_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut4_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul4_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul4_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut4_ans2"
+                    android:id="@+id/radio_namul4_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1665,10 +1665,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut4_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul4_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut4_ans2_text"
+                    android:id="@+id/radio_namul4_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1677,11 +1677,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut4_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut4_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul4_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul4_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut4_ans3"
+                    android:id="@+id/radio_namul4_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1692,10 +1692,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut4_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul4_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut4_ans3_text"
+                    android:id="@+id/radio_namul4_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1704,8 +1704,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut4_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut4_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul4_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul4_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -1716,7 +1716,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name5"
+                android:id="@+id/namul_name5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1727,7 +1727,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="사탕/\n초콜릿"
+                android:text="기타\n녹색채소/\n(냉이,근대,\n아욱,쑥,\n우거지\n등)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1749,7 +1749,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans9"
+                        android:id="@+id/check_namul5_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1773,7 +1773,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans8"
+                        android:id="@+id/check_namul5_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1797,7 +1797,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans7"
+                        android:id="@+id/check_namul5_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1821,7 +1821,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans6"
+                        android:id="@+id/check_namul5_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1845,7 +1845,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans5"
+                        android:id="@+id/check_namul5_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1869,7 +1869,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans4"
+                        android:id="@+id/check_namul5_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1893,7 +1893,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans3"
+                        android:id="@+id/check_namul5_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1917,7 +1917,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans2"
+                        android:id="@+id/check_namul5_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1941,7 +1941,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut5_ans1"
+                        android:id="@+id/check_namul5_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1963,7 +1963,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_peanut5_ans1"
+                    android:id="@+id/radio_namul5_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/radio_bt"
@@ -1976,7 +1976,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut5_ans1_text"
+                    android:id="@+id/radio_namul5_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1985,11 +1985,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut5_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut5_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul5_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul5_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut5_ans2"
+                    android:id="@+id/radio_namul5_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2000,10 +2000,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut5_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul5_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut5_ans2_text"
+                    android:id="@+id/radio_namul5_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2012,11 +2012,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut5_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut5_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul5_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul5_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut5_ans3"
+                    android:id="@+id/radio_namul5_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2027,10 +2027,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut5_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul5_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut5_ans3_text"
+                    android:id="@+id/radio_namul5_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2039,8 +2039,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut5_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut5_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul5_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul5_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -2051,7 +2051,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name6"
+                android:id="@+id/namul_name6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2062,7 +2062,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="땅콩/\n아몬드/\n잣"
+                android:text="더덕/\n도라지"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -2083,7 +2083,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans9"
+                        android:id="@+id/check_namul6_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2107,7 +2107,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans8"
+                        android:id="@+id/check_namul6_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2131,7 +2131,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans7"
+                        android:id="@+id/check_namul6_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2155,7 +2155,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans6"
+                        android:id="@+id/check_namul6_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2179,7 +2179,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans5"
+                        android:id="@+id/check_namul6_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2203,7 +2203,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans4"
+                        android:id="@+id/check_namul6_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2227,7 +2227,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans3"
+                        android:id="@+id/check_namul6_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2251,7 +2251,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans2"
+                        android:id="@+id/check_namul6_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2275,7 +2275,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut6_ans1"
+                        android:id="@+id/check_namul6_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2297,7 +2297,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_peanut6_ans1"
+                    android:id="@+id/radio_namul6_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -2311,7 +2311,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut6_ans1_text"
+                    android:id="@+id/radio_namul6_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2320,11 +2320,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut6_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut6_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul6_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul6_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut6_ans2"
+                    android:id="@+id/radio_namul6_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2335,10 +2335,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut6_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul6_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut6_ans2_text"
+                    android:id="@+id/radio_namul6_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2347,11 +2347,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut6_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut6_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul6_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul6_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut6_ans3"
+                    android:id="@+id/radio_namul6_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2362,10 +2362,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut6_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul6_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut6_ans3_text"
+                    android:id="@+id/radio_namul6_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2374,8 +2374,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut6_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut6_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul6_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul6_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -2386,7 +2386,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name7"
+                android:id="@+id/namul_name7"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2397,7 +2397,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="콩/\n콩자반\n(초콩포함,\n콩밥제외)"
+                android:text="콩나물/\n숙주나물"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -2418,7 +2418,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans9"
+                        android:id="@+id/check_namul7_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2442,7 +2442,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans8"
+                        android:id="@+id/check_namul7_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2466,7 +2466,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans7"
+                        android:id="@+id/check_namul7_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2490,7 +2490,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans6"
+                        android:id="@+id/check_namul7_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2514,7 +2514,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans5"
+                        android:id="@+id/check_namul7_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2538,7 +2538,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans4"
+                        android:id="@+id/check_namul7_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2562,7 +2562,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans3"
+                        android:id="@+id/check_namul7_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2586,7 +2586,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans2"
+                        android:id="@+id/check_namul7_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2610,7 +2610,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut7_ans1"
+                        android:id="@+id/check_namul7_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2632,7 +2632,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_peanut7_ans1"
+                    android:id="@+id/radio_namul7_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -2646,7 +2646,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut7_ans1_text"
+                    android:id="@+id/radio_namul7_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2655,11 +2655,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut7_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut7_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul7_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul7_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut7_ans2"
+                    android:id="@+id/radio_namul7_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2670,10 +2670,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut7_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul7_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut7_ans2_text"
+                    android:id="@+id/radio_namul7_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2682,11 +2682,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut7_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut7_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul7_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul7_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut7_ans3"
+                    android:id="@+id/radio_namul7_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2697,10 +2697,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut7_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul7_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut7_ans3_text"
+                    android:id="@+id/radio_namul7_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2709,8 +2709,8 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut7_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut7_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul7_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul7_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
@@ -2721,7 +2721,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/peanut_name8"
+                android:id="@+id/namul_name8"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2732,7 +2732,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="된장국/\n청국장/\n된장/쌈장"
+                android:text="고사리/\n고구마줄기/\n토란대"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -2753,7 +2753,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans9"
+                        android:id="@+id/check_namul8_ans9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2777,7 +2777,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans8"
+                        android:id="@+id/check_namul8_ans8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2801,7 +2801,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans7"
+                        android:id="@+id/check_namul8_ans7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2825,7 +2825,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans6"
+                        android:id="@+id/check_namul8_ans6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2849,7 +2849,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans5"
+                        android:id="@+id/check_namul8_ans5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2873,7 +2873,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans4"
+                        android:id="@+id/check_namul8_ans4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2897,7 +2897,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans3"
+                        android:id="@+id/check_namul8_ans3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2921,7 +2921,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans2"
+                        android:id="@+id/check_namul8_ans2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2945,7 +2945,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/check_peanut8_ans1"
+                        android:id="@+id/check_namul8_ans1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2967,7 +2967,7 @@
                 android:padding="10dp">
 
                 <CheckBox
-                    android:id="@+id/radio_peanut8_ans1"
+                    android:id="@+id/radio_namul8_ans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -2981,7 +2981,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/radio_peanut8_ans1_text"
+                    android:id="@+id/radio_namul8_ans1_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -2990,11 +2990,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut8_ans1"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut8_ans1" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul8_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul8_ans1" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut8_ans2"
+                    android:id="@+id/radio_namul8_ans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -3005,10 +3005,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut8_ans1_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul8_ans1_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut8_ans2_text"
+                    android:id="@+id/radio_namul8_ans2_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -3017,11 +3017,11 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut8_ans2"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut8_ans2" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul8_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul8_ans2" />
 
                 <CheckBox
-                    android:id="@+id/radio_peanut8_ans3"
+                    android:id="@+id/radio_namul8_ans3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -3032,10 +3032,10 @@
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/radio_peanut8_ans2_text" />
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul8_ans2_text" />
 
                 <TextView
-                    android:id="@+id/radio_peanut8_ans3_text"
+                    android:id="@+id/radio_namul8_ans3_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -3044,92 +3044,680 @@
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio_peanut8_ans3"
-                    app:layout_constraintTop_toTopOf="@+id/radio_peanut8_ans3" />
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul8_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul8_ans3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </TableRow>
 
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/peanut_img2"
-        android:layout_width="wrap_content"
-
-
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@color/list_line"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/peanut_img1">
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/border_white_gray">
+            android:background="@color/bg_gray">
 
-            <ImageView
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/namul_name9"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
-                android:padding="20dp"
-                android:src="@drawable/peanut4" />
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="느타리버섯"
+                android:textColor="@color/text_black_gray"
+                android:textSize="14sp" />
 
-            <ImageView
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="3dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout89"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout89"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout90"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout90"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout91"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout91"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout92"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout92"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout93"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout93"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout94"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout94"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout95"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout95"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout96"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout96"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul9_ans1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
-                android:padding="20dp"
-                android:src="@drawable/peanut5" />
+                android:padding="10dp">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="@color/white"
-                android:padding="20dp"
-                android:src="@drawable/peanut6" />
+                <CheckBox
+                    android:id="@+id/radio_namul9_ans1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/radio_namul9_ans1_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="사진 5-1\n(0.5그릇)"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul9_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul9_ans1" />
+
+                <CheckBox
+                    android:id="@+id/radio_namul9_ans2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul9_ans1_text" />
+
+                <TextView
+                    android:id="@+id/radio_namul9_ans2_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="사진 5-2\n(1그릇)"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul9_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul9_ans2" />
+
+                <CheckBox
+                    android:id="@+id/radio_namul9_ans3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul9_ans2_text" />
+
+                <TextView
+                    android:id="@+id/radio_namul9_ans3_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="사진 5-3\n(1그릇 반)"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul9_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul9_ans3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/border_white_gray">
+            android:background="@color/bg_gray">
 
             <TextView
+                android:id="@+id/namul_name10"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 5-1. 된장 &gt;"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="기타버섯\n(목이,\n양송이,\n팽이 등)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                android:gravity="center"
-                android:text="&lt; 사진 5-2. 된장 &gt;"
-                android:textColor="@color/text_black_gray"
-                android:textSize="14sp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="3dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout97"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout97"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout98"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout98"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout99"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout99"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout100"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout100"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout101"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout101"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout102"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout102"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout103"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout103"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout104"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout104"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/check_namul10_ans1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_bt"
+                        android:button="@color/transparency"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                android:gravity="center"
-                android:text="&lt; 사진 5-3. 된장 &gt;"
-                android:textColor="@color/text_black_gray"
-                android:textSize="14sp" />
+                android:padding="10dp">
+
+                <CheckBox
+                    android:id="@+id/radio_namul10_ans1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/radio_namul10_ans1_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="사진 5-1\n(0.5그릇)"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul10_ans1"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul10_ans1" />
+
+                <CheckBox
+                    android:id="@+id/radio_namul10_ans2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul10_ans1_text" />
+
+                <TextView
+                    android:id="@+id/radio_namul10_ans2_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="사진 5-2\n(1그릇)"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul10_ans2"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul10_ans2" />
+
+                <CheckBox
+                    android:id="@+id/radio_namul10_ans3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/radio_bt"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/text_black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_namul10_ans2_text" />
+
+                <TextView
+                    android:id="@+id/radio_namul10_ans3_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="사진 5-3\n(1그릇 반)"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radio_namul10_ans3"
+                    app:layout_constraintTop_toTopOf="@+id/radio_namul10_ans3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </TableRow>
 
     </TableLayout>
