@@ -1,5 +1,6 @@
 package com.cbu.medical_survey_app.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -19,6 +20,19 @@ public class StartActivity extends AppCompatActivity {
 
     Button btn_main_1;
     public static DataController dtc;
+
+    //화면전환시 xml 변경
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation==Configuration.ORIENTATION_PORTRAIT){
+            setContentView(R.layout.main_page_portrait);
+
+        }
+        else if(newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.main_page_landscape);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
