@@ -16,33 +16,32 @@ import com.cbu.medical_survey_app.ButtonListener;
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.activities.StartActivity;
 
-public class FoodFragment_8 extends Fragment {
+public class FoodFragment_9 extends Fragment {
     private Context nowContext;
-    private Food8[] food8;
+    private Food9[] food9;
     ButtonListener bt1,bt2;
-    Button food8_pre_bt, food8_next_bt;
+    Button food9_pre_bt, food9_next_bt;
 
 
-    public FoodFragment_8(Context context){
+    public FoodFragment_9(Context context){
 
         nowContext = context;
         bt1 = new ButtonListener(context);
         bt2 = new ButtonListener(context);
-        food8 = new Food8[7];
+        food9 = new Food9[7];
     }
-
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        ViewGroup vg = (ViewGroup) inflater.inflate(R.layout.food_frag_9, container, false);
 
-        ViewGroup vg = (ViewGroup) inflater.inflate(R.layout.food_frag_8, container, false);
 
-        food8_pre_bt = vg.findViewById(R.id.bt_food8_prev);
-        food8_next_bt = vg.findViewById(R.id.bt_food8_next);
+        food9_pre_bt = vg.findViewById(R.id.bt_food9_prev);
+        food9_next_bt = vg.findViewById(R.id.bt_food9_next);
 
-        food8_pre_bt.setOnClickListener(bt1);
-        food8_next_bt.setOnClickListener(bt2);
+        food9_pre_bt.setOnClickListener(bt1);
+        food9_next_bt.setOnClickListener(bt2);
 
 
         StartActivity.dtc.setDataToView(vg);
@@ -52,21 +51,22 @@ public class FoodFragment_8 extends Fragment {
 
         return vg;
     }
+
     private void initView(ViewGroup vg){
 
 
-        //고기, 돼지고기찜
+        //닭고기, 생선류
         for(int RowID=0;RowID<7;RowID++){
             RadioButton[] rb1 = new RadioButton[9];
             RadioButton[] rb2 = new RadioButton[3];
             for(int ColID=0;ColID<9;ColID++){
-                rb1[ColID] = vg.findViewById(getResId(vg,"food8_fir_radio"+(RowID+1)+"_"+(ColID+1)));
+                rb1[ColID] = vg.findViewById(getResId(vg,"food9_fir_radio"+(RowID+1)+"_"+(ColID+1)));
             }
             for(int ColID=0;ColID<3;ColID++){
-                rb2[ColID] = vg.findViewById(getResId(vg, "food8_sec_radio_avg" + (RowID + 1) + "_"+(ColID+1)));
+                rb2[ColID] = vg.findViewById(getResId(vg, "food9_sec_radio_avg" + (RowID + 1) + "_"+(ColID+1)));
             }
 
-            food8[RowID] = new Food8(rb1,rb2);
+            food9[RowID] = new Food9(rb1,rb2);
         }
 
 
@@ -95,14 +95,14 @@ public class FoodFragment_8 extends Fragment {
         rb.setEnabled(true);
         rb.setTextColor(getResources().getColor(R.color.text_black));
     }
-    private class Food8{
+    private class Food9{
         protected RadioButton[] erb;
         protected RadioButton[] yrb;
         protected int checked=-1;
         protected int ck=-1;
 
 
-        public Food8(RadioButton[] rb1,RadioButton[] rb2){
+        public Food9(RadioButton[] rb1,RadioButton[] rb2){
             erb = rb1;
             yrb = rb2;
 

@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
+import com.cbu.medical_survey_app.fragments.FoodFragment_10;
 import com.cbu.medical_survey_app.fragments.FoodFragment_7;
+import com.cbu.medical_survey_app.fragments.FoodFragment_8;
+import com.cbu.medical_survey_app.fragments.FoodFragment_9;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
@@ -43,6 +46,10 @@ public class DataController {
     final private SmokeData smoke_data;
     final private SleepData sleep_data;
     final private FoodData_7 food_data7;
+    final private FoodData_8 food_data8;
+    final private FoodData_9 food_data9;
+    final private FoodData_10 food_data10;
+    final private FoodData_11 food_data11;
 
     public DataController(String name, String address) {
         origin_name = name;
@@ -56,6 +63,10 @@ public class DataController {
         job_data = new JobData();
         last_data = new LastData();
         food_data7 = new FoodData_7();
+        food_data8 = new FoodData_8();
+        food_data9 = new FoodData_9();
+        food_data10 = new FoodData_10();
+        food_data11 = new FoodData_11();
     }
 
     // survey_content에 연결된 프래그먼트에 따라 저장할 데이터 분기
@@ -107,8 +118,24 @@ public class DataController {
         else if(nowFragment instanceof FoodFragment_7){
             System.out.println("식품 사항7 Frag:");
             food_data7.saveData(context);
-            return food_data7.check();
+            //return food_data7.check();
         }
+        else if(nowFragment instanceof FoodFragment_8){
+            System.out.println("식품 사항8 Frag:");
+            food_data8.saveData(context);
+            //return food_data8.check();
+        }
+        else if(nowFragment instanceof FoodFragment_9){
+            System.out.println("식품 사항9 Frag:");
+            food_data9.saveData(context);
+            //return food_data9.check();
+        }
+        else if(nowFragment instanceof FoodFragment_10){
+            System.out.println("식품 사항10 Frag:");
+            food_data10.saveData(context);
+            //return food_data9.check();
+        }
+
 
 
         else {
@@ -169,6 +196,21 @@ public class DataController {
             case R.id.food_frag_7:{
                 food_data7.setDataToView(vg);
                 break;
+            }
+            case R.id.food_frag_8:{
+                food_data8.setDataToView(vg);
+                break;
+
+            }
+            case R.id.food_frag_9:{
+                food_data9.setDataToView(vg);
+                break;
+
+            }
+            case R.id.food_frag_10:{
+                food_data10.setDataToView(vg);
+                break;
+
             }
             case R.id.job_frag: {
                 job_data.setDataToView(vg);
