@@ -1,6 +1,8 @@
 package com.cbu.medical_survey_app.datas;
 
 import android.content.Context;
+import android.content.ContextWrapper;
+import android.os.Environment;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
@@ -268,22 +270,32 @@ public class DataController {
     }
 
     public void saveExcel(Context context) {
+        ContextWrapper cw = new ContextWrapper(context);
         Workbook workbook = new HSSFWorkbook();
 
-        Sheet sheet = workbook.createSheet();
+        // 새로운 sheet 생성, 열 기본 너비 지정
+        Sheet sheet = workbook.createSheet("직업 사항");
+        sheet.setColumnWidth(0, 30 * 512);
+        sheet.setColumnWidth(1, 30 * 512);
 
-        Row row = sheet.createRow(0);
+        Row row;
         Cell cell;
 
         int idx = 0;
 
+        // 데이터 삽입
         for (Map.Entry<String, String> entry: job_data.getData().entrySet()) {
-            cell = row.createCell(idx++);
+
+            row = sheet.createRow(idx++);
+
+            cell = row.createCell(0);
             cell.setCellValue(entry.getKey());
-            System.out.println(entry.getKey());
+
+            cell = row.createCell(1);
+            cell.setCellValue(entry.getValue());
         }
 
-        File xlsFile = new File(context.getExternalFilesDir(null), "text.xls");
+        File xlsFile = new File(cw.getExternalFilesDir(""), "text.xls");
 
         try{
             FileOutputStream os = new FileOutputStream(xlsFile);
