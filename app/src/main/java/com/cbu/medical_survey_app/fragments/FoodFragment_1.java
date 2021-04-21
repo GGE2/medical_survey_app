@@ -102,6 +102,7 @@ public class FoodFragment_1 extends Fragment {
     private void disableRadioGroup(RadioGroup rg) {
         for (int i = 0; i < rg.getChildCount(); i++) {
             rg.getChildAt(i).setEnabled(false);
+            rg.check(-1);
         }
     }
 

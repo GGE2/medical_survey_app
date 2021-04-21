@@ -197,6 +197,7 @@ public class SmokeFragment extends Fragment {
         edt.setFocusable(false);
         edt.setClickable(false);
         edt.setTextColor(getResources().getColor(R.color.text_gray));
+        edt.setText("");
     }
 
     private void enableEditText(EditText edt) {
@@ -208,6 +209,7 @@ public class SmokeFragment extends Fragment {
     private void disableRadioGroup(RadioGroup rg) {
         for (int i = 0; i < rg.getChildCount(); i++) {
             rg.getChildAt(i).setEnabled(false);
+            rg.check(-1);
         }
     }
 

@@ -34,6 +34,8 @@ import org.apache.poi.ss.usermodel.Workbook;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class DataController {
@@ -270,31 +272,37 @@ public class DataController {
     }
 
     public void saveExcel(Context context) {
-        ContextWrapper cw = new ContextWrapper(context);
         Workbook workbook = new HSSFWorkbook();
 
-        // 새로운 sheet 생성, 열 기본 너비 지정
-        Sheet sheet = workbook.createSheet("직업 사항");
-        sheet.setColumnWidth(0, 30 * 512);
-        sheet.setColumnWidth(1, 30 * 512);
+        ArrayList<LinkedHashMap<String, String>> array = new ArrayList<>();
+        array.add(normal_data1.getData());
+        array.add(normal_data2.getData());
+        array.add(normal_data3.getData());
+        array.add(normal_data4.getData());
+        makeSheet(workbook, array, "일반 사항");
 
-        Row row;
-        Cell cell;
+        array.clear();
+        array.add(smoke_data.getData());
+        makeSheet(workbook, array, "흡연 및 음주 습관 사항");
 
-        int idx = 0;
+        array.clear();
+        array.add(sleep_data.getData());
+        makeSheet(workbook, array, "수면_육체적 운동 및 활동 사항");
 
-        // 데이터 삽입
-        for (Map.Entry<String, String> entry: job_data.getData().entrySet()) {
+        array.clear();
+        array.add(food_data1.getData());
+        array.add(food_data2.getData());
+        array.add(food_data3.getData());
+        array.add(food_data4.getData());
+        array.add(food_data5.getData());
+        array.add(food_data6.getData());
+        makeSheet(workbook, array, "식품 섭취 빈도 조사");
 
-            row = sheet.createRow(idx++);
+        array.clear();
+        array.add(job_data.getData());
+        makeSheet(workbook, array, "직업 사항");
 
-            cell = row.createCell(0);
-            cell.setCellValue(entry.getKey());
-
-            cell = row.createCell(1);
-            cell.setCellValue(entry.getValue());
-        }
-
+        ContextWrapper cw = new ContextWrapper(context);
         File xlsFile = new File(cw.getExternalFilesDir(""), "text.xls");
 
         try{
@@ -305,5 +313,32 @@ public class DataController {
         }
 
         System.out.println(xlsFile.getAbsolutePath() + "에 저장됨");
+    }
+
+    private void makeSheet(Workbook workbook, ArrayList<LinkedHashMap<String, String>> datas, String shName) {
+
+        // 새로운 sheet 생성, 열 기본 너비 지정
+        Sheet sheet = workbook.createSheet(shName);
+        sheet.setColumnWidth(0, 50 * 512);
+        sheet.setColumnWidth(1, 20 * 512);
+
+        Row row;
+        Cell cell;
+
+        // 해시맵 배열을 모두 돔
+        for (LinkedHashMap<String, String> data : datas) {
+            int idx = 0;
+
+            // 데이터 삽입
+            for (Map.Entry<String, String> entry: data.entrySet()) {
+                row = sheet.createRow(idx++);
+
+                cell = row.createCell(0);
+                cell.setCellValue(entry.getKey());
+
+                cell = row.createCell(1);
+                cell.setCellValue(entry.getValue());
+            }
+        }
     }
 }

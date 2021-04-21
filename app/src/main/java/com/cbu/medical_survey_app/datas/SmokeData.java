@@ -113,8 +113,8 @@ public class SmokeData {
         mapped_data.put("금연 기간", input_smoke_stop1 + "년전 또는 " + input_smoke_stop2 + "년도 또는 " + input_smoke_stop3 + "살 때");
         mapped_data.put("주변 흡연 여부(20갑 이상)", radio_other_20smoke_checked == -1 ? "" : radio_other_20smoke_checked == R.id.radio_other_20smoke_no ? "아니오" : radio_other_20smoke_checked == R.id.radio_other_20smoke_yes ? "예" : "모르겠다");
         for (int famID = 0; famID < input_smoke_families.length; famID++) {
-            mapped_data.put("가족(누구)_" + famID, input_smoke_families[famID] + "");
-            mapped_data.put("기간(년)_" + famID, input_smoke_family_years[famID] + "년");
+            mapped_data.put("가족" + famID + "(누구)", input_smoke_families[famID]);
+            mapped_data.put("기간" + famID + "(년)", input_smoke_family_years[famID] + "년");
         }
         mapped_data.put("음주 여부", radio_drink_checked == -1 ? "" : radio_drink_checked == R.id.radio_drink_no ? "아니오" : radio_drink_checked == R.id.radio_drink_yes_before ? "예, 지금은 안 마신다.(" + input_drink_yes_before + "년에 끊음)" : "예, 지금도 마신다");
         mapped_data.put("총 음주 기간", input_drink_all_year + "년");
