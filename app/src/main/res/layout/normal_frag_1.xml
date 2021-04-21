@@ -201,6 +201,7 @@
             android:id="@+id/pro3_3"
             android:layout_width="70dp"
             android:maxLength="3"
+            android:inputType="number"
             android:layout_height="wrap_content"
             android:textColor="@color/text_black"
             android:textSize="14sp"
@@ -238,6 +239,7 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:inputType="number"
             android:maxLength="6"
             android:textColor="@color/text_black"
             android:textSize="14sp"
@@ -254,6 +256,7 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:inputType="number"
             android:maxLength="7"
             android:textColor="@color/text_black"
             android:textSize="14sp"
@@ -296,6 +299,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:maxLength="3"
+            android:inputType="number"
             android:textColor="@color/text_black"
             android:textSize="14sp"
             android:textStyle="bold"/>
@@ -321,6 +325,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:maxLength="3"
+            android:inputType="number"
             android:textColor="@color/text_black"
             android:textSize="14sp"
             android:textStyle="bold"/>
@@ -364,6 +369,7 @@
                     android:id="@+id/pro5_2"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:inputType="number"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:textStyle="bold"/>
@@ -411,6 +417,7 @@
             android:id="@+id/pro6_1"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:gravity="center"
             android:maxLength="3"
             android:textColor="@color/text_black"
@@ -446,6 +453,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:inputType="number"
             android:maxLength="3"
             android:textColor="@color/text_black"
             android:textSize="14sp"
@@ -479,6 +487,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:inputType="number"
             android:maxLength="3"
             android:textColor="@color/text_black"
             android:textSize="14sp"
@@ -616,6 +625,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
+                    android:inputType="number"
                     android:textStyle="bold"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -666,6 +676,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/text_black"
             android:textSize="14sp"
+            android:inputType="number"
             android:textStyle="bold"/>
 
         <TextView

@@ -76,8 +76,7 @@ public class NormalFragment_1 extends Fragment {
         rbt3 = vg.findViewById(R.id.pro8_1);
         editText2 = vg.findViewById(R.id.pro8_2);
         rbt4 = vg.findViewById(R.id.pro8_3);
-        no_group_rb_1(rbt1,rbt2,editText1); // pro 5독립버튼 처리
-        no_group_rb_2(rbt3,rbt4,editText2); //pro 8독립버튼 처리
+
 
         next_btn.setOnClickListener(bt1);
 
@@ -90,14 +89,11 @@ public class NormalFragment_1 extends Fragment {
             }
         });
 
-
-
-
-
-
         // 프래그먼트에 데이터 세팅
         StartActivity.dtc.setDataToView(vg);
 
+        no_group_rb_1(rbt1,rbt2,editText1); // pro 5독립버튼 처리
+        no_group_rb_2(rbt3,rbt4,editText2); //pro 8독립버튼 처리
 
 
         return vg;
@@ -109,6 +105,14 @@ public class NormalFragment_1 extends Fragment {
         RadioButton rb1 = bt1;
         RadioButton rb2 = bt2;
         EditText edit = ed;
+
+        if(!rb1.isChecked()){
+            edit.setEnabled(false);
+            edit.setFocusable(false);
+            edit.setText("");
+            edit.setTextColor(getResources().getColor(R.color.text_gray));
+        }
+
 
         //Pro5 독립버튼 처리
         rb1.setOnClickListener(new View.OnClickListener(){
@@ -146,6 +150,14 @@ public class NormalFragment_1 extends Fragment {
         RadioButton rb1 = bt1;
         RadioButton rb2 = bt2;
         EditText edit = ed;
+
+        if(!rb1.isChecked()){
+            edit.setEnabled(false);
+            edit.setFocusable(false);
+            edit.setText("");
+            edit.setTextColor(getResources().getColor(R.color.text_gray));
+        }
+
 
         //Pro8 독립버튼 처리
         rb1.setOnClickListener(new View.OnClickListener(){
