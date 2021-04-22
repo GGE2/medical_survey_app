@@ -37,7 +37,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -295,8 +297,6 @@ public class DataController {
     public void saveExcel(Context context) {
         Workbook workbook = new HSSFWorkbook();
 
-        String personalID = normal_data1.getData().get("사용자 주민번호 앞자리") + "_" + normal_data1.getData().get("사용자 주민번호 뒷자리");
-
         ArrayList<LinkedHashMap<String, String>> array = new ArrayList<>();
         array.add(normal_data1.getData());
         array.add(normal_data2.getData());
@@ -330,8 +330,11 @@ public class DataController {
         array.add(last_data.getData());
         makeSheet(workbook, array, "본인 정보");
 
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+        String curDate = format.format(new Date());
+
         ContextWrapper cw = new ContextWrapper(context);
-        File xlsFile = new File(cw.getExternalFilesDir(""), origin_name + "_" + personalID + ".xls");
+        File xlsFile = new File(cw.getExternalFilesDir(""), origin_name + "_" + curDate + ".xls");
 
         try{
             FileOutputStream os = new FileOutputStream(xlsFile);
