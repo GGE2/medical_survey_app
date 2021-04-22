@@ -2,6 +2,7 @@ package com.cbu.medical_survey_app.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -76,6 +77,8 @@ public class NormalFragment_2 extends Fragment {
             }
             EditText input_year = vg.findViewById(getResId(vg,"normal_input_position_"+(posRowID+1)+"_1"));
             EditText input_age = vg.findViewById(getResId(vg,"normal_input_position_"+(posRowID+1)+"_2"));
+            input_year.setInputType(InputType.TYPE_CLASS_NUMBER);
+            input_age.setInputType(InputType.TYPE_CLASS_NUMBER);
             nor[posRowID] = new normal_position(radio,input_year,input_age);
 
         }

@@ -1,13 +1,18 @@
 package com.cbu.medical_survey_app.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,39 +24,81 @@ public class StartActivity extends AppCompatActivity {
 
     Button btn_main_1;
     public static DataController dtc;
+    EditText main_input_address,main_input_name;
+    ViewGroup viewGroup;
+
+
+    //화면전환시 xml 변경
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation==Configuration.ORIENTATION_PORTRAIT){
+            setContentView(R.layout.main_page_portrait);
+
+        }
+        else if(newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.main_page_landscape);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_page_portrait);
-
-        // oreintation 에 따라 layout.xml 동적으로 적용
-        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_PORTRAIT){
+        //oreintation 에 따라 layout.xml 동적으로 적용
+        if(getResources().getConfiguration().orientation==Configuration.ORIENTATION_PORTRAIT){
             setContentView(R.layout.main_page_portrait);
         }
-        else
+        else{
             setContentView(R.layout.main_page_landscape);
+        }
+
 
         btn_main_1 = (Button)findViewById(R.id.btn_main_1);
-        EditText main_input_name = (EditText)findViewById((R.id.main_input_name));
-        EditText main_input_address = (EditText)findViewById((R.id.main_input_address));
+        main_input_name = (EditText)findViewById((R.id.main_input_name));
+        main_input_address = (EditText)findViewById((R.id.main_input_address));
 
-        dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
+        //화면 전환시 데이터유지
+        if(savedInstanceState!=null){
+
+            String nData = savedInstanceState.getString("name_Data");
+            String aData = savedInstanceState.getString("address_Data");
+
+            main_input_name.setText(nData);
+            main_input_address.setText(aData);
+
+        }
 
         btn_main_1.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(StartActivity.this, SurveyActivity.class);
-                startActivity(intent);
+                Intent intent = new Intent(StartActivity.this, SubActivity.class);
+                if(checkText()) {
+                    dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
+                    startActivity(intent);
+                }
+                else{
+                    openPopup();
+                }
             }
         });
+
+
+
+    }
+    //onDestory() 함수 호출시 데이터 저장
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String saveName = main_input_name.getText().toString();
+        String saveAddress = main_input_address.getText().toString();
+
+        outState.putString("name_Data",saveName);
+        outState.putString("address_Data",saveAddress);
     }
 
-
-        //화면 밖 클릭시 키보드 종료
+    //화면 밖 클릭시 키보드 종료
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         View v = getCurrentFocus();
@@ -69,11 +116,23 @@ public class StartActivity extends AppCompatActivity {
     }
 
 
-//    //name과 address 입력값 확인
-//    private boolean checkText(){
-//
-//
-//        return main_input_name.equals(null) && main_input_address.equals(null);
-//    }
+    //name과 address 입력값 확인
+    private boolean checkText(){
+        String address_check="";
+        String name_check="";
 
+        address_check = main_input_address.getText().toString();
+        name_check = main_input_address.getText().toString();
+
+        if(name_check.equals("") || address_check.equals("")) {
+            return false;
+        }
+        else
+            return true;
+
+    }
+    private void openPopup() {
+        Intent intent = new Intent(StartActivity.this, StartPopupActivity.class);
+        ((Activity)StartActivity.this).startActivityForResult(intent, 1);
+    }
 }

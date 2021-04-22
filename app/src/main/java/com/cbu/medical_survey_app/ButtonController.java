@@ -21,6 +21,10 @@ import com.cbu.medical_survey_app.fragments.FoodFragment_4;
 import com.cbu.medical_survey_app.fragments.FoodFragment_5;
 import com.cbu.medical_survey_app.fragments.FoodFragment_6;
 import com.cbu.medical_survey_app.fragments.FoodFragment_7;
+import com.cbu.medical_survey_app.fragments.FoodFragment_8;
+import com.cbu.medical_survey_app.fragments.FoodFragment_9;
+import com.cbu.medical_survey_app.fragments.FoodFragment_10;
+import com.cbu.medical_survey_app.fragments.FoodFragment_11;
 import com.cbu.medical_survey_app.fragments.JobFragment;
 import com.cbu.medical_survey_app.fragments.LastFragment;
 import com.cbu.medical_survey_app.fragments.NormalFragment_1;
@@ -249,7 +253,7 @@ public void sleepNext() {
         title.setText(R.string.sleep_title);
         title_img.setImageResource(R.drawable.img_sleep_top);
 
-        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+        FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
 
         fragmentTransaction.replace(R.id.survey_warning, new Fragment());
@@ -257,7 +261,6 @@ public void sleepNext() {
 
         fragmentTransaction.commit();
     }
-
     public void food1_Next() {
         // 음식1 -> 음식2
         if(StartActivity.dtc.saveData(nowContext)){
@@ -490,6 +493,112 @@ public void sleepNext() {
             openPopup();
         }
     }
+
+    public void food7_prev(){
+        StartActivity.dtc.saveData(nowContext);
+        // 유효성 검사 통과
+
+        title.setText(R.string.sleep_title);
+        title_img.setImageResource(R.drawable.img_sleep_top);
+
+        makeFrag(new SleepFragment(nowContext));
+
+
+    }
+    public void food7_next(){
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            title.setText(R.string.food_title);
+            title_img.setImageResource(R.drawable.img_food_top);
+
+            makeFrag(new FoodFragment_8(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+
+    }
+    public void food8_prev(){
+        StartActivity.dtc.saveData(nowContext);
+        // 유효성 검사 통과
+
+        title.setText(R.string.food_title);
+        title_img.setImageResource(R.drawable.img_food_top);
+
+        makeFrag(new FoodFragment_7(nowContext));
+
+
+    }
+    public void food8_next(){
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            title.setText(R.string.food_title);
+            title_img.setImageResource(R.drawable.img_food_top);
+
+            makeFrag(new FoodFragment_9(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+
+    }
+    public void food9_prev(){
+        StartActivity.dtc.saveData(nowContext);
+        // 유효성 검사 통과
+
+        title.setText(R.string.food_title);
+        title_img.setImageResource(R.drawable.img_food_top);
+
+        makeFrag(new FoodFragment_8(nowContext));
+
+
+    }
+    public void food9_next(){
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            title.setText(R.string.food_title);
+            title_img.setImageResource(R.drawable.img_food_top);
+
+            makeFrag(new FoodFragment_10(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+
+    }
+    public void food10_prev(){
+        StartActivity.dtc.saveData(nowContext);
+        // 유효성 검사 통과
+
+        title.setText(R.string.food_title);
+        title_img.setImageResource(R.drawable.img_food_top);
+
+        makeFrag(new FoodFragment_9(nowContext));
+
+
+    }
+    public void food10_next(){
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            title.setText(R.string.food_title);
+            title_img.setImageResource(R.drawable.img_food_top);
+
+            makeFrag(new FoodFragment_11(nowContext));
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+
+
 
     public void jobPrev() {
         StartActivity.dtc.saveData(nowContext);

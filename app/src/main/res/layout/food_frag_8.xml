@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/food_frag_7"
+    android:id="@+id/food_frag_8"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="1dp">
 
 
     <TableLayout
-        android:id="@+id/imgtable_boodang"
+        android:id="@+id/imgtable_pork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -19,32 +19,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/border_white_gray">
-        <ImageView
-            android:id="@+id/img_boo_1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@color/white"
-            android:padding="20dp"
-            android:src="@drawable/boo_1" />
+            <ImageView
+                android:id="@+id/img_pork_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/pork1_1" />
 
-        <ImageView
-            android:id="@+id/img_boo_2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@color/white"
-            android:padding="20dp"
-            android:src="@drawable/boo_2" />
+            <ImageView
+                android:id="@+id/img_pork_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/pork1_2" />
 
-        <ImageView
-            android:id="@+id/img_boo_3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@color/white"
-            android:padding="20dp"
-            android:src="@drawable/boo_3" />
+            <ImageView
+                android:id="@+id/img_pork_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:padding="20dp"
+                android:src="@drawable/pork1_3" />
         </TableRow>
 
 
@@ -54,38 +54,38 @@
             android:background="@color/border_white_gray">
 
             <TextView
-                android:id="@+id/boo_text_1"
+                android:id="@+id/pork_text_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 11-1. 부추 &gt;"
+                android:text="&lt; 사진 13-1. 고기 75그램 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/boo_text_2"
+                android:id="@+id/pork_text_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 11-2. 부추 &gt;"
+                android:text="&lt; 사진 13-2. 고기 150그램 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/boo_text_3"
+                android:id="@+id/pork_text_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 11-3. 부추 &gt;"
+                android:text="&lt; 사진 13-3. 고기 225그램 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
         </TableRow>
@@ -96,31 +96,31 @@
             android:layout_height="match_parent"
             android:background="@color/border_white_gray">
             <ImageView
-                android:id="@+id/img_dang_1"
+                android:id="@+id/img_porked_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/dang_1" />
+                android:src="@drawable/porked1_1" />
 
             <ImageView
-                android:id="@+id/img_dang_2"
+                android:id="@+id/img_porked_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/dang_2" />
+                android:src="@drawable/pork1_2" />
 
             <ImageView
-                android:id="@+id/img_dang_3"
+                android:id="@+id/img_porked_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:padding="20dp"
-                android:src="@drawable/dang_3" />
+                android:src="@drawable/pork1_3" />
         </TableRow>
 
 
@@ -130,38 +130,38 @@
             android:background="@color/border_white_gray">
 
             <TextView
-                android:id="@+id/dang_text_1"
+                android:id="@+id/porked_text_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 12-1. 당근 &gt;"
+                android:text="&lt; 사진 14-1. 돼지고기찜 25그램 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/dang_text_2"
+                android:id="@+id/porked_text_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 12-2. 당근 &gt;"
+                android:text="&lt; 사진 14-2. 돼지고기찜 50그램 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/dang_text_3"
+                android:id="@+id/porked_text_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="&lt; 사진 12-3. 당근 &gt;"
+                android:text="&lt; 사진 14-3. 돼지고기찜 75그램 &gt;"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
         </TableRow>
@@ -169,13 +169,13 @@
     </TableLayout>
 
     <TableLayout
-        android:id="@+id/radiotable_boodang"
+        android:id="@+id/radiotable_pork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@color/list_line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgtable_boodang">
+        app:layout_constraintTop_toBottomOf="@+id/imgtable_pork">
 
 
         <TableRow
@@ -403,7 +403,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/food7_text_name_1"
+                android:id="@+id/food8_text_name_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -414,7 +414,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="고춧잎/참나물/취나물"
+                android:text="삼겹살"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -434,7 +434,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_1"
+                        android:id="@+id/food8_fir_radio1_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -458,7 +458,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_2"
+                        android:id="@+id/food8_fir_radio1_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -482,7 +482,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_3"
+                        android:id="@+id/food8_fir_radio1_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -506,7 +506,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_4"
+                        android:id="@+id/food8_fir_radio1_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -529,7 +529,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_5"
+                        android:id="@+id/food8_fir_radio1_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -553,7 +553,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_6"
+                        android:id="@+id/food8_fir_radio1_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -577,7 +577,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_7"
+                        android:id="@+id/food8_fir_radio1_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -601,7 +601,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_8"
+                        android:id="@+id/food8_fir_radio1_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -624,7 +624,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio1_9"
+                        android:id="@+id/food8_fir_radio1_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -650,7 +650,7 @@
                 android:padding="10dp">
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg1_1"
+                    android:id="@+id/food8_sec_radio_avg1_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -662,19 +662,18 @@
                     android:textSize="10sp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
-
                 <TextView
                     android:id="@+id/avg_text1_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:text="사진 11-1"
+                    android:text="사진 13-1"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg1_1"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg1_1"/>
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg1_2"
+                    android:id="@+id/food8_sec_radio_avg1_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -684,7 +683,7 @@
                     android:text="2"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg1_1"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg1_1"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text1_2"
@@ -694,12 +693,12 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="사진 11-2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg1_2"
+                    android:text="사진 13-2"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg1_2"
                     app:layout_constraintTop_toBottomOf="@id/avg_text1_1"/>
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg1_3"
+                    android:id="@+id/food8_sec_radio_avg1_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -709,7 +708,7 @@
                     android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg1_2"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg1_2"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text1_3"
@@ -717,11 +716,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="사진 11-3"
+                    android:text="사진 13-3"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text1_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg1_3"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg1_3"/>
 
 
 
@@ -735,7 +734,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/food7_text_name_2"
+                android:id="@+id/food8_text_name_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -746,7 +745,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="쑥갓/부추/미나리"
+                android:text="돼지구이/볶음\n돼지불고기/동그랑땡"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -766,7 +765,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_1"
+                        android:id="@+id/food8_fir_radio2_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -790,7 +789,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_2"
+                        android:id="@+id/food8_fir_radio2_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -814,7 +813,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_3"
+                        android:id="@+id/food8_fir_radio2_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -838,7 +837,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_4"
+                        android:id="@+id/food8_fir_radio2_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -861,7 +860,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_5"
+                        android:id="@+id/food8_fir_radio2_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -885,7 +884,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_6"
+                        android:id="@+id/food8_fir_radio2_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -909,7 +908,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_7"
+                        android:id="@+id/food8_fir_radio2_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -933,7 +932,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_8"
+                        android:id="@+id/food8_fir_radio2_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -956,7 +955,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio2_9"
+                        android:id="@+id/food8_fir_radio2_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -982,7 +981,7 @@
                 android:padding="10dp">
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg2_1"
+                    android:id="@+id/food8_sec_radio_avg2_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -998,14 +997,14 @@
                     android:id="@+id/avg_text2_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진 11-1"
+                    android:text="사진 13-1"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg2_1"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg2_1"/>
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg2_2"
+                    android:id="@+id/food8_sec_radio_avg2_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1015,7 +1014,7 @@
                     android:text="2"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg2_1"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg2_1"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text2_2"
@@ -1025,12 +1024,12 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="사진 11-2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg2_1"
+                    android:text="사진 13-2"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg2_1"
                     app:layout_constraintTop_toBottomOf="@id/avg_text2_1"/>
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg2_3"
+                    android:id="@+id/food8_sec_radio_avg2_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1040,7 +1039,7 @@
                     android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg2_2"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg2_2"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text2_3"
@@ -1048,11 +1047,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="사진 11-3"
+                    android:text="사진 13-3"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text2_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg2_3"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg2_3"/>
 
 
 
@@ -1066,7 +1065,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/food7_text_name_3"
+                android:id="@+id/food8_text_name_3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1077,7 +1076,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="오 이"
+                android:text="스테이크/쇠고기구이\n(갈비, 등심,안심\n쇠고기불고기)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1097,7 +1096,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_1"
+                        android:id="@+id/food8_fir_radio3_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1121,7 +1120,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_2"
+                        android:id="@+id/food8_fir_radio3_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1145,7 +1144,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_3"
+                        android:id="@+id/food8_fir_radio3_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1169,7 +1168,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_4"
+                        android:id="@+id/food8_fir_radio3_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1192,7 +1191,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_5"
+                        android:id="@+id/food8_fir_radio3_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1216,7 +1215,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_6"
+                        android:id="@+id/food8_fir_radio3_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1240,7 +1239,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_7"
+                        android:id="@+id/food8_fir_radio3_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1264,7 +1263,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_8"
+                        android:id="@+id/food8_fir_radio3_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1287,7 +1286,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio3_9"
+                        android:id="@+id/food8_fir_radio3_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1313,7 +1312,7 @@
                 android:padding="10dp">
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg3_1"
+                    android:id="@+id/food8_sec_radio_avg3_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -1329,14 +1328,14 @@
                     android:id="@+id/avg_text3_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진 12-1"
+                    android:text="사진 13-1"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg3_1"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg3_1"/>
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg3_2"
+                    android:id="@+id/food8_sec_radio_avg3_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1346,7 +1345,7 @@
                     android:text="2"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg3_1"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg3_1"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text3_2"
@@ -1356,12 +1355,12 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="사진 12-2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg3_1"
+                    android:text="사진 13-2"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg3_1"
                     app:layout_constraintTop_toBottomOf="@id/avg_text3_1"/>
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg3_3"
+                    android:id="@+id/food8_sec_radio_avg3_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1371,7 +1370,7 @@
                     android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg3_2"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg3_2"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text3_3"
@@ -1379,11 +1378,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="사진 12-3"
+                    android:text="사진 13-3"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text3_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg3_3"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg3_3"/>
 
 
 
@@ -1396,7 +1395,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/food7_text_name_4"
+                android:id="@+id/food8_text_name_4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1407,7 +1406,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="당근/당근주스"
+                android:text="개고기"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1427,7 +1426,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_1"
+                        android:id="@+id/food8_fir_radio4_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1451,7 +1450,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_2"
+                        android:id="@+id/food8_fir_radio4_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1475,7 +1474,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_3"
+                        android:id="@+id/food8_fir_radio4_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1499,7 +1498,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_4"
+                        android:id="@+id/food8_fir_radio4_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1522,7 +1521,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_5"
+                        android:id="@+id/food8_fir_radio4_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1546,7 +1545,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_6"
+                        android:id="@+id/food8_fir_radio4_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1570,7 +1569,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_7"
+                        android:id="@+id/food8_fir_radio4_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1594,7 +1593,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_8"
+                        android:id="@+id/food8_fir_radio4_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1617,7 +1616,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio4_9"
+                        android:id="@+id/food8_fir_radio4_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1643,7 +1642,7 @@
                 android:padding="10dp">
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg4_1"
+                    android:id="@+id/food8_sec_radio_avg4_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -1659,14 +1658,14 @@
                     android:id="@+id/avg_text4_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진 12-1"
+                    android:text="사진 13-1"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg4_1"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg4_1"/>
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg4_2"
+                    android:id="@+id/food8_sec_radio_avg4_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1676,7 +1675,7 @@
                     android:text="2"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg4_1"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg4_1"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text4_2"
@@ -1686,12 +1685,12 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="사진 12-2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg4_1"
+                    android:text="사진 13-2"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg4_1"
                     app:layout_constraintTop_toBottomOf="@id/avg_text4_1"/>
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg4_3"
+                    android:id="@+id/food8_sec_radio_avg4_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -1701,7 +1700,7 @@
                     android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg4_2"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg4_2"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text4_3"
@@ -1709,11 +1708,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="사진 12-3"
+                    android:text="사진 13-3"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text4_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg4_3"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg4_3"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -1726,7 +1725,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/food7_text_name_5"
+                android:id="@+id/food8_text_name_5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -1737,7 +1736,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="양 파"
+                android:text="돼지고기 찜\n(보쌈 , 장조림, 족발)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -1757,7 +1756,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_1"
+                        android:id="@+id/food8_fir_radio5_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1781,7 +1780,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_2"
+                        android:id="@+id/food8_fir_radio5_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1805,7 +1804,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_3"
+                        android:id="@+id/food8_fir_radio5_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1829,7 +1828,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_4"
+                        android:id="@+id/food8_fir_radio5_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1852,7 +1851,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_5"
+                        android:id="@+id/food8_fir_radio5_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1876,7 +1875,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_6"
+                        android:id="@+id/food8_fir_radio5_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1900,7 +1899,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_7"
+                        android:id="@+id/food8_fir_radio5_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1924,7 +1923,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_8"
+                        android:id="@+id/food8_fir_radio5_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1947,7 +1946,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio5_9"
+                        android:id="@+id/food8_fir_radio5_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -1973,7 +1972,7 @@
                 android:padding="10dp">
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg5_1"
+                    android:id="@+id/food8_sec_radio_avg5_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -1989,14 +1988,14 @@
                     android:id="@+id/avg_text5_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진 12-1"
+                    android:text="사진 14-1"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg5_1"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg5_1"/>
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg5_2"
+                    android:id="@+id/food8_sec_radio_avg5_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2006,7 +2005,7 @@
                     android:text="2"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg5_1"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg5_1"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text5_2"
@@ -2016,12 +2015,12 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="사진 12-2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg5_1"
+                    android:text="사진 14-2"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg5_1"
                     app:layout_constraintTop_toBottomOf="@id/avg_text5_1"/>
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg5_3"
+                    android:id="@+id/food8_sec_radio_avg5_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2031,7 +2030,7 @@
                     android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg5_2"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg5_2"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text5_3"
@@ -2039,11 +2038,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="사진 12-3"
+                    android:text="사진 14-3"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text5_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg5_3"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg5_3"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -2057,7 +2056,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/food7_text_name_6"
+                android:id="@+id/food8_text_name_6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2068,7 +2067,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="풋고추"
+                android:text="가공육\n(햄, 소시지)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -2088,7 +2087,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_1"
+                        android:id="@+id/food8_fir_radio6_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2112,7 +2111,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_2"
+                        android:id="@+id/food8_fir_radio6_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2136,7 +2135,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_3"
+                        android:id="@+id/food8_fir_radio6_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2160,7 +2159,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_4"
+                        android:id="@+id/food8_fir_radio6_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2183,7 +2182,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_5"
+                        android:id="@+id/food8_fir_radio6_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2207,7 +2206,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_6"
+                        android:id="@+id/food8_fir_radio6_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2231,7 +2230,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_7"
+                        android:id="@+id/food8_fir_radio6_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2255,7 +2254,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_8"
+                        android:id="@+id/food8_fir_radio6_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2278,7 +2277,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio6_9"
+                        android:id="@+id/food8_fir_radio6_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2304,7 +2303,7 @@
                 android:padding="10dp">
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg6_1"
+                    android:id="@+id/food8_sec_radio_avg6_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -2320,14 +2319,14 @@
                     android:id="@+id/avg_text6_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1개"
+                    android:text="비엔나햄 3개,햄 반장"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg6_1"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg6_1"/>
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg6_2"
+                    android:id="@+id/food8_sec_radio_avg6_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2337,7 +2336,7 @@
                     android:text="2"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg6_1"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg6_1"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text6_2"
@@ -2347,12 +2346,12 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="2개"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg6_1"
+                    android:text="비엔나햄 5개,햄 한장"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg6_1"
                     app:layout_constraintTop_toBottomOf="@id/avg_text6_1"/>
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg6_3"
+                    android:id="@+id/food8_sec_radio_avg6_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2362,7 +2361,7 @@
                     android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg6_2"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg6_2"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text6_3"
@@ -2370,11 +2369,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="3개"
+                    android:text="비엔나햄 8개,햄 한장 반"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text6_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg6_3"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg6_3"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -2389,7 +2388,7 @@
             android:background="@color/bg_gray">
 
             <TextView
-                android:id="@+id/food7_text_name_7"
+                android:id="@+id/food8_text_name_7"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
@@ -2400,7 +2399,7 @@
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="애호박"
+                android:text="부산물\n(내장육, 선지, 순대)"
                 android:textColor="@color/text_black_gray"
                 android:textSize="14sp" />
 
@@ -2420,7 +2419,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_1"
+                        android:id="@+id/food8_fir_radio7_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2444,7 +2443,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_2"
+                        android:id="@+id/food8_fir_radio7_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2468,7 +2467,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_3"
+                        android:id="@+id/food8_fir_radio7_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2492,7 +2491,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_4"
+                        android:id="@+id/food8_fir_radio7_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2515,7 +2514,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_5"
+                        android:id="@+id/food8_fir_radio7_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2540,7 +2539,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_6"
+                        android:id="@+id/food8_fir_radio7_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2564,7 +2563,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_7"
+                        android:id="@+id/food8_fir_radio7_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2588,7 +2587,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_8"
+                        android:id="@+id/food8_fir_radio7_8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2611,7 +2610,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:id="@+id/food7_fir_radio7_9"
+                        android:id="@+id/food8_fir_radio7_9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/radio_bt"
@@ -2637,7 +2636,7 @@
                 android:padding="10dp">
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg7_1"
+                    android:id="@+id/food8_sec_radio_avg7_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -2653,14 +2652,14 @@
                     android:id="@+id/avg_text7_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사진 12-1"
+                    android:text="사진 14-1"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg7_1"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg7_1"/>
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg7_2"
+                    android:id="@+id/food8_sec_radio_avg7_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2670,7 +2669,7 @@
                     android:text="2"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg7_1"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg7_1"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text7_2"
@@ -2680,12 +2679,12 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
-                    android:text="사진 12-2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg7_1"
+                    android:text="사진 14-2"
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg7_1"
                     app:layout_constraintTop_toBottomOf="@id/avg_text7_1"/>
 
                 <RadioButton
-                    android:id="@+id/food7_sec_radio_avg7_3"
+                    android:id="@+id/food8_sec_radio_avg7_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -2695,7 +2694,7 @@
                     android:text="3"
                     android:textColor="@color/text_black"
                     android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg7_2"
+                    app:layout_constraintTop_toBottomOf="@id/food8_sec_radio_avg7_2"
                     app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/avg_text7_3"
@@ -2703,347 +2702,17 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="5dp"
-                    android:text="사진 12-3"
+                    android:text="사진 14-3"
                     android:textColor="@color/text_black"
                     android:textSize="14sp"
                     app:layout_constraintTop_toBottomOf="@id/avg_text7_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg7_3"/>
+                    app:layout_constraintStart_toEndOf="@id/food8_sec_radio_avg7_3"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/bg_gray">
-
-            <TextView
-                android:id="@+id/food7_text_name_8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="@color/white"
-                android:fontFamily="@font/roboto_bold"
-                android:gravity="center"
-                android:padding="10dp"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:text="늙은호박/당호박/\n호박즙"
-                android:textColor="@color/text_black_gray"
-                android:textSize="14sp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c64"
-                    android:layout_width="69dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c65"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c64"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c66"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c65"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c67"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c66"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c68"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c67"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c69"
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c68"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c70"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c69"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c71"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c70"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/c72"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="1dp"
-                    android:background="@color/white"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/c71"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <RadioButton
-                        android:id="@+id/food7_fir_radio8_9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radio_bt"
-                        android:button="@color/transparency"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:background="@color/white"
-                android:padding="10dp">
-
-                <RadioButton
-                    android:id="@+id/food7_sec_radio_avg8_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:button="@drawable/radio_bt"
-                    android:fontFamily="@font/roboto_bold"
-                    android:paddingLeft="5dp"
-                    android:text="1"
-                    android:textColor="@color/text_black"
-                    android:textSize="10sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
-                <TextView
-                    android:id="@+id/avg_text8_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="죽 한그릇/반팩"
-                    android:textColor="@color/text_black"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_1"/>
-                <RadioButton
-                    android:id="@+id/food7_sec_radio_avg8_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:button="@drawable/radio_bt"
-                    android:fontFamily="@font/roboto_bold"
-                    android:paddingLeft="5dp"
-                    android:text="2"
-                    android:textColor="@color/text_black"
-                    android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg8_1"
-                    app:layout_constraintStart_toStartOf="parent"/>
-                <TextView
-                    android:id="@+id/avg_text8_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"
-                    android:textColor="@color/text_black"
-                    android:textSize="14sp"
-                    android:text="죽 한그릇/한팩"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_2"
-                    app:layout_constraintTop_toBottomOf="@id/avg_text8_1"/>
-
-                <RadioButton
-                    android:id="@+id/food7_sec_radio_avg8_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:button="@drawable/radio_bt"
-                    android:fontFamily="@font/roboto_bold"
-                    android:paddingLeft="5dp"
-                    android:text="3"
-                    android:textColor="@color/text_black"
-                    android:textSize="10sp"
-                    app:layout_constraintTop_toBottomOf="@id/food7_sec_radio_avg8_2"
-                    app:layout_constraintStart_toStartOf="parent"/>
-                <TextView
-                    android:id="@+id/avg_text8_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"
-                    android:text="죽 한그릇 반/한팩 반"
-                    android:textColor="@color/text_black"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toBottomOf="@id/avg_text8_2"
-                    app:layout_constraintStart_toEndOf="@id/food7_sec_radio_avg8_3"/>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        </TableRow>
 
 
 
@@ -3062,10 +2731,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radiotable_boodang">
+        app:layout_constraintTop_toBottomOf="@id/radiotable_pork">
 
         <Button
-            android:id="@+id/bt_food7_prev"
+            android:id="@+id/bt_food8_prev"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:background="@drawable/white_bt"
@@ -3086,7 +2755,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/bt_food7_next"
+            android:id="@+id/bt_food8_next"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:background="@drawable/green_bt"

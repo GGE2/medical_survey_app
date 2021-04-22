@@ -3,6 +3,7 @@ package com.cbu.medical_survey_app.fragments;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -133,6 +134,8 @@ public class NormalFragment_3 extends Fragment {
             } else {
                 EditText eY = vg.findViewById(getResId(vg, "normal3_pro_14input_position_" + (RowID + 1) + "_1"));
                 EditText eA = vg.findViewById(getResId(vg, "normal3_pro_14input_position_" + (RowID + 1) + "_2"));
+                eY.setInputType(InputType.TYPE_CLASS_NUMBER);
+                eA.setInputType(InputType.TYPE_CLASS_NUMBER);
 
                 operation[RowID] = new operation_position(rb, eY, eA);
             }
