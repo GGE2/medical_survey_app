@@ -36,7 +36,7 @@ public class NormalData_2 {
 
 
     public NormalData_2() {
-        mapped_data = new LinkedHashMap<String,String>();
+        mapped_data = new LinkedHashMap<String, String>();
         for(int i=0;i<21;i++){
 
             check_radio_id[i]= -1;
@@ -56,6 +56,7 @@ public class NormalData_2 {
     }
 
     public LinkedHashMap<String, String> getData() {
+
         return mapped_data;
     }
     public void saveData(Context nowContext){
@@ -93,8 +94,10 @@ public class NormalData_2 {
                 input_age_result[RowID] = "";
             }
             mapped_data.put(getString(disease_name),check_radio_id[RowID]==-1?"":radio_result[check_radio_id[RowID]]);
-            mapped_data.put("처음진단받은 년도",input_year_result[RowID]+"년");
-            mapped_data.put("처음진단받은 나이",input_age_result[RowID]+"세");
+            if(check_radio_id[RowID]==1||check_radio_id[RowID]==2) {
+                mapped_data.put(getString(disease_name)+" 처음진단받은 년도", input_year_result[RowID] + "년");
+                mapped_data.put(getString(disease_name)+" 처음진단받은 나이", input_age_result[RowID] + "세");
+            }
 
         }
 

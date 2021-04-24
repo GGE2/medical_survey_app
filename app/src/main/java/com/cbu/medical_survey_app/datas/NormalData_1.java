@@ -49,7 +49,9 @@ public class NormalData_1 {
     final private LinkedHashMap<String, String> mapped_data;
 
     public NormalData_1() {
+
         mapped_data = new LinkedHashMap<String, String>();
+
     }
 
     private String getString(EditText view) {
@@ -113,7 +115,7 @@ public class NormalData_1 {
         }
         mapped_data.put("사용자 성별",user_sex);
         mapped_data.put("사용자 결혼상태",user_married_status);
-        //mapped_data.put("사용자 생년월일",user_birth);
+        mapped_data.put("사용자 생년월일",user_birth);
         mapped_data.put("사용자 띠",user_czs+"띠");
         mapped_data.put("사용자 부모나이(사용자를 낳았을 때)",user_mom_age);
         mapped_data.put("사용자 주민번호 앞자리",user_id_front);

@@ -42,7 +42,7 @@ public class NormalData_3 {
 
     public NormalData_3(){
 
-        mapped_data = new LinkedHashMap<String,String>();
+        mapped_data = new LinkedHashMap<String, String>();
 
         for(int i=0;i<disease_check.length;i++){
             for(int k=0;k<disease_check[0].length;k++){
