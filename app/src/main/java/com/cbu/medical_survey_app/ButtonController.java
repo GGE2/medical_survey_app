@@ -53,7 +53,6 @@ public class ButtonController {
         // 현재 뷰의 데이터들을 저장
 
         if(StartActivity.dtc.saveData(nowContext)) {
-            StartActivity.dtc.saveData(nowContext);
             Fragment fragment = new NormalFragment_2(nowContext);
             FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
@@ -75,16 +74,7 @@ public class ButtonController {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
-//        ((FragmentActivity)nowContext).startActivity(intent);
-        // 데이터 엑셀에 저장
-        //MainActivity.dtc.saveExcel(nowContext);
 
-        // 설문 완료 시 앱 재시작
-            /*
-            Intent intent = new Intent(nowContext, MainActivity.class);
-            ((Activity)nowContext).finishAffinity();
-            ((Activity)nowContext).startActivity(intent);
-            System.exit(0);*/
     }
 
     public void normal2_next () {
@@ -163,26 +153,10 @@ public class ButtonController {
         if(StartActivity.dtc.saveData(nowContext)) {
             title.setText(R.string.smoke_title);
             title_img.setImageResource(R.drawable.img_smoke_top);
-            Fragment fragment = new SmokeFragment(nowContext);
-            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-            fragmentTransaction.replace(R.id.survey_content, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
+            makeFrag(new SmokeFragment(nowContext));
         }
         else
             openPopup();
-
-//        ((FragmentActivity)nowContext).startActivity(intent);
-        // 데이터 엑셀에 저장
-        //MainActivity.dtc.saveExcel(nowContext);
-
-        // 설문 완료 시 앱 재시작
-            /*
-            Intent intent = new Intent(nowContext, MainActivity.class);
-            ((Activity)nowContext).finishAffinity();
-            ((Activity)nowContext).startActivity(intent);
-            System.exit(0);*/
     }
 
     public void smokePrev() {

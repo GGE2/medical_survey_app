@@ -14,7 +14,7 @@ import java.util.LinkedHashMap;
 
 public class NormalData_4 {
 
-        final private LinkedHashMap<String, String> mapped_data;
+        final private LinkedHashMap<String, String> mapped_data2;
 
         //14번
 
@@ -30,7 +30,7 @@ public class NormalData_4 {
 
 
         public NormalData_4() {
-            mapped_data = new LinkedHashMap<String, String>();
+            mapped_data2 = new LinkedHashMap<String, String>();
 
             for(int i=0;i<ray.length;i++){
                 ray[i]=-1;
@@ -45,7 +45,8 @@ public class NormalData_4 {
 
         }
          public LinkedHashMap<String, String> getData() {
-            return mapped_data;
+
+            return mapped_data2;
         }
 
 
@@ -59,7 +60,7 @@ public class NormalData_4 {
                             ray[RowID] = ColID;
                         }
                     }
-                    mapped_data.put(getString(ray_name),ray[RowID]==-1?"":ray_str[ray[RowID]]);
+                    mapped_data2.put(getString(ray_name),ray[RowID]==-1?"":ray_str[ray[RowID]]);
                 }
                 //15번
                 for(int RowID=0;RowID<9;RowID++){
@@ -78,12 +79,12 @@ public class NormalData_4 {
 
                     }
                     if(medi_eat[RowID]==0){
-                        mapped_data.put(getString(medi_name),medi_eat[RowID]==-1?"":medi_eat_str[medi_eat[RowID]]);
+                        mapped_data2.put(getString(medi_name),medi_eat[RowID]==-1?"":medi_eat_str[medi_eat[RowID]]);
                     }
                     else {
                         if(medi_eat[RowID]!=-1) {
-                            mapped_data.put(getString(medi_name) + "총 복용량 :", medi_eat[RowID]==-1?"":medi_eat_str[medi_eat[RowID]]);
-                            mapped_data.put(getString(medi_name) + "총 복용기간 :", medi_year[RowID]==-1?"":medi_year_str[medi_year[RowID]]);
+                            mapped_data2.put(getString(medi_name) + "총 복용량 :", medi_eat[RowID]==-1?"":medi_eat_str[medi_eat[RowID]]);
+                            mapped_data2.put(getString(medi_name) + "총 복용기간 :", medi_year[RowID]==-1?"":medi_year_str[medi_year[RowID]]);
                         }
                     }
                 }

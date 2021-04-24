@@ -299,10 +299,14 @@ public class DataController {
 
         ArrayList<LinkedHashMap<String, String>> array = new ArrayList<>();
         array.add(normal_data1.getData());
+        makeSheet(workbook, array, "일반 사항1");
         array.add(normal_data2.getData());
+        makeSheet(workbook, array, "일반 사항2");
         array.add(normal_data3.getData());
+        makeSheet(workbook, array, "일반 사항3");
+        //array.clear();
         array.add(normal_data4.getData());
-        makeSheet(workbook, array, "일반 사항");
+        makeSheet(workbook, array, "일반 사항4");
 
         array.clear();
         array.add(smoke_data.getData());
