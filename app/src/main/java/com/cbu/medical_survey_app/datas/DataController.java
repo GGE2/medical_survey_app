@@ -356,9 +356,10 @@ public class DataController {
         Row row;
         Cell cell;
 
+        int idx = 0;
+
         // 해시맵 배열을 모두 돔
         for (LinkedHashMap<String, String> data : datas) {
-            int idx = 0;
 
             // 데이터 삽입
             for (Map.Entry<String, String> entry: data.entrySet()) {
