@@ -10,6 +10,8 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.fragments.FoodFragment_1;
+import com.cbu.medical_survey_app.fragments.FoodFragment_11;
+import com.cbu.medical_survey_app.fragments.FoodFragment_12;
 import com.cbu.medical_survey_app.fragments.FoodFragment_2;
 import com.cbu.medical_survey_app.fragments.FoodFragment_3;
 import com.cbu.medical_survey_app.fragments.FoodFragment_4;
@@ -66,6 +68,7 @@ public class DataController {
     final private FoodData_9 food_data9;
     final private FoodData_10 food_data10;
     final private FoodData_11 food_data11;
+    final private FoodData_12 food_data12;
     final private JobData job_data;
     final private LastData last_data;
 
@@ -89,6 +92,7 @@ public class DataController {
         food_data9 = new FoodData_9();
         food_data10 = new FoodData_10();
         food_data11 = new FoodData_11();
+        food_data12 = new FoodData_12();
         last_data = new LastData();
         job_data = new JobData();
     }
@@ -176,6 +180,16 @@ public class DataController {
             System.out.println("식품 사항10 Frag:");
             food_data10.saveData(context);
             //return food_data10.check();
+        }
+        else if(nowFragment instanceof FoodFragment_11){
+            System.out.println("식품 사항11 Frag:");
+            food_data11.saveData(context);
+            //return food_data11.check();
+        }
+        else if(nowFragment instanceof FoodFragment_12){
+            System.out.println("식품 사항12 Frag:");
+            food_data12.saveData(context);
+            //return food_data12.check();
         }
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
@@ -281,6 +295,14 @@ public class DataController {
                 food_data10.setDataToView(vg);
                 break;
             }
+            case R.id.food_frag_11:{
+                food_data11.setDataToView(vg);
+                break;
+            }
+            case R.id.food_frag_12:{
+                food_data12.setDataToView(vg);
+                break;
+            }
             case R.id.job_frag: {
                 job_data.setDataToView(vg);
                 break;
@@ -299,14 +321,10 @@ public class DataController {
 
         ArrayList<LinkedHashMap<String, String>> array = new ArrayList<>();
         array.add(normal_data1.getData());
-        makeSheet(workbook, array, "일반 사항1");
         array.add(normal_data2.getData());
-        makeSheet(workbook, array, "일반 사항2");
         array.add(normal_data3.getData());
-        makeSheet(workbook, array, "일반 사항3");
-        //array.clear();
         array.add(normal_data4.getData());
-        makeSheet(workbook, array, "일반 사항4");
+        makeSheet(workbook, array, "일반 사항");
 
         array.clear();
         array.add(smoke_data.getData());
@@ -323,7 +341,17 @@ public class DataController {
         array.add(food_data4.getData());
         array.add(food_data5.getData());
         array.add(food_data6.getData());
-        makeSheet(workbook, array, "식품 섭취 빈도 조사");
+        makeSheet(workbook, array, "식품 섭취 빈도 조사1");
+
+        array.clear();
+        array.add(food_data7.getData());
+        array.add(food_data8.getData());
+        array.add(food_data9.getData());
+        array.add(food_data10.getData());
+        array.add(food_data11.getData());
+        array.add(food_data12.getData());
+        makeSheet(workbook, array, "식품 섭취 빈도 조사2");
+
 
         array.clear();
         array.add(job_data.getData());

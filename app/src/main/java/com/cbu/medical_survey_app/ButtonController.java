@@ -15,6 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.cbu.medical_survey_app.activities.StartActivity;
 import com.cbu.medical_survey_app.activities.PopupActivity;
+import com.cbu.medical_survey_app.fragments.FoodFragment_12;
 import com.cbu.medical_survey_app.fragments.FoodFragment_2;
 import com.cbu.medical_survey_app.fragments.FoodFragment_3;
 import com.cbu.medical_survey_app.fragments.FoodFragment_4;
@@ -35,6 +36,7 @@ import com.cbu.medical_survey_app.fragments.SleepFragment;
 import com.cbu.medical_survey_app.fragments.SmokeFragment;
 import com.cbu.medical_survey_app.fragments.FoodFragment_1;
 import com.cbu.medical_survey_app.fragments.WarningFragment;
+import com.cbu.medical_survey_app.fragments.WarningFragment2;
 
 public class ButtonController {
 
@@ -446,11 +448,9 @@ public void sleepNext() {
 
     public void food6_Next() {
         if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
 
-            // 음식6 -> 직업(일단)
-            title.setText(R.string.job_title);
-            title_img.setImageResource(0);
+
+
 
 //            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
 //            FragmentTransaction fragmentTransaction = fm.beginTransaction();
@@ -460,7 +460,7 @@ public void sleepNext() {
 //
 //            fragmentTransaction.commit();
 
-            makeFrag(new JobFragment(nowContext));
+            makeFrag(new FoodFragment_7(nowContext));
         }
         else{
             // 유효성 검사 실패 -> 경고창
@@ -470,12 +470,9 @@ public void sleepNext() {
 
     public void food7_prev(){
         StartActivity.dtc.saveData(nowContext);
-        // 유효성 검사 통과
-
-        title.setText(R.string.sleep_title);
-        title_img.setImageResource(R.drawable.img_sleep_top);
-
-        makeFrag(new SleepFragment(nowContext));
+        title.setText(R.string.food_title);
+        title_img.setImageResource(R.drawable.img_food_top);
+        makeFrag(new FoodFragment_6(nowContext));
 
 
     }
@@ -571,7 +568,63 @@ public void sleepNext() {
             openPopup();
         }
     }
+    public void food11_prev(){
+        StartActivity.dtc.saveData(nowContext);
+        // 유효성 검사 통과
 
+        title.setText(R.string.food_title);
+        title_img.setImageResource(R.drawable.img_food_top);
+
+        makeFrag(new FoodFragment_10(nowContext));
+
+
+    }
+    public void food11_next(){
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+
+            FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
+            fragmentTransaction.replace(R.id.survey_warning, new WarningFragment2(nowContext));
+            fragmentTransaction.replace(R.id.survey_content, new FoodFragment_12(nowContext));
+
+            fragmentTransaction.commit();
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
+    public void food12_prev(){
+        StartActivity.dtc.saveData(nowContext);
+        // 유효성 검사 통과
+        FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
+        fragmentTransaction.replace(R.id.survey_warning, new Fragment());
+        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_11(nowContext));
+
+        fragmentTransaction.commit();
+
+    }
+    public void food12_next(){
+        if(StartActivity.dtc.saveData(nowContext)){
+            // 유효성 검사 통과
+            title.setText(R.string.job_title);
+            FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
+            fragmentTransaction.replace(R.id.survey_warning, new Fragment());
+            fragmentTransaction.replace(R.id.survey_content, new JobFragment(nowContext));
+
+            fragmentTransaction.commit();
+        }
+        else{
+            // 유효성 검사 실패 -> 경고창
+            openPopup();
+        }
+    }
 
 
     public void jobPrev() {
@@ -581,7 +634,13 @@ public void sleepNext() {
         title.setText(R.string.food_title);
         title_img.setImageResource(R.drawable.img_food_top);
 
-        makeFrag(new FoodFragment_6(nowContext));
+        FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
+        fragmentTransaction.replace(R.id.survey_warning, new WarningFragment2(nowContext));
+        fragmentTransaction.replace(R.id.survey_content, new FoodFragment_12(nowContext));
+
+        fragmentTransaction.commit();
     }
 
     public void jobNext() {

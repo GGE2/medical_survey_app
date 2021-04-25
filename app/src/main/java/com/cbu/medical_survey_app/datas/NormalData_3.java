@@ -171,7 +171,7 @@ public class NormalData_3 {
             } else if (operation_check[RowID] == 2) {
                 mapped_data.put(RowID==11?getString(operation_name)+operation_etc+"수술":getString(operation_name) + "경험 유:", "언제받았는지 모르겠다");
             } else {
-                mapped_data.put(RowID==11?"기타"+operation_etc+"수술":getString(operation_name) + "경험 :", operation_check[RowID] != -1 ? "미기입" : "없다");
+                mapped_data.put(RowID==11?"기타"+operation_etc+"수술":getString(operation_name) + "경험 :", operation_check[RowID] != -1 ? "" : "없다");
             }
 
 

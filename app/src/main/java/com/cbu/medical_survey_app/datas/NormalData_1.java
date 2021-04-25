@@ -124,7 +124,7 @@ public class NormalData_1 {
         mapped_data.put("사용자 몸무게",user_weight+"kg");
         mapped_data.put("사용자 현재 사는 지역 기간",pro5_ID==R.id.pro5_3?"모르겠다":user_period_address+"년");
         mapped_data.put("사용자 20~25살 몸무게",user_weight_20th+"kg");
-        mapped_data.put("사용자 35~40살 모무게",user_weight_30th+"kg");
+        mapped_data.put("사용자 35~40살 몸무게",user_weight_30th+"kg");
         mapped_data.put("사용자 최고 몸무게",user_weight_best+"kg");
         mapped_data.put("사용자 최종학력",user_final_education);
         mapped_data.put("사용자 가족구성원 수",pro8_ID==R.id.pro8_3?"모르겠다":user_household_member+"명");
