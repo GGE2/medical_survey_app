@@ -103,104 +103,104 @@ public class DataController {
         if(nowFragment instanceof NormalFragment_1){
             System.out.println("일반 사항1 Frag");
             normal_data1.saveData(context);
-//            return normal_data1.check();
+            return normal_data1.check();
         }
         else if(nowFragment instanceof NormalFragment_2){
             System.out.println("일반 사항2 Frag");
             normal_data2.saveData(context);
-//            return normal_data2.check();
+            return normal_data2.check();
         }
         else if(nowFragment instanceof NormalFragment_3){
             System.out.println("일반 사항3 Frag");
             normal_data3.saveData(context);
-//            return normal_data3.check();
+            return normal_data3.check();
         }
         else if(nowFragment instanceof NormalFragment_4){
             System.out.println("일반 사항4 Frag");
             normal_data4.saveData(context);
-//            return normal_data4.check();
+            return normal_data4.check();
         }
         else if(nowFragment instanceof SmokeFragment){
             System.out.println("흡연 및 음주 Frag");
             smoke_data.saveData(context);
-//            return smoke_data.check();
+            return smoke_data.check();
         }
         else if(nowFragment instanceof SleepFragment){
             System.out.println("수면 육체 활동사항 Frag");
             sleep_data.saveData(context);
-//            return sleep_data.check();
+            return sleep_data.check();
         }
 
         else if(nowFragment instanceof FoodFragment_1){
             System.out.println("식품 사항1 Frag:");
             food_data1.saveData(context);
-//            return food_data1.check();
+            return food_data1.check();
         }
         else if(nowFragment instanceof FoodFragment_2){
             System.out.println("식품 사항2 Frag:");
             food_data2.saveData(context);
-//            return food_data2.check();
+            return food_data2.check();
         }
         else if(nowFragment instanceof FoodFragment_3){
             System.out.println("식품 사항3 Frag:");
             food_data3.saveData(context);
-//            return food_data3.check();
+            return food_data3.check();
         }
         else if(nowFragment instanceof FoodFragment_4){
             System.out.println("식품 사항4 Frag:");
             food_data4.saveData(context);
-//            return food_data4.check();
+            return food_data4.check();
         }
         else if(nowFragment instanceof FoodFragment_5){
             System.out.println("식품 사항5 Frag:");
             food_data5.saveData(context);
-//            return food_data5.check();
+            return food_data5.check();
         }
         else if(nowFragment instanceof FoodFragment_6){
             System.out.println("식품 사항6 Frag:");
             food_data6.saveData(context);
-//            return food_data6.check();
+            return food_data6.check();
         }
         else if(nowFragment instanceof FoodFragment_7){
             System.out.println("식품 사항7 Frag:");
             food_data7.saveData(context);
-//            return food_data7.check();
+            return food_data7.check();
         }
         else if(nowFragment instanceof FoodFragment_8){
             System.out.println("식품 사항8 Frag:");
             food_data8.saveData(context);
-            //return food_data8.check();
+            return food_data8.check();
         }
         else if(nowFragment instanceof FoodFragment_9){
             System.out.println("식품 사항9 Frag:");
             food_data9.saveData(context);
-            //return food_data9.check();
+            return food_data9.check();
         }
         else if(nowFragment instanceof FoodFragment_10){
             System.out.println("식품 사항10 Frag:");
             food_data10.saveData(context);
-            //return food_data10.check();
+            return food_data10.check();
         }
         else if(nowFragment instanceof FoodFragment_11){
             System.out.println("식품 사항11 Frag:");
             food_data11.saveData(context);
-            //return food_data11.check();
+            return food_data11.check();
         }
         else if(nowFragment instanceof FoodFragment_12){
             System.out.println("식품 사항12 Frag:");
             food_data12.saveData(context);
-            //return food_data12.check();
+            return food_data12.check();
         }
         else if(nowFragment instanceof JobFragment){
             System.out.println("직업사항 Frag");
             job_data.saveData(context);
-//            return job_data.check();
+            return job_data.check();
         }
 
         else if(nowFragment instanceof LastFragment){
             System.out.println("설문 완료 Frag");
             last_data.saveData(context);
-            //return last_data.check();
+            return last_data.check();
         }
 
 

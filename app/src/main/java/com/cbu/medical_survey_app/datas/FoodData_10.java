@@ -17,9 +17,9 @@ public class FoodData_10 {
     private int[] jg_once = new int[9];
     private String[] avg_year={"거의 안먹음","월 1회","월 2~3회","주 1~2회","주 3~4회","주 5~6회","일 1회","일 2회","일 3회"};
     private String[][] avg_once={{"사진 16-1","사진 16-2","사진 16-3"},{"사진 16-1","사진 16-2","사진 16-3"},{"사진 16-1","사진 16-2","사진 16-3"},
-            {"사진 9-1(&#189;큰술)","사진 9-2(1큰술)","사진 9-3(1 &#189;큰술)"},{"작은캔 반개","작은캔 1개","작은캔 1개 반"},
+            {"사진 9-1(반 큰술)","사진 9-2(1큰술)","사진 9-3(1큰술 반)"},{"작은캔 반개","작은캔 1개","작은캔 1개 반"},
             {"사진 17-1","사진 17-2","사진 17-3"},{"사진 17-1","사진 17-2","사진 17-3"},{"2개","4개","6개"}
-            ,{"중 &#188;마리","중 &#189;마리","중 1마리"}};
+            ,{"중 1/4마리","중 1/2마리","중 1마리"}};
 
 
     public FoodData_10() {
@@ -58,11 +58,10 @@ public class FoodData_10 {
                 mapped_data.put(getString(food_name),jg_year[RowID]==-1?"":avg_year[jg_year[RowID]]);
             }
             else {
-                if(jg_year[RowID]!=-1) {
                     mapped_data.put(getString(food_name) + "지난 1년간 섭취한 평균 횟수 :", jg_year[RowID]==-1?"":avg_year[jg_year[RowID]]);
 
                     mapped_data.put(getString(food_name) + "평균 1회 섭취분량 :", jg_once[RowID]==-1?"":avg_once[RowID][jg_once[RowID]]);
-                }
+
             }
         }
 
@@ -78,7 +77,7 @@ public class FoodData_10 {
                 }
                 else{
                     ((RadioButton)vg.findViewById(getResId(vg,"food10_fir_radio"+(RowID+1)+"_"+(jg_year[RowID]+1)))).setChecked(true);
-                    if(jg_year[RowID]!=-1)
+                    if(jg_once[RowID]!=-1)
                         ((RadioButton)vg.findViewById(getResId(vg,"food10_sec_radio_avg"+(RowID+1)+"_"+(jg_once[RowID]+1)))).setChecked(true);
                 }
 

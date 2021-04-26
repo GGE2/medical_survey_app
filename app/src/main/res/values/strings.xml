@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">medical_survey_app</string>
+    <string name="app_name">충북대학교 비뇨기과</string>
     <!-- Title -->
     <string name="name">성명</string>
     <string name="address">주소</string>

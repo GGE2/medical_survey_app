@@ -99,14 +99,14 @@ public class NormalData_3 {
                 }
                 //12번 암
                 if (i == 5) {
-                    if (disease_check[i][k] == 0 || disease_check[i][k] != -1) {
+                    if (disease_check[i][k] == 0 || disease_check[i][k] == -1) {
                         if(disease_check[i][k] == 0)
                             cancer_check[k] = 1;
                         mapped_data.put(disease_family[k] + " " + getString(disease_name) + " 병력 : ", disease_check[i][k] == -1 ? " " : check_disease_reuslt_string[disease_check[i][k]]);
                     } else {
                         if (cancer_button_check[k] == 1) {
                             cancer_check[k] = 1;
-                            mapped_data.put(disease_family[k] + " " + getString(disease_name) + " 병력 : ", check_disease_reuslt_string[disease_check[i][k]] + "부위불명");
+                            mapped_data.put(disease_family[k] + " " + getString(disease_name) + " 병력 : ", check_disease_reuslt_string[disease_check[i][k]] + "(부위불명)");
                         }
                         else {
                             if(!(cancer[k].equals("")))
@@ -169,9 +169,9 @@ public class NormalData_3 {
             if (operation_check[RowID] == 1) {
                 mapped_data.put(RowID==11?getString(operation_name)+operation_etc+"수술":getString(operation_name)+ "경험유:", getString(inputY) + "년 " + getString(inputA) + "세");
             } else if (operation_check[RowID] == 2) {
-                mapped_data.put(RowID==11?getString(operation_name)+operation_etc+"수술":getString(operation_name) + "경험 유:", "언제받았는지 모르겠다");
+                mapped_data.put(RowID==11?getString(operation_name)+operation_etc+"수술":getString(operation_name) + "경험유 :", "언제받았는지 모르겠다");
             } else {
-                mapped_data.put(RowID==11?"기타"+operation_etc+"수술":getString(operation_name) + "경험 :", operation_check[RowID] != -1 ? "" : "없다");
+                mapped_data.put(RowID==11?"기타 수술":getString(operation_name) + "경험 :", operation_check[RowID] == -1 ? "" : "없다");
             }
 
 
@@ -347,14 +347,12 @@ public class NormalData_3 {
                 if(RowID==5){
                     if(disease_check[RowID][ColID]==1) {
                         if (cancer_text_check[ColID] == -1 && cancer_check[ColID] == -1) {
-                            Log.e("ifno", "ifno");
                             return false;
                         }
                     }
                 }
                 else {
                     if(disease_check[RowID][ColID] == -1) {
-                        Log.e("elseno","elseno");
                         return false;
                     }
                 }

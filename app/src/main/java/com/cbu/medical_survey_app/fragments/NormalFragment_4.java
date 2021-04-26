@@ -70,7 +70,7 @@ public class NormalFragment_4 extends Fragment {
             Ray[RowID] = new ray(rb);
         }
         //15번
-        for(int RowID=0;RowID<6;RowID++){
+        for(int RowID=0;RowID<9;RowID++){
             RadioButton[] rb1 = new RadioButton[6];
             RadioButton[] rb2 = new RadioButton[3];
             for(int ColID=0;ColID<6;ColID++){

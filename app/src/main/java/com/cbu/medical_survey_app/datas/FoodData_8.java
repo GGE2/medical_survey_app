@@ -57,11 +57,10 @@ public class FoodData_8 {
                 mapped_data.put(getString(food_name),pork_year[RowID]==-1?"":avg_year[pork_year[RowID]]);
             }
             else {
-                if(pork_year[RowID]!=-1) {
                     mapped_data.put(getString(food_name) + "지난 1년간 섭취한 평균 횟수 :", pork_year[RowID]==-1?"":avg_year[pork_year[RowID]]);
 
                     mapped_data.put(getString(food_name) + "평균 1회 섭취분량 :", pork_once[RowID]==-1?"":avg_once[RowID][pork_once[RowID]]);
-                }
+
             }
         }
 
@@ -75,7 +74,7 @@ public class FoodData_8 {
                 }
                 else{
                     ((RadioButton)vg.findViewById(getResId(vg,"food8_fir_radio"+(RowID+1)+"_"+(pork_year[RowID]+1)))).setChecked(true);
-                    if(pork_year[RowID]!=-1)
+                    if(pork_once[RowID]!=-1)
                         ((RadioButton)vg.findViewById(getResId(vg,"food8_sec_radio_avg"+(RowID+1)+"_"+(pork_once[RowID]+1)))).setChecked(true);
                 }
 
@@ -85,7 +84,7 @@ public class FoodData_8 {
 
     }
     public boolean check(){
-        for(int RowID=0;RowID<8;RowID++){
+        for(int RowID=0;RowID<7;RowID++){
             if(pork_year[RowID]==-1){
                 return false;
             }

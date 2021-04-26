@@ -93,11 +93,14 @@ public class NormalData_2 {
                 input_year_result[RowID] = "";
                 input_age_result[RowID] = "";
             }
-            mapped_data.put(getString(disease_name),check_radio_id[RowID]==-1?"":radio_result[check_radio_id[RowID]]);
+
             if(check_radio_id[RowID]==1||check_radio_id[RowID]==2) {
+                mapped_data.put(getString(disease_name),check_radio_id[RowID]==-1?"":radio_result[check_radio_id[RowID]]);
                 mapped_data.put(getString(disease_name)+" 처음진단받은 년도", input_year_result[RowID] + "년");
                 mapped_data.put(getString(disease_name)+" 처음진단받은 나이", input_age_result[RowID] + "세");
             }
+            else
+                mapped_data.put(getString(disease_name),check_radio_id[RowID]==-1?"":radio_result[check_radio_id[RowID]]);
 
         }
 
