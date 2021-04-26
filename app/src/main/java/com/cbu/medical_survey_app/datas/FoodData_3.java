@@ -93,14 +93,10 @@ public class FoodData_3 {
     public boolean check() {
 
         for (int peanutID = 0; peanutID < peanut_checked.length; peanutID++) {
-            if(peanut_checked[peanutID] == -1){
-                return false;
-            }
-        }
-
-        for (int peanutID = 0; peanutID < radio_peanut_checked.length; peanutID++) {
-            if(radio_peanut_checked[peanutID] == -1){
-                return false;
+            if(peanut_checked[peanutID] != -1 && peanut_checked[peanutID] != 0){
+                if(radio_peanut_checked[peanutID] == -1){
+                    return false;
+                }
             }
         }
 

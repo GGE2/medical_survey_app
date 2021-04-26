@@ -127,20 +127,22 @@ public class FoodData_1 {
     public boolean check() {
 
         for (int riceID = 0; riceID < rice_checked.length; riceID++) {
-            if(rice_checked[riceID] == -1){
-                return false;
-            }
-        }
+            if(rice_checked[riceID] != 0 && rice_checked[riceID] != -1){
+                // 먹는다고 체크 시
+                if(radio_rice_checked[riceID] == -1){
+                    return false;
+                }
 
-        for (int riceID = 0; riceID < radio_rice_checked.length; riceID++) {
-            if(radio_rice_checked[riceID] == -1){
-                return false;
+                if(riceID == 0) {
+                    // 밥 먹는다고 체크 시 -> 쌀밥, 잡곡밥 검사
+                    System.out.println(radio_rice_sub1_checked);
+                    System.out.println(radio_rice_sub2_checked);
+                    if (radio_rice_sub1_checked == -1) return false;
+                    else if (radio_rice_sub1_checked != R.id.radio_rice_sub1_ans1) {
+                        if (radio_rice_sub2_checked == -1) return false;
+                    }
+                }
             }
-        }
-
-        if(radio_rice_sub1_checked == -1)   return false;
-        else if(radio_rice_sub1_checked != R.id.radio_rice_sub1_ans1){
-            if(radio_rice_sub2_checked == -1)   return false;
         }
 
         return true;

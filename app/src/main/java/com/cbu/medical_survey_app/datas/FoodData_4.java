@@ -93,14 +93,10 @@ public class FoodData_4 {
     public boolean check() {
 
         for (int doobooID = 0; doobooID < dooboo_checked.length; doobooID++) {
-            if(dooboo_checked[doobooID] == -1){
-                return false;
-            }
-        }
-
-        for (int doobooID = 0; doobooID < radio_dooboo_checked.length; doobooID++) {
-            if(radio_dooboo_checked[doobooID] == -1){
-                return false;
+            if(dooboo_checked[doobooID] != -1 && dooboo_checked[doobooID] != 0){
+                if(radio_dooboo_checked[doobooID] == -1){
+                    return false;
+                }
             }
         }
 
