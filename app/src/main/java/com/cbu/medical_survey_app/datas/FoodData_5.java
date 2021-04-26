@@ -93,14 +93,10 @@ public class FoodData_5 {
     public boolean check() {
 
         for (int kimchiID = 0; kimchiID < kimchi_checked.length; kimchiID++) {
-            if(kimchi_checked[kimchiID] == -1){
-                return false;
-            }
-        }
-
-        for (int kimchiID = 0; kimchiID < radio_kimchi_checked.length; kimchiID++) {
-            if(radio_kimchi_checked[kimchiID] == -1){
-                return false;
+            if(kimchi_checked[kimchiID] != -1 && kimchi_checked[kimchiID] != 0){
+                if(radio_kimchi_checked[kimchiID] == -1){
+                    return false;
+                }
             }
         }
 

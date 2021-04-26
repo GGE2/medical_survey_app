@@ -97,14 +97,10 @@ public class FoodData_2 {
     public boolean check() {
 
         for (int flourID = 0; flourID < flour_checked.length; flourID++) {
-            if(flour_checked[flourID] == -1){
-                return false;
-            }
-        }
-
-        for (int flourID = 0; flourID < radio_flour_checked.length; flourID++) {
-            if(radio_flour_checked[flourID] == -1){
-                return false;
+            if(flour_checked[flourID] != -1 && flour_checked[flourID] != 0){
+                if(radio_flour_checked[flourID] == -1){
+                    return false;
+                }
             }
         }
 

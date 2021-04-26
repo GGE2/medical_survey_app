@@ -130,32 +130,32 @@ public class DataController {
         else if(nowFragment instanceof FoodFragment_1){
             System.out.println("식품 사항1 Frag:");
             food_data1.saveData(context);
-//            return food_data1.check();
+            return food_data1.check();
         }
         else if(nowFragment instanceof FoodFragment_2){
             System.out.println("식품 사항2 Frag:");
             food_data2.saveData(context);
-//            return food_data2.check();
+            return food_data2.check();
         }
         else if(nowFragment instanceof FoodFragment_3){
             System.out.println("식품 사항3 Frag:");
             food_data3.saveData(context);
-//            return food_data3.check();
+            return food_data3.check();
         }
         else if(nowFragment instanceof FoodFragment_4){
             System.out.println("식품 사항4 Frag:");
             food_data4.saveData(context);
-//            return food_data4.check();
+            return food_data4.check();
         }
         else if(nowFragment instanceof FoodFragment_5){
             System.out.println("식품 사항5 Frag:");
             food_data5.saveData(context);
-//            return food_data5.check();
+            return food_data5.check();
         }
         else if(nowFragment instanceof FoodFragment_6){
             System.out.println("식품 사항6 Frag:");
             food_data6.saveData(context);
-//            return food_data6.check();
+            return food_data6.check();
         }
         else if(nowFragment instanceof FoodFragment_7){
             System.out.println("식품 사항7 Frag:");
