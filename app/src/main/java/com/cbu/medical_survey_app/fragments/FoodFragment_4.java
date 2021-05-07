@@ -18,16 +18,16 @@ public class FoodFragment_4 extends Fragment {
 
     private ButtonListener btl;
 
-    private table[] dooboos;
-    private table[] dooboos_radio;
+    private table1[] dooboos;
+    private table2[] dooboos_radio;
 
     public FoodFragment_4() {
     }
 
     public FoodFragment_4(Context context) {
         btl = new ButtonListener(context);
-        dooboos = new table[6];
-        dooboos_radio = new table[6];
+        dooboos = new table1[6];
+        dooboos_radio = new table2[6];
     }
 
     @Override
@@ -49,23 +49,32 @@ public class FoodFragment_4 extends Fragment {
 
     private void initViews(ViewGroup vg) {
 
-        for (int doobooID = 0; doobooID < dooboos.length; doobooID++) {
-            CheckBox[] cbs = new CheckBox[9];
-
-            for (int ansID = 0; ansID < cbs.length; ansID++) {
-                cbs[ansID] = vg.findViewById(getResId(vg, "check_dooboo" + (doobooID + 1) + "_ans" + (ansID + 1)));
-            }
-            dooboos[doobooID] = new table(cbs);
-        }
-
         for (int doobooID = 0; doobooID < dooboos_radio.length; doobooID++) {
             CheckBox[] cbs = new CheckBox[3];
 
             for (int ansID = 0; ansID < cbs.length; ansID++) {
                 cbs[ansID] = vg.findViewById(getResId(vg, "radio_dooboo" + (doobooID + 1) + "_ans" + (ansID + 1)));
             }
-            dooboos_radio[doobooID] = new table(cbs);
+            dooboos_radio[doobooID] = new table2(cbs);
         }
+
+        for (int doobooID = 0; doobooID < dooboos.length; doobooID++) {
+            CheckBox[] cbs = new CheckBox[9];
+
+            for (int ansID = 0; ansID < cbs.length; ansID++) {
+                cbs[ansID] = vg.findViewById(getResId(vg, "check_dooboo" + (doobooID + 1) + "_ans" + (ansID + 1)));
+            }
+            dooboos[doobooID] = new table1(cbs, doobooID);
+        }
+    }
+
+    private void disabledChecked(CheckBox cb){
+        cb.setChecked(false);
+        cb.setEnabled(false);
+    }
+
+    private void enabledChecked(CheckBox cb){
+        cb.setEnabled(true);
     }
 
     // 문자열 값으로 id를 얻어옴
@@ -74,12 +83,74 @@ public class FoodFragment_4 extends Fragment {
         return getID;
     }
 
-    private class table {
+    private class table1 {
+
+        protected CheckBox[] check_bts;
+        protected int checked = -1;
+        protected int index;
+
+        public table1(CheckBox[] cbs, int index) {
+            check_bts = cbs;
+            this.index = index;
+
+            for (int i = 0; i < check_bts.length; i++) {
+                if(check_bts[i].isChecked()){
+                    checked = i;
+                    check_bts[i].setChecked(true);
+                }
+                else{
+                    check_bts[i].setChecked(false);
+                }
+                setBtListener(check_bts[i], i);
+            }
+
+            if(checked == 0 || checked == -1) {
+                for (CheckBox cb : dooboos_radio[index].check_bts){
+                    disabledChecked(cb);
+                }
+            }
+            else{
+                for (CheckBox cb : dooboos_radio[index].check_bts){
+                    enabledChecked(cb);
+                }
+            }
+        }
+
+        private void setBtListener(CheckBox cb, int idx) {
+            cb.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(idx != checked) {
+                        cb.setChecked(true);
+                        if(checked != -1)
+                            check_bts[checked].setChecked(false);
+                        checked = idx;
+                    }
+                    else{
+                        cb.setChecked(true);
+                    }
+
+                    if(checked == 0 || checked == -1) {
+                        for (CheckBox cb : dooboos_radio[index].check_bts){
+                            disabledChecked(cb);
+                        }
+                    }
+                    else{
+                        for (CheckBox cb : dooboos_radio[index].check_bts){
+                            enabledChecked(cb);
+                        }
+                    }
+                }
+            });
+        }
+    }
+
+    private class table2 {
 
         protected CheckBox[] check_bts;
         protected int checked = -1;
 
-        public table(CheckBox[] cbs) {
+        public table2(CheckBox[] cbs) {
             check_bts = cbs;
 
             for (int i = 0; i < check_bts.length; i++) {
@@ -107,6 +178,7 @@ public class FoodFragment_4 extends Fragment {
                     else{
                         cb.setChecked(true);
                     }
+
                 }
             });
         }

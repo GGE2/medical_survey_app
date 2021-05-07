@@ -93,14 +93,10 @@ public class FoodData_6 {
     public boolean check() {
 
         for (int namulID = 0; namulID < namul_checked.length; namulID++) {
-            if(namul_checked[namulID] == -1){
-                return false;
-            }
-        }
-
-        for (int namulID = 0; namulID < radio_namul_checked.length; namulID++) {
-            if(radio_namul_checked[namulID] == -1){
-                return false;
+            if(namul_checked[namulID] != -1 && namul_checked[namulID] != 0){
+                if(radio_namul_checked[namulID] == -1){
+                    return false;
+                }
             }
         }
 
