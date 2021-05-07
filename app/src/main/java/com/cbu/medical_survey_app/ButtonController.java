@@ -667,8 +667,13 @@ public void sleepNext() {
         if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
 
+            StartActivity.dtc.makeFolder();
+
             // 데이터 엑셀에 저장
             StartActivity.dtc.saveExcel(nowContext);
+
+            // DataController 객체 저장
+            StartActivity.dtc.saveObject(nowContext);
 
             // 설문 완료 시 앱 재시작
             Intent intent = new Intent(nowContext, StartActivity.class);

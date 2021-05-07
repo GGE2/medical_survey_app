@@ -2,7 +2,9 @@ package com.cbu.medical_survey_app.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -51,7 +53,9 @@ public class StartActivity extends AppCompatActivity {
         else{
             setContentView(R.layout.main_page_landscape);
         }
-
+        // 외부 저장소 읽기/쓰기 권한 요청
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, MODE_PRIVATE);
 
         btn_main_1 = (Button)findViewById(R.id.btn_main_1);
         main_input_name = (EditText)findViewById((R.id.main_input_name));
