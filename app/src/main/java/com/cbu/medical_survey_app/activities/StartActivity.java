@@ -8,9 +8,11 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -19,8 +21,18 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.cbu.medical_survey_app.GsonDeserializeExclusion;
 import com.cbu.medical_survey_app.R;
 import com.cbu.medical_survey_app.datas.DataController;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -77,9 +89,19 @@ public class StartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                // (임시) 새로운 설문인지, 불러오긴지
+                boolean isLoad = true;
+
                 Intent intent = new Intent(StartActivity.this, SubActivity.class);
                 if(checkText()) {
-                    dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
+
+                    if(isLoad){
+                        loadFile("_ddd");
+                    }
+                    else{
+                        dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
+                    }
+
                     startActivity(intent);
                 }
                 else{
@@ -119,6 +141,16 @@ public class StartActivity extends AppCompatActivity {
         return super.dispatchTouchEvent(event);
     }
 
+    private void loadFile(String fileName) {
+        // 공유 폴더에 있는 객체 파일을 SharedPreferences 폴더로 이동
+        copyFile(Environment.getExternalStoragePublicDirectory("Objects").getAbsolutePath(), "/data/data/com.cbu.medical_survey_app/shared_prefs/", "datas.xml");
+
+        SharedPreferences sp = getSharedPreferences("datas", MODE_PRIVATE);
+
+        Gson gson = new GsonBuilder().addDeserializationExclusionStrategy(new GsonDeserializeExclusion()).create();
+
+        dtc = gson.fromJson(sp.getString(fileName, ""), DataController.class);
+    }
 
     //name과 address 입력값 확인
     private boolean checkText(){
@@ -138,5 +170,32 @@ public class StartActivity extends AppCompatActivity {
     private void openPopup() {
         Intent intent = new Intent(StartActivity.this, StartPopupActivity.class);
         ((Activity)StartActivity.this).startActivityForResult(intent, 1);
+    }
+
+    private void copyFile(String filePath_from, String filePath_to, String file){
+        InputStream from = null;
+        OutputStream to = null;
+
+        try{
+
+            from = new FileInputStream(filePath_from + "/" + file);
+            to = new FileOutputStream(filePath_to + "/" + file);
+
+            byte[] buffer = new byte[1024];
+            int read;
+            while((read = from.read(buffer)) != -1) {
+                to.write(buffer, 0, read);
+            }
+            from.close();
+            from = null;
+
+            to.flush();
+            to.close();
+            to = null;
+        } catch(FileNotFoundException e){
+            Log.e("File Not Found", e.getMessage());
+        } catch (Exception e) {
+            Log.e("File Error", e.getMessage());
+        }
     }
 }
