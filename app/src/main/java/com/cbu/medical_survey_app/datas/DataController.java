@@ -2,7 +2,9 @@ package com.cbu.medical_survey_app.datas;
 
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.SharedPreferences;
 import android.os.Environment;
+import android.util.Log;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
@@ -37,18 +39,27 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class DataController {
 
+    private String fileName = "";
+
     // 설문 시작 시 이름, 주소
-    final private String origin_name;
+    final public String origin_name;
     final private String origin_address;
 
     final private NormalData_1 normal_data1;
@@ -317,6 +328,8 @@ public class DataController {
     }
 
     public void saveExcel(Context context) {
+        fileName = normal_data1.getData().get("사용자 주민번호 앞자리") + "_" + origin_name;
+
         Workbook workbook = new HSSFWorkbook();
 
         ArrayList<LinkedHashMap<String, String>> array = new ArrayList<>();
@@ -366,9 +379,12 @@ public class DataController {
         String curDate = format.format(new Date());
 
         ContextWrapper cw = new ContextWrapper(context);
-        File xlsFile = new File(cw.getExternalFilesDir(""), origin_name + "_" + curDate + ".xls");
+//        File xlsFile = new File(cw.getExternalFilesDir(""), fileName + ".xls");
+
+        File xlsFile = new File(Environment.getExternalStoragePublicDirectory("Excels"), fileName + ".xls");
 
         try{
+
             FileOutputStream os = new FileOutputStream(xlsFile);
             workbook.write(os);
         } catch (IOException e) {
@@ -376,6 +392,65 @@ public class DataController {
         }
 
         System.out.println(xlsFile.getAbsolutePath() + "에 저장됨");
+    }
+
+    private void copyFile(String filePath_from, String filePath_to, String file){
+        InputStream from = null;
+        OutputStream to = null;
+
+        try{
+
+            from = new FileInputStream(filePath_from + "/" + file);
+            to = new FileOutputStream(filePath_to + "/" + file);
+
+            byte[] buffer = new byte[1024];
+            int read;
+            while((read = from.read(buffer)) != -1) {
+                to.write(buffer, 0, read);
+            }
+            from.close();
+            from = null;
+
+            to.flush();
+            to.close();
+            to = null;
+        } catch(FileNotFoundException e){
+            Log.e("File Not Found", e.getMessage());
+        } catch (Exception e) {
+            Log.e("File Error", e.getMessage());
+        }
+    }
+
+    // 저장할 폴더 없을 시 생성
+    public void makeFolder() {
+        String folderName1 = "Excels";
+        String folderName2 = "Objects";
+
+        File dir1 = new File(Environment.getExternalStoragePublicDirectory("").getAbsolutePath() + "/" + folderName1);
+
+        if(!dir1.exists()){
+            dir1.mkdirs();
+        }
+        File dir2 = new File(Environment.getExternalStoragePublicDirectory("").getAbsolutePath() + "/" + folderName2);
+
+        if(!dir2.exists()){
+            dir2.mkdirs();
+        }
+
+
+    }
+
+    public void saveObject(Context context) {
+        Gson gson = new GsonBuilder().create();
+        SharedPreferences sp = context.getSharedPreferences("datas", Context.MODE_PRIVATE);
+
+        String savedDatas = gson.toJson(this, DataController.class);
+
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString(fileName, savedDatas);
+        editor.commit();
+
+        copyFile("/data/data/com.cbu.medical_survey_app/shared_prefs/", Environment.getExternalStoragePublicDirectory("Objects").getAbsolutePath(), "datas.xml");
     }
 
     private void makeSheet(Workbook workbook, ArrayList<LinkedHashMap<String, String>> datas, String shName) {
