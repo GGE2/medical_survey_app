@@ -54,16 +54,14 @@ public class ButtonController {
     public void normalComplete () {
         // 현재 뷰의 데이터들을 저장
 
-        if(StartActivity.dtc.saveData(nowContext)) {
+            StartActivity.dtc.saveData(nowContext);
             Fragment fragment = new NormalFragment_2(nowContext);
             FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.survey_content, fragment);
             fragmentTransaction.commit();
-        }
-        else{
-            openPopup();
-        }
+
+
 
     }
     public void normal2_pre () {
@@ -82,15 +80,13 @@ public class ButtonController {
     public void normal2_next () {
         // 현재 뷰의 데이터들을 저장
 
-        if(StartActivity.dtc.saveData(nowContext)) {
+        StartActivity.dtc.saveData(nowContext);
             Fragment fragment = new NormalFragment_3(nowContext);
             FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.survey_content, fragment);
             fragmentTransaction.commit();
-        }
-        else
-            openPopup();
+
 
     }
     public void normal3_pre () {
@@ -117,15 +113,13 @@ public class ButtonController {
     public void normal3_next () {
         // 현재 뷰의 데이터들을 저장
 
-        if(StartActivity.dtc.saveData(nowContext)) {
+        StartActivity.dtc.saveData(nowContext);
             Fragment fragment = new NormalFragment_4(nowContext);
             FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.survey_content, fragment);
             fragmentTransaction.commit();
-        }
-        else
-            openPopup();
+
 
 
 //        ((FragmentActivity)nowContext).startActivity(intent);
@@ -152,13 +146,11 @@ public class ButtonController {
     }
     public void normal4_next () {
         // 현재 뷰의 데이터들을 저장
-        if(StartActivity.dtc.saveData(nowContext)) {
+        StartActivity.dtc.saveData(nowContext);
             title.setText(R.string.smoke_title);
             title_img.setImageResource(R.drawable.img_smoke_top);
             makeFrag(new SmokeFragment(nowContext));
-        }
-        else
-            openPopup();
+
     }
 
     public void smokePrev() {
@@ -172,19 +164,14 @@ public class ButtonController {
     }
 
     public void smokeNext() {
-        if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
-
+        StartActivity.dtc.saveData(nowContext);
             // 흡연 -> 수면
             title.setText(R.string.sleep_title);
             title_img.setImageResource(R.drawable.img_sleep_top);
 
             makeFrag(new SleepFragment(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
     }
 
     public void sleepPrev() {
@@ -199,9 +186,8 @@ public class ButtonController {
     }
 
 public void sleepNext() {
-    if(StartActivity.dtc.saveData(nowContext)){
         // 유효성 검사 통과
-
+    StartActivity.dtc.saveData(nowContext);
         // 수면 -> 음식
         title.setText(R.string.food_title);
         title_img.setImageResource(R.drawable.img_food_top);
@@ -215,11 +201,8 @@ public void sleepNext() {
         fragmentTransaction.commit();
 
 //            makeFrag(new JobFragment(nowContext));
-    }
-    else{
-        // 유효성 검사 실패 -> 경고창
-        openPopup();
-    }
+
+
 }
 
     public void food1_Prev() {
@@ -239,7 +222,7 @@ public void sleepNext() {
     }
     public void food1_Next() {
         // 음식1 -> 음식2
-        if(StartActivity.dtc.saveData(nowContext)){
+        StartActivity.dtc.saveData(nowContext);
             // 유효성 검사 통과
 
 //            title.setText(R.string.food_title);
@@ -255,11 +238,6 @@ public void sleepNext() {
 
 //            makeFrag(new JobFragment(nowContext));
         }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
-    }
 
     public void food2_Prev() {
         StartActivity.dtc.saveData(nowContext);
@@ -282,7 +260,7 @@ public void sleepNext() {
 
     public void food2_Next() {
 
-        if(StartActivity.dtc.saveData(nowContext)){
+        StartActivity.dtc.saveData(nowContext);
             // 유효성 검사 통과
 
             // 음식2 -> 음식3
@@ -298,11 +276,7 @@ public void sleepNext() {
 //            fragmentTransaction.commit();
 
             makeFrag(new FoodFragment_3(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
     }
 
     public void food3_Prev() {
@@ -326,16 +300,10 @@ public void sleepNext() {
     }
 
     public void food3_Next() {
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
-
-            // 음식3 -> 음식4
+        StartActivity.dtc.saveData(nowContext);
             makeFrag(new FoodFragment_4(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
+
     }
 
     public void food4_Prev() {
@@ -359,7 +327,7 @@ public void sleepNext() {
     }
 
     public void food4_Next() {
-        if(StartActivity.dtc.saveData(nowContext)){
+        StartActivity.dtc.saveData(nowContext);
             // 유효성 검사 통과
 
             // 음식4 -> 음식5
@@ -375,11 +343,7 @@ public void sleepNext() {
 //            fragmentTransaction.commit();
 
             makeFrag(new FoodFragment_5(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
     }
 
     public void food5_Prev() {
@@ -403,7 +367,7 @@ public void sleepNext() {
     }
 
     public void food5_Next() {
-        if(StartActivity.dtc.saveData(nowContext)){
+        StartActivity.dtc.saveData(nowContext);
             // 유효성 검사 통과
 
             // 음식5 -> 음식6
@@ -419,11 +383,7 @@ public void sleepNext() {
 //            fragmentTransaction.commit();
 
             makeFrag(new FoodFragment_6(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
     }
 
     public void food6_Prev() {
@@ -447,7 +407,7 @@ public void sleepNext() {
     }
 
     public void food6_Next() {
-        if(StartActivity.dtc.saveData(nowContext)){
+        StartActivity.dtc.saveData(nowContext);
 
 
 
@@ -461,11 +421,7 @@ public void sleepNext() {
 //            fragmentTransaction.commit();
 
             makeFrag(new FoodFragment_7(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
     }
 
     public void food7_prev(){
@@ -477,18 +433,13 @@ public void sleepNext() {
 
     }
     public void food7_next(){
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
+        StartActivity.dtc.saveData(nowContext);
 
             title.setText(R.string.food_title);
             title_img.setImageResource(R.drawable.img_food_top);
 
             makeFrag(new FoodFragment_8(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
 
     }
     public void food8_prev(){
@@ -503,18 +454,14 @@ public void sleepNext() {
 
     }
     public void food8_next(){
-        if(StartActivity.dtc.saveData(nowContext)){
+        StartActivity.dtc.saveData(nowContext);
             // 유효성 검사 통과
 
             title.setText(R.string.food_title);
             title_img.setImageResource(R.drawable.img_food_top);
 
             makeFrag(new FoodFragment_9(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
 
     }
     public void food9_prev(){
@@ -529,18 +476,14 @@ public void sleepNext() {
 
     }
     public void food9_next(){
-        if(StartActivity.dtc.saveData(nowContext)){
+        StartActivity.dtc.saveData(nowContext);
             // 유효성 검사 통과
 
             title.setText(R.string.food_title);
             title_img.setImageResource(R.drawable.img_food_top);
 
             makeFrag(new FoodFragment_10(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
 
     }
     public void food10_prev(){
@@ -555,18 +498,14 @@ public void sleepNext() {
 
     }
     public void food10_next(){
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
 
+            // 유효성 검사 통과
+        StartActivity.dtc.saveData(nowContext);
             title.setText(R.string.food_title);
             title_img.setImageResource(R.drawable.img_food_top);
 
             makeFrag(new FoodFragment_11(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
     }
     public void food11_prev(){
         StartActivity.dtc.saveData(nowContext);
@@ -580,9 +519,9 @@ public void sleepNext() {
 
     }
     public void food11_next(){
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
 
+            // 유효성 검사 통과
+            StartActivity.dtc.saveData(nowContext);
             FragmentManager fm = ((FragmentActivity)nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
 
@@ -590,11 +529,8 @@ public void sleepNext() {
             fragmentTransaction.replace(R.id.survey_content, new FoodFragment_12(nowContext));
 
             fragmentTransaction.commit();
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
+
     }
     public void food12_prev(){
         StartActivity.dtc.saveData(nowContext);
@@ -609,8 +545,9 @@ public void sleepNext() {
 
     }
     public void food12_next(){
-        if(StartActivity.dtc.saveData(nowContext)){
+
             // 유효성 검사 통과
+         StartActivity.dtc.saveData(nowContext);
             title.setText(R.string.job_title);
             FragmentManager fm = ((FragmentActivity) nowContext).getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
@@ -619,11 +556,8 @@ public void sleepNext() {
             fragmentTransaction.replace(R.id.survey_content, new JobFragment(nowContext));
 
             fragmentTransaction.commit();
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
+
     }
 
 
@@ -644,19 +578,15 @@ public void sleepNext() {
     }
 
     public void jobNext() {
-        if(StartActivity.dtc.saveData(nowContext)){
             // 유효성 검사 통과
-
+        StartActivity.dtc.saveData(nowContext);
             // 직업 -> 최종 제출 페이지
             title.setText(R.string.last_title);
             title_img.setImageResource(0);
 
             makeFrag(new LastFragment(nowContext));
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
+
     }
 
 
@@ -664,9 +594,9 @@ public void sleepNext() {
     // 버튼이 눌렸을 때 동작들(datas에 저장하거나, 제출)
     public void surveyComplete () {
 
-        if(StartActivity.dtc.saveData(nowContext)){
-            // 유효성 검사 통과
 
+            // 유효성 검사 통과
+            StartActivity.dtc.saveData(nowContext);
             StartActivity.dtc.makeFolder();
 
             // 데이터 엑셀에 저장
@@ -680,11 +610,8 @@ public void sleepNext() {
             ((Activity)nowContext).finishAffinity();
             ((Activity)nowContext).startActivity(intent);
             System.exit(0);
-        }
-        else{
-            // 유효성 검사 실패 -> 경고창
-            openPopup();
-        }
+
+
     }
 
 

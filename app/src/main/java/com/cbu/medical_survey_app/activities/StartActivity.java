@@ -1,10 +1,14 @@
 package com.cbu.medical_survey_app.activities;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -14,12 +18,17 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
 
 import com.cbu.medical_survey_app.GsonDeserializeExclusion;
 import com.cbu.medical_survey_app.R;
@@ -40,6 +49,11 @@ public class StartActivity extends AppCompatActivity {
     public static DataController dtc;
     EditText main_input_address,main_input_name;
     ViewGroup viewGroup;
+    Toolbar toolbar;
+
+
+
+
 
 
     //화면전환시 xml 변경
@@ -58,6 +72,9 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         //oreintation 에 따라 layout.xml 동적으로 적용
         if(getResources().getConfiguration().orientation==Configuration.ORIENTATION_PORTRAIT){
             setContentView(R.layout.main_page_portrait);
@@ -65,6 +82,11 @@ public class StartActivity extends AppCompatActivity {
         else{
             setContentView(R.layout.main_page_landscape);
         }
+        //메뉴 toolbar 생성
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+
         // 외부 저장소 읽기/쓰기 권한 요청
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, MODE_PRIVATE);
@@ -89,19 +111,9 @@ public class StartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // (임시) 새로운 설문인지, 불러오긴지
-                boolean isLoad = true;
-
                 Intent intent = new Intent(StartActivity.this, SubActivity.class);
                 if(checkText()) {
-
-                    if(isLoad){
-                        loadFile("_ddd");
-                    }
-                    else{
-                        dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
-                    }
-
+                    dtc = new DataController(main_input_name.getText().toString(), main_input_address.getText().toString());
                     startActivity(intent);
                 }
                 else{
@@ -113,6 +125,39 @@ public class StartActivity extends AppCompatActivity {
 
 
     }
+
+
+    //menu insert
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    //menu action
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //return super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                // User chose the "Settings" item, show the app settings UI...
+                Intent intent = new Intent(StartActivity.this, MenuPopupActivity.class);
+                ((Activity)StartActivity.this).startActivityForResult(intent, 1);
+
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                Toast.makeText(getApplicationContext(), "나머지 버튼 클릭됨", Toast.LENGTH_LONG).show();
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
+
+
     //onDestory() 함수 호출시 데이터 저장
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -141,16 +186,17 @@ public class StartActivity extends AppCompatActivity {
         return super.dispatchTouchEvent(event);
     }
 
-    private void loadFile(String fileName) {
-        // 공유 폴더에 있는 객체 파일을 SharedPreferences 폴더로 이동
-        copyFile(Environment.getExternalStoragePublicDirectory("Objects").getAbsolutePath(), "/data/data/com.cbu.medical_survey_app/shared_prefs/", "datas.xml");
-
-        SharedPreferences sp = getSharedPreferences("datas", MODE_PRIVATE);
-
-        Gson gson = new GsonBuilder().addDeserializationExclusionStrategy(new GsonDeserializeExclusion()).create();
-
-        dtc = gson.fromJson(sp.getString(fileName, ""), DataController.class);
-    }
+//    private void loadFile(String fileName) {
+//        // 공유 폴더에 있는 객체 파일을 SharedPreferences 폴더로 이동
+//        copyFile(Environment.getExternalStoragePublicDirectory("Objects").getAbsolutePath(), "/data/data/com.cbu.medical_survey_app/shared_prefs/", "datas.xml");
+//
+//        SharedPreferences sp = getSharedPreferences("datas", MODE_PRIVATE);
+//
+//        Gson gson = new GsonBuilder().addDeserializationExclusionStrategy(new GsonDeserializeExclusion()).create();
+//
+//
+//        dtc = gson.fromJson(sp.getString(fileName, ""), DataController.class);
+//    }
 
     //name과 address 입력값 확인
     private boolean checkText(){
@@ -172,30 +218,5 @@ public class StartActivity extends AppCompatActivity {
         ((Activity)StartActivity.this).startActivityForResult(intent, 1);
     }
 
-    private void copyFile(String filePath_from, String filePath_to, String file){
-        InputStream from = null;
-        OutputStream to = null;
 
-        try{
-
-            from = new FileInputStream(filePath_from + "/" + file);
-            to = new FileOutputStream(filePath_to + "/" + file);
-
-            byte[] buffer = new byte[1024];
-            int read;
-            while((read = from.read(buffer)) != -1) {
-                to.write(buffer, 0, read);
-            }
-            from.close();
-            from = null;
-
-            to.flush();
-            to.close();
-            to = null;
-        } catch(FileNotFoundException e){
-            Log.e("File Not Found", e.getMessage());
-        } catch (Exception e) {
-            Log.e("File Error", e.getMessage());
-        }
-    }
 }

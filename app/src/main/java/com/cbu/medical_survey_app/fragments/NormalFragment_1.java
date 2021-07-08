@@ -90,6 +90,7 @@ public class NormalFragment_1 extends Fragment {
         });
 
         // 프래그먼트에 데이터 세팅
+
         StartActivity.dtc.setDataToView(vg);
 
         no_group_rb_1(rbt1,rbt2,editText1); // pro 5독립버튼 처리
