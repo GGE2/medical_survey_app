@@ -77,9 +77,6 @@ public void saveExcel(Context context) {
         SharedPreferences sp = getSharedPreferences("datas", MODE_PRIVATE);
 
         Gson gson = new GsonBuilder().addDeserializationExclusionStrategy(new GsonDeserializeExclusion()).create();
-
-
-        StartActivity.dtc = gson.fromJson(sp.getString(fileName, ""), DataController.class);
     }
 ```
 
