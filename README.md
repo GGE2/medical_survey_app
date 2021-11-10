@@ -13,17 +13,75 @@
 ### 기능
 ----------------------------------------------------------------
 + #### [검색]
-1.설문이 종료되면 설문 내용은 Excel 파일로 변환되어 저장  
+1.설문이 종료되면 설문 내용은 Excel 파일로 변환되어 저장 (JSON Object)  
 2.환자의 고유번호로 저장된 Excel 파일로 들어가 특정 column 검색
 ```
+public void saveExcel(Context context) {
+        Workbook workbook = new HSSFWorkbook();
+
+        ArrayList<LinkedHashMap<String, String>> array = new ArrayList<>();
+      
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+        String curDate = format.format(new Date());
+
+        ContextWrapper cw = new ContextWrapper(context);
+        File xlsFile = new File(cw.getExternalFilesDir(""), origin_name + "_" + curDate + ".xls");
+
+        try{
+            FileOutputStream os = new FileOutputStream(xlsFile);
+            workbook.write(os);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(xlsFile.getAbsolutePath() + "에 저장됨");
+    }
+
+    private void makeSheet(Workbook workbook, ArrayList<LinkedHashMap<String, String>> datas, String shName) {
+        Sheet sheet = workbook.createSheet(shName);
+        sheet.setColumnWidth(0, 50 * 512);
+        sheet.setColumnWidth(1, 20 * 512);
+
+        Row row;
+        Cell cell;
+
+        int idx = 0;
+
+      
+        for (LinkedHashMap<String, String> data : datas) {
+            for (Map.Entry<String, String> entry: data.entrySet()) {
+                row = sheet.createRow(idx++);
+
+                cell = row.createCell(0);
+                cell.setCellValue(entry.getKey());
+
+                cell = row.createCell(1);
+                cell.setCellValue(entry.getValue());
+            }
+        }
+    }
+
 
 ```
 
 -----------------------------------------------------------------
 + #### [수정]
-1.앱 초기화면 파일 불러오기를 통해 저장된 엑셀파일을 다시 안드로이드 파일로 변환  
+1.앱 초기화면 파일 불러오기를 통해 저장된 엑셀파일을 다시 JAVA OBJECT로 변환(JSON -> JAVA OBJECT)
 2.수정하고자 하는 부분 수정  
 3.기존 엑셀파일은 삭제하고 새로운 파일 저장  
+```
+ private void loadFile(String fileName) {
+        
+        copyFile(Environment.getExternalStoragePublicDirectory("Objects").getAbsolutePath(), "/data/data/com.cbu.medical_survey_app/shared_prefs/", "datas.xml");
+
+        SharedPreferences sp = getSharedPreferences("datas", MODE_PRIVATE);
+
+        Gson gson = new GsonBuilder().addDeserializationExclusionStrategy(new GsonDeserializeExclusion()).create();
+
+
+        StartActivity.dtc = gson.fromJson(sp.getString(fileName, ""), DataController.class);
+    }
+```
 
 -----------------------------------------------------------------
 + #### [유효성 검사]
